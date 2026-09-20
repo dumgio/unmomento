@@ -427,6 +427,7 @@ export const ESERCIZI = [
     famiglia: 'attenzione',
     stati: ['ansia', 'notte', 'non-so'],
     minuti: 1,
+    sostegno: true,
     fonte: { autore: 'Marco Aurelio', opera: 'A se stesso', nota: "vivere nel momento presente" },
     perche: `L'ansia vive nel futuro e nel passato. I sensi sono sempre nel presente: notare ciò che si vede, si tocca e si sente riporta l'attenzione qui, dove le cose sono ancora affrontabili. Usare i sensi è una tecnica di oggi, coerente con l'invito di Marco Aurelio a vivere nel momento presente.`,
     studio: 'esercizi-spirituali',
@@ -450,6 +451,7 @@ export const ESERCIZI = [
       { tipo: 'testo', testo: `Ora quattro cose che tocchi o senti a contatto con il corpo: la sedia, i vestiti, i piedi sul pavimento.` },
       { tipo: 'testo', testo: `Tre cose che senti con le orecchie. Anche i suoni più lontani.` },
       { tipo: 'respiro', testo: `Due odori, se ce ne sono, e un sapore in bocca. Poi un respiro lento.`, dentro: 4, fuori: 6, cicli: 2 },
+      { tipo: 'testo', testo: `Ora che sei più calmo, fai una domanda sola: di ciò che ti turba, che cosa dipende da te? Tieni quella cosa. Il resto, per ora, lascialo stare.` },
     ],
   },
   {
@@ -459,6 +461,7 @@ export const ESERCIZI = [
     famiglia: 'attenzione',
     stati: ['ansia', 'notte'],
     minuti: 3,
+    sostegno: true,
     fonte: { autore: 'Epitteto', opera: 'Discorsi', nota: "l'attenzione a sé (prosoché); il respiro è un sostegno di oggi" },
     perche: `Gli stoici chiamavano prosoché la vigilanza su di sé. Seguire il respiro non è un loro esercizio: lo usiamo come sostegno di oggi, perché è il modo più semplice di portare l'attenzione qui. Ogni volta che la mente scappa e la riportiamo indietro, rafforziamo la capacità di tornare al presente.`,
     studio: 'esercizi-spirituali',
@@ -482,6 +485,7 @@ export const ESERCIZI = [
       { tipo: 'testo', testo: `Ogni volta che ti accorgi di essere altrove e torni, stai facendo proprio l'esercizio: quello è il muscolo dell'attenzione.` },
       { tipo: 'respiro', testo: `Ancora qualche respiro, con lo stesso ritmo.`, dentro: 4, fuori: 6, cicli: 4 },
       { tipo: 'testo', testo: `Quando sei pronto, guarda ciò che hai attorno e torna a ciò che stavi facendo, con un po' più di spazio dentro.` },
+      { tipo: 'testo', testo: `Ora che sei più calmo, fai una domanda sola: di ciò che ti turba, che cosa dipende da te? Tieni quella cosa. Il resto, per ora, lascialo stare.` },
     ],
   },
   {

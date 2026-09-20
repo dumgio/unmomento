@@ -7,7 +7,7 @@ const nomeStato = (id) => (STATI.find((s) => s.id === id) || {}).nome || id;
 export function listaEsercizi(esercizi) {
   if (!esercizi.length) return '<p class="nota">Nessun esercizio trovato. Prova a togliere qualche filtro.</p>';
   return `<div class="carte">${esercizi.map((e) => `<button class="carta-link" data-az="apri" data-tipo="esercizio" data-id="${e.id}">
-    <strong>${esc(e.titolo)}</strong><span class="tag">${e.minuti} min</span><span class="tag">${esc(nomeDisc(e.disciplina))}</span></button>`).join('')}</div>`;
+    <strong>${esc(e.titolo)}</strong><span class="tag">${e.minuti} min</span><span class="tag">${esc(nomeDisc(e.disciplina))}</span>${e.sostegno ? '<span class="tag">Sostegno di oggi</span>' : ''}</button>`).join('')}</div>`;
 }
 
 function filtri(f) {
@@ -30,7 +30,7 @@ function filtri(f) {
 export function catalogoHtml(filtro, esercizi, meditazioni) {
   return `
   <h1 class="titolo medio">Esercizi</h1>
-  <p class="lead">Tutti gli esercizi e le meditazioni, con la fonte di ciascuno.</p>
+  <p class="lead">Tutti gli esercizi e le meditazioni, con la fonte di ciascuno. Quelli con l'etichetta «Sostegno di oggi» sono tecniche moderne, usate come appoggio per calmarsi prima dell'esercizio stoico.</p>
   <h2 class="grp">Meditazioni a tempo</h2>
   <div class="carte">${meditazioni.map((m) => `<button class="carta-link" data-az="apri" data-tipo="meditazione" data-id="${m.id}"><strong>${esc(m.titolo)}</strong><span class="tag">${m.minuti} min</span><br><span>${esc(m.sotto)}</span></button>`).join('')}</div>
   <h2 class="grp">Esercizi guidati</h2>
@@ -42,7 +42,7 @@ export function schedaEsercizioHtml(e) {
   return `
   <button class="indietro" data-az="indietro">← Indietro</button>
   <h1 class="titolo medio">${esc(e.titolo)}</h1>
-  <p><span class="tag">${e.minuti} ${e.minuti === 1 ? 'minuto' : 'minuti'}</span><span class="tag">${esc(nomeDisc(e.disciplina))}</span>${e.stati.map((s) => `<span class="tag">${esc(nomeStato(s))}</span>`).join('')}</p>
+  <p><span class="tag">${e.minuti} ${e.minuti === 1 ? 'minuto' : 'minuti'}</span><span class="tag">${esc(nomeDisc(e.disciplina))}</span>${e.sostegno ? '<span class="tag">Sostegno di oggi</span>' : ''}${e.stati.map((s) => `<span class="tag">${esc(nomeStato(s))}</span>`).join('')}</p>
   <h3 class="info-h">A che cosa serve</h3>
   <p class="info-p">${esc(e.perche)}</p>
   <h3 class="info-h">Fonte</h3>
