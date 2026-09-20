@@ -2,7 +2,10 @@
 // Tipi di blocco: h (titolo), p (testo), lista, passi, nota, azione. Nel testo, **così** diventa grassetto.
 // Un blocco «azione» apre un esercizio (az: 'esercizio'), una pagina di studio (az: 'studio') o una meditazione (az: 'meditazione').
 
-export const PAGINE_STUDIO = [
+import { PAGINE_STUDIO_3A } from './studio3.js';
+import { PAGINE_STUDIO_3B } from './studio4.js';
+
+const PAGINE_BASE = [
   {
     id: 'cose-lo-stoicismo',
     titolo: "Che cos'è lo stoicismo",
@@ -658,3 +661,5 @@ export const PAGINE_STUDIO = [
     ],
   },
 ];
+
+export const PAGINE_STUDIO = [...PAGINE_BASE, ...PAGINE_STUDIO_3A, ...PAGINE_STUDIO_3B];

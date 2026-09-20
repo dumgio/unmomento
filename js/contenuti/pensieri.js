@@ -1,6 +1,8 @@
 // Pensieri da portare con te: formulazioni originali di idee stoiche, una per voce. Nessuna citazione dai libri.
 
-export const PENSIERI = [
+import { PENSIERI_3 } from './pensieri3.js';
+
+const PENSIERI_BASE = [
   { id: 'e01', voce: 'epitteto', testo: "Alcune cose dipendono da te, altre no. Comincia sempre da qui: qual è quale?", fonte: { autore: 'Epitteto', opera: "Manuale" } },
   { id: 'e02', voce: 'epitteto', testo: "Non ti turbano le cose, ma i giudizi che ne dai. Cambia il giudizio, e la cosa peserà meno.", fonte: { autore: 'Epitteto', opera: "Manuale" } },
   { id: 'e03', voce: 'epitteto', testo: "Non pretendere che le cose vadano come vuoi. Vuoi che vadano come vanno, e starai sereno.", fonte: { autore: 'Epitteto', opera: "Manuale" } },
@@ -202,3 +204,5 @@ export const PENSIERI = [
   { id: 'm66', voce: 'marco', testo: "Vivo il tempo che ho come un ospite riconoscente, non come un creditore.", fonte: { autore: 'Marco Aurelio', opera: "A se stesso" } },
   { id: 'm67', voce: 'marco', testo: "Tra ciò che mi accade e ciò che faccio c'è uno spazio: è lì che sono libero.", fonte: { autore: 'Marco Aurelio', opera: "A se stesso" } },
 ];
+
+export const PENSIERI = [...PENSIERI_BASE, ...PENSIERI_3];

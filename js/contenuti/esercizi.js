@@ -1,7 +1,9 @@
 // Gli esercizi guidati. I testi sono originali (nessuna citazione dai libri); ogni esercizio indica la fonte.
 // Formato dei passi: vedi tests/contenuti.test.js e app/js/logica/sessione.js.
 
-export const ESERCIZI = [
+import { ESERCIZI_3 } from './esercizi3.js';
+
+const ESERCIZI_BASE = [
   {
     id: 'fermati-impressione',
     titolo: 'Fermati, impressione',
@@ -1182,3 +1184,5 @@ export const ESERCIZI = [
     ],
   },
 ];
+
+export const ESERCIZI = [...ESERCIZI_BASE, ...ESERCIZI_3];

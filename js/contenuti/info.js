@@ -1,6 +1,6 @@
 // Pagine informative, contatti e messaggi di posta già pronti. Nel testo **così** è grassetto e *così* è corsivo.
 
-export const VERSIONE = '1.1 · settembre 2026';
+export const VERSIONE = '1.2 · settembre 2026';
 
 export const CONTATTI = {
   sito: 'https://www.formebrevi.it',

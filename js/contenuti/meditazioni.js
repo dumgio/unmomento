@@ -1,7 +1,9 @@
 // Meditazioni a tempo: una sequenza di segmenti, ciascuno con un testo e una durata in secondi.
 // Con «suono: 'campana'» una campana dolce suona all'inizio del segmento. Una campana suona anche alla fine.
 
-export const MEDITAZIONI = [
+import { MEDITAZIONI_3 } from './meditazioni3.js';
+
+const MEDITAZIONI_BASE = [
   {
     id: 'attenzione-presente',
     titolo: "L'attenzione a se stessi",
@@ -182,3 +184,5 @@ export const MEDITAZIONI = [
     ],
   },
 ];
+
+export const MEDITAZIONI = [...MEDITAZIONI_BASE, ...MEDITAZIONI_3];

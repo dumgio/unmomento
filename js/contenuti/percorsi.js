@@ -2,7 +2,9 @@
 // Nessun obbligo: si può saltare un giorno, ripeterlo o cambiare l'ordine. Non si contano le serie di giorni.
 // Tipi di azione: esercizio, meditazione, studio (id di una pagina di studio), quaderno (id di un modello).
 
-export const PERCORSI = [
+import { PERCORSI_3 } from './percorsi3.js';
+
+const PERCORSI_BASE = [
   {
     id: 'sette-giorni-di-calma',
     titolo: 'Sette giorni per la calma',
@@ -34,3 +36,5 @@ export const PERCORSI = [
     ],
   },
 ];
+
+export const PERCORSI = [...PERCORSI_BASE, ...PERCORSI_3];
