@@ -11,6 +11,12 @@ import {
 import { faseRespiro, durataRespiro } from './logica/respiro.js';
 import { pianoMeditazione, segmentoAl } from './logica/meditazione.js';
 import { filtraEsercizi } from './logica/catalogo.js';
+import {
+  CHIAVE as CHIAVE_QUADERNO, leggiElenco, serializza, nuovaPagina, scrivi as scriviPagina, intitola, altraDomanda,
+  haTesto, salvaPagina, eliminaPagina, testoPagina, testoTutto, paginaDaEsercizio,
+} from './logica/quaderno.js';
+import { quadernoElenco, quadernoNuova, quadernoPagina } from './ui/quaderno.js';
+import { disegnaVista, livelloAl } from './ui/animazione.js';
 import { esc, paginaHtml, elencoHtml } from './ui/comuni.js';
 import { oraHome, sceglieStato, sceglieDisciplina, orientaHtml, sceglieTempo, proposteHtml } from './ui/ora.js';
 import { introHtml, passoHtml, chiusuraHtml } from './ui/esercizio.js';
@@ -18,7 +24,7 @@ import {
   catalogoHtml, listaEsercizi, schedaEsercizioHtml, schedaMeditazioneHtml, meditazioneInCorso,
 } from './ui/catalogo.js';
 
-// ---- Memoria del telefono: solo la voce scelta e la nota di apertura già letta ----
+// ---- Memoria del telefono: la voce scelta, la nota di apertura già letta e, se lo usi, il quaderno ----
 const CHIAVE_VOCE = 'un-momento-voce';
 const CHIAVE_NOTA = 'un-momento-nota';
 const leggi = (k) => { try { return localStorage.getItem(k); } catch { return null; } };
@@ -27,8 +33,8 @@ const scrivi = (k, v) => { try { localStorage.setItem(k, v); } catch { /* facolt
 // ---- Stato ----
 const app = document.getElementById('app');
 const zone = document.getElementById('zone');
-const ZONE = [['ora', 'Ora'], ['esercizi', 'Esercizi'], ['studio', 'Studio'], ['info', 'Info']];
-const RADICE = { ora: 'ora-home', esercizi: 'catalogo', studio: 'studio-elenco', info: 'info-elenco' };
+const ZONE = [['ora', 'Ora'], ['esercizi', 'Esercizi'], ['quaderno', 'Quaderno'], ['studio', 'Studio'], ['info', 'Info']];
+const RADICE = { ora: 'ora-home', esercizi: 'catalogo', quaderno: 'quaderno', studio: 'studio-elenco', info: 'info-elenco' };
 
 let pila = [{ v: 'ora-home' }];
 let zona = 'ora';
@@ -42,6 +48,12 @@ let filtro = { q: '', stato: '', disciplina: '', minuti: '', famiglia: '' };
 let med = null;
 let audio = null;
 let wakeLock = null;
+let quaderno = leggiElenco(leggi(CHIAVE_QUADERNO));
+let pagina = null;
+let salvata = false;
+let animazione = null;
+
+const persistiQuaderno = () => scrivi(CHIAVE_QUADERNO, serializza(quaderno));
 
 function pensieroCasuale(escludi) {
   const lista = PENSIERI.filter((p) => p.voce === voce && p.testo !== escludi);
@@ -95,7 +107,7 @@ function notaHtml() {
   <div class="scheda">
     <p style="margin:0 0 14px"><strong>Come funziona.</strong> Dici che cosa senti e quanto tempo hai: da uno a dieci minuti. L'app ti propone alcuni esercizi e ti guida passo passo, con brevi domande, respiri e pause.</p>
     <p style="margin:0 0 14px"><strong>Da dove viene.</strong> Dagli esercizi degli stoici antichi (Epitteto, Seneca, Marco Aurelio), pensati per allenare il modo di pensare.</p>
-    <p style="margin:0 0 14px"><strong>Oltre l'emergenza.</strong> Puoi anche fare una meditazione, leggere le pagine di studio e capire lo stoicismo, oppure scegliere un pensiero da portare con te.</p>
+    <p style="margin:0 0 14px"><strong>Oltre l'emergenza.</strong> Puoi anche fare una meditazione, scrivere nel quaderno, leggere le pagine di studio e capire lo stoicismo, oppure scegliere un pensiero da portare con te.</p>
   </div>
   <p class="nota">Stoicismo quotidiano si basa sulla sapienza degli stoici antichi. Non sostituisce il parere del medico né un percorso di cura: se il malessere è forte o dura da tempo, parlane con il tuo medico. L'app è gratuita, funziona anche senza connessione e senza account, e i tuoi dati restano sul tuo telefono.</p>
   <button class="btn primario" data-az="nota-ok">Comincia</button>`;
@@ -121,12 +133,15 @@ function vista(c) {
     case 'ora-tempo': return sceglieTempo();
     case 'ora-proposte': return proposteHtml(flusso.proposte);
     case 'esercizio':
-      if (sessione.conclusa) return chiusuraHtml(sessione, pensiero);
+      if (sessione.conclusa) return chiusuraHtml(sessione, pensiero, { puoSalvare: paginaDaEsercizio(sessione) !== null, salvata });
       return intro ? introHtml(sessione) : passoHtml(sessione);
     case 'catalogo': return catalogoHtml(filtro, filtraEsercizi(ESERCIZI, filtro), MEDITAZIONI);
     case 'scheda-esercizio': return schedaEsercizioHtml(ESERCIZI.find((e) => e.id === c.id));
     case 'scheda-meditazione': return schedaMeditazioneHtml(MEDITAZIONI.find((m) => m.id === c.id));
     case 'meditazione': return meditazioneInCorso(med.m);
+    case 'quaderno': return quadernoElenco(quaderno);
+    case 'quaderno-nuova': return quadernoNuova();
+    case 'quaderno-pagina': return quadernoPagina(pagina);
     case 'studio-elenco': return studioElenco();
     case 'studio-pagina': return paginaHtml(PAGINE_STUDIO.find((p) => p.id === c.id), 'indietro');
     case 'info-elenco': return infoElenco();
@@ -167,6 +182,7 @@ function radice(z) { zona = z; pila = [{ v: RADICE[z] }]; disegna(); }
 function iniziaEsercizio(id) {
   const e = ESERCIZI.find((x) => x.id === id);
   sessione = creaSessione(e, voce);
+  salvata = false;
   intro = true;
   flusso.recenti = [...flusso.recenti.slice(-8), id];
   richiediWakeLock();
@@ -256,6 +272,34 @@ const azioni = {
   },
   'fine-esercizio': () => { terminaEsercizio(); radice('ora'); },
 
+  // Il quaderno
+  'salva-quaderno': () => {
+    const p = paginaDaEsercizio(sessione);
+    if (!p || salvata) return;
+    quaderno = salvaPagina(quaderno, p);
+    persistiQuaderno();
+    salvata = true;
+    avviso('Salvato nel quaderno');
+    disegna(true);
+  },
+  'quaderno-nuova': () => vai('quaderno-nuova'),
+  'quaderno-crea': (d) => { pagina = nuovaPagina(d.id); pila.pop(); vai('quaderno-pagina'); },
+  'quaderno-apri': (d) => { pagina = quaderno.find((p) => p.id === d.id); if (pagina) vai('quaderno-pagina'); },
+  'quaderno-altra': (d) => {
+    const nuova = altraDomanda(pagina, Number(d.i));
+    if (nuova === pagina) { avviso("C'è già una risposta: cancellala per cambiare domanda"); return; }
+    pagina = nuova;
+    quaderno = salvaPagina(quaderno, pagina); persistiQuaderno();
+    disegna(true);
+  },
+  'quaderno-copia': () => { if (haTesto(pagina)) copia(testoPagina(pagina)); else avviso('La pagina è ancora vuota'); },
+  'quaderno-copia-tutto': () => copia(testoTutto(quaderno)),
+  'quaderno-elimina': () => {
+    if (!window.confirm('Vuoi eliminare questa pagina? Non si può recuperare.')) return;
+    quaderno = eliminaPagina(quaderno, pagina.id); persistiQuaderno();
+    pagina = null; pila.pop(); disegna();
+  },
+
   // Catalogo, studio, info
   filtro: (d) => { filtro[d.k] = String(filtro[d.k]) === d.v ? '' : d.v; disegna(true); },
   apri: (d) => {
@@ -279,8 +323,9 @@ const azioni = {
     med = { m, piano: pianoMeditazione(m), inizio: Date.now(), indice: -1, finita: false };
     richiediWakeLock();
     vai('meditazione');
+    if (m.animazione) animaVista();
   },
-  'ferma-meditazione': () => { med = null; rilasciaWakeLock(); pila.pop(); disegna(); },
+  'ferma-meditazione': () => { med = null; if (animazione) cancelAnimationFrame(animazione); animazione = null; rilasciaWakeLock(); pila.pop(); disegna(); },
 };
 
 app.addEventListener('click', (e) => {
@@ -296,6 +341,14 @@ zone.addEventListener('click', (e) => {
 });
 
 app.addEventListener('input', (e) => {
+  if (pagina && corrente().v === 'quaderno-pagina') {
+    if (e.target.id === 'q-titolo') pagina = intitola(pagina, e.target.value);
+    else if (e.target.dataset && e.target.dataset.q !== undefined) pagina = scriviPagina(pagina, Number(e.target.dataset.q), e.target.value);
+    else return;
+    quaderno = salvaPagina(quaderno, pagina);
+    persistiQuaderno();
+    return;
+  }
   if (e.target.dataset && e.target.dataset.campo && sessione) { sessione = rispondi(sessione, e.target.dataset.campo, e.target.value); return; }
   if (e.target.id === 'cerca') {
     filtro.q = e.target.value;
@@ -312,6 +365,25 @@ document.addEventListener('keydown', (e) => {
   if (v === 'esercizio') azioni['esci-esercizio']();
   else if (v === 'meditazione') azioni['ferma-meditazione']();
 });
+
+// ---- La vista dall'alto: un canvas che sale fino allo spazio e torna giù ----
+const menoMovimento = () => window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function animaVista() {
+  const canvas = document.getElementById('med-anim');
+  if (!med || !med.m.animazione) { animazione = null; return; }
+  if (canvas) {
+    const dpr = window.devicePixelRatio || 1;
+    const w = canvas.clientWidth, h = canvas.clientHeight;
+    if (canvas.width !== Math.round(w * dpr)) { canvas.width = Math.round(w * dpr); canvas.height = Math.round(h * dpr); }
+    const ctx = canvas.getContext('2d');
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const t = (Date.now() - med.inizio) / 1000;
+    let u = med.finita ? 0 : livelloAl(med.piano, t);
+    if (menoMovimento()) u = Math.round(u);
+    disegnaVista(ctx, w, h, u);
+  }
+  animazione = requestAnimationFrame(animaVista);
+}
 
 // ---- Orologio a schermo: respiro, pause e meditazioni ----
 function tick() {

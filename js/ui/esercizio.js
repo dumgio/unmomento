@@ -48,19 +48,19 @@ export function passoHtml(sess) {
       corpo = `<p class="passo">${ricco(p.testo)}</p>
         <label class="campo" for="scritto">La tua risposta</label>
         <textarea id="scritto" data-campo="${esc(p.chiave)}" placeholder="${esc(p.segnaposto)}">${esc(sess.risposte[p.chiave] || '')}</textarea>
-        <p class="nota">Resta soltanto qui: non viene salvato.</p>${comandi(avantiBtn)}`; break;
+        <p class="nota">Resta su questo telefono. Alla fine puoi salvarlo nel quaderno, se vuoi.</p>${comandi(avantiBtn)}`; break;
     case 'scegli':
       corpo = `<p class="passo">${ricco(p.testo)}</p>
         ${p.opzioni.map((o, i) => `<button class="opzione" data-az="opzione" data-i="${i}"><strong>${esc(o.testo)}</strong></button>`).join('')}
         ${haIndietro ? '<div class="comandi solo"><button class="btn chiaro" data-az="indietro-passo">Indietro</button></div>' : ''}`; break;
     case 'colonne':
-      corpo = `<p class="passo">${ricco(p.testo)}</p>${colonneHtml(p, sess)}<p class="nota">Tocca una voce per spostarla nell'altra colonna. Non viene salvato.</p>${comandi(avantiBtn)}`; break;
+      corpo = `<p class="passo">${ricco(p.testo)}</p>${colonneHtml(p, sess)}<p class="nota">Tocca una voce per spostarla nell'altra colonna. Alla fine puoi salvare le colonne nel quaderno.</p>${comandi(avantiBtn)}`; break;
     default: corpo = '';
   }
   return `${testata(sess)}${corpo}`;
 }
 
-export function chiusuraHtml(sess, pensiero) {
+export function chiusuraHtml(sess, pensiero, { puoSalvare = false, salvata = false } = {}) {
   const e = sess.esercizio;
   return `
   <div class="testata"><span class="voce-nome">${esc(e.titolo)}</span></div>
@@ -71,6 +71,7 @@ export function chiusuraHtml(sess, pensiero) {
   <p class="fonte">Perché funziona: ${esc(e.perche)}</p>
   <div class="pila" style="margin-top:18px">
     <button class="btn primario" data-az="altro-esercizio">Un altro esercizio</button>
+    ${puoSalvare ? `<button class="btn chiaro" data-az="salva-quaderno"${salvata ? ' disabled' : ''}>${salvata ? 'Salvato nel quaderno' : 'Salva nel quaderno'}</button>` : ''}
     <button class="btn chiaro" data-az="apri" data-tipo="studio" data-id="${esc(e.studio)}">Approfondisci nello Studio</button>
     <button class="btn chiaro" data-az="fine-esercizio">Fine</button>
   </div>`;

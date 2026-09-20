@@ -1,6 +1,6 @@
 // Pagine informative, contatti e messaggi di posta già pronti. Nel testo **così** è grassetto e *così* è corsivo.
 
-export const VERSIONE = '1.0 · settembre 2026';
+export const VERSIONE = '1.1 · settembre 2026';
 
 export const CONTATTI = {
   sito: 'https://www.formebrevi.it',
@@ -32,10 +32,11 @@ export const PAGINE_INFO = [
     blocchi: [
       { t: 'h', x: 'In breve' },
       { t: 'p', x: `Stoicismo quotidiano è la app gratuita di Formebrevi APS. Ti offre esercizi guidati per i momenti difficili, meditazioni brevi e pagine per capire lo stoicismo. Funziona anche senza connessione e non ti chiede di registrarti.` },
-      { t: 'h', x: 'Le quattro zone' },
+      { t: 'h', x: 'Le cinque zone' },
       { t: 'lista', x: [
         `**Ora:** il pulsante «Ho bisogno di un momento» ti porta, in pochi tocchi, a un esercizio adatto.`,
         `**Esercizi:** il catalogo di tutti gli esercizi e le meditazioni a tempo, con ricerca e filtri.`,
+        `**Quaderno:** un posto privato per scrivere: la mattina, la sera, una lettera a te stesso o ciò che vuoi.`,
         `**Studio:** le pagine che spiegano lo stoicismo e da dove vengono gli esercizi.`,
         `**Info:** questa guida, le fonti, i crediti e come sostenere Formebrevi.`,
       ] },
@@ -53,7 +54,7 @@ export const PAGINE_INFO = [
         `**Testo:** leggi e vai avanti.`,
         `**Respiro:** un cerchio che si allarga e si restringe a ritmo lento. Ti basta seguirlo.`,
         `**Pausa:** qualche secondo di silenzio, con un suono dolce alla fine.`,
-        `**Scrivi:** un piccolo campo dove scrivere una frase. Ciò che scrivi resta soltanto durante l'esercizio.`,
+        `**Scrivi:** un piccolo campo dove scrivere una frase. Ciò che scrivi resta sul telefono e, alla fine, puoi salvarlo nel quaderno.`,
         `**Scegli:** due o tre risposte. Ognuna può portare a un passo diverso.`,
         `**Colonne:** due elenchi, per esempio «dipende da me» e «non dipende da me». Aggiungi le cose e toccale per spostarle.`,
       ] },
@@ -62,11 +63,14 @@ export const PAGINE_INFO = [
       { t: 'h', x: 'Un pensiero' },
       { t: 'p', x: `Nella zona Ora, «Un pensiero» ti mostra una breve frase, scritta con parole nostre, che riprende un'idea di Epitteto, Seneca o Marco Aurelio, nella voce che hai scelto.` },
       { t: 'h', x: 'Le meditazioni a tempo' },
-      { t: 'p', x: `Nella zona Esercizi trovi meditazioni da cinque a dieci minuti. Un testo compare a intervalli, con una campana dolce all'inizio e alla fine. Lo schermo resta acceso, se il telefono lo permette. Puoi fermarti in qualsiasi momento.` },
+      { t: 'p', x: `Nella zona Esercizi trovi meditazioni da cinque a dieci minuti. Un testo compare a intervalli, con una campana dolce all'inizio e alla fine. Lo schermo resta acceso, se il telefono lo permette. Puoi fermarti in qualsiasi momento. Nella «Vista dall'alto» compare anche un disegno che sale dalla stanza fino allo spazio e poi torna giù.` },
+      { t: 'h', x: 'Il quaderno' },
+      { t: 'p', x: `Il quaderno ha quattro modelli: **Mattina** (prepararsi alla giornata), **Sera** (esaminare la giornata in tre domande), **Lettera** (scrivere a te stesso come a un amico) e **Pagina libera**. Nei primi tre puoi cambiare la domanda con un'altra. Le pagine si salvano da sole, le puoi rileggere, modificare, eliminare e copiare. Alla fine di un esercizio puoi anche salvare ciò che hai scritto.` },
+      { t: 'p', x: `Il quaderno resta soltanto su questo telefono. Se cancelli i dati del browser o disinstalli la app, le pagine si perdono: usa «Copia tutto» per conservarne una copia.` },
       { t: 'h', x: 'Il suono' },
       { t: 'p', x: `I suoni (la campana, il segnale della pausa) sono generati dalla app e usano l'audio del telefono. Se il volume è spento, gli esercizi funzionano lo stesso.` },
       { t: 'h', x: 'Privacy' },
-      { t: 'p', x: `La app è senza account, senza pubblicità e senza raccolta di dati: nessun dato lascia il telefono. Sul telefono restano soltanto la voce che hai scelto e l'informazione di aver letto la nota di apertura. Ciò che scrivi negli esercizi non viene salvato.` },
+      { t: 'p', x: `La app è senza account, senza pubblicità e senza raccolta di dati: nessun dato lascia il telefono. Sul telefono restano soltanto la voce che hai scelto, l'informazione di aver letto la nota di apertura e, se lo usi, le pagine del quaderno. Ciò che scrivi negli esercizi si salva solo se scegli «Salva nel quaderno».` },
       { t: 'h', x: 'Installarla sul telefono' },
       { t: 'lista', x: [
         `**Android (Chrome):** tocca i tre puntini in alto a destra, poi «Installa app» o «Aggiungi a schermata Home».`,
@@ -79,7 +83,7 @@ export const PAGINE_INFO = [
       { t: 'lista', x: [
         `**Devo praticare ogni giorno?** No. La app non conta i giorni: la apri quando ti serve.`,
         `**Devo credere allo stoicismo?** No. Gli esercizi si provano: se aiutano, li ripeti.`,
-        `**Ho scritto qualcosa in un esercizio: dove va?** Resta soltanto nella schermata, e sparisce quando finisci l'esercizio.`,
+        `**Ho scritto qualcosa in un esercizio: dove va?** Resta sul telefono. Se a fine esercizio scegli «Salva nel quaderno», la trovi nel quaderno. Altrimenti sparisce quando esci.`,
         `**Posso cambiare voce a metà?** Sì, dalla zona Ora. Vale per gli esercizi successivi.`,
         `**È gratuita?** Sì. Se ti è utile, puoi sostenere Formebrevi dalla pagina «Sostieni Formebrevi».`,
       ] },
@@ -176,7 +180,7 @@ export const PAGINE_INFO = [
       { t: 'h', x: 'Contenuti e licenza' },
       { t: 'p', x: `I contenuti sono distribuiti con licenza Creative Commons BY-NC-SA 4.0: puoi usarli e condividerli per scopi non commerciali, citando la fonte. Le idee sono degli autori antichi e degli studiosi indicati nella pagina Fonti; i testi sono stati scritti per questa app.` },
       { t: 'h', x: 'Privacy' },
-      { t: 'p', x: `La app è senza account, senza pubblicità e senza raccolta di dati: nessun dato lascia il telefono. Sul telefono restano soltanto la voce scelta e la nota di apertura già letta.` },
+      { t: 'p', x: `La app è senza account, senza pubblicità e senza raccolta di dati: nessun dato lascia il telefono. Sul telefono restano soltanto la voce scelta, la nota di apertura già letta e, se lo usi, il quaderno.` },
       { t: 'h', x: 'Altre app di Formebrevi' },
       { t: 'link', x: 'Dialogo, per condurre un dialogo filosofico', href: 'dialogo', stile: 'chiaro' },
       { t: 'link', x: "Kalmly, l'app per l'ADHD", href: 'kalmly', stile: 'chiaro' },

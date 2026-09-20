@@ -74,6 +74,7 @@ export function meditazioneInCorso(m) {
   return `
   <div class="testata"><span class="voce-nome">${esc(m.titolo)}</span><button class="esci" data-az="ferma-meditazione">Ferma</button></div>
   <div class="progresso" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="med-barra"><div id="med-prog" style="width:0%"></div></div>
-  <p class="med-testo" id="med-testo" aria-live="polite"></p>
+  ${m.animazione ? '<canvas class="med-anim" id="med-anim" aria-hidden="true"></canvas>' : ''}
+  <p class="med-testo${m.animazione ? ' con-anim' : ''}" id="med-testo" aria-live="polite"></p>
   <p class="nota" style="text-align:center">Resta <span id="med-resto">--:--</span></p>`;
 }

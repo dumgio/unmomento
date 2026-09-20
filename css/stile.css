@@ -102,12 +102,14 @@ input[type=text],input[type=search]{min-height:48px;}
 .consiglio{background:var(--salvia);color:var(--salvia-scura);border-radius:14px;padding:12px 14px;margin:12px 0;font-weight:600;}
 
 /* Meditazione */
+.med-anim{display:block;width:100%;height:230px;border-radius:20px;margin:6px 0 14px;background:#EFE9DB;}
+.med-testo.con-anim{min-height:6.5em;font-size:1.35rem;}
 .med-testo{font-family:var(--titoli);font-size:1.5rem;line-height:1.5;text-align:center;min-height:9em;display:flex;align-items:center;justify-content:center;padding:10px 4px;}
 
 /* Barra delle zone */
-.zone{position:fixed;left:0;right:0;bottom:0;background:var(--carta);border-top:1px solid var(--bordo);padding:8px 10px;padding-bottom:max(8px,env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(4,1fr);gap:6px;max-width:600px;margin:0 auto;z-index:20;}
+.zone{position:fixed;left:0;right:0;bottom:0;background:var(--carta);border-top:1px solid var(--bordo);padding:8px 10px;padding-bottom:max(8px,env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(5,1fr);gap:4px;max-width:600px;margin:0 auto;z-index:20;}
 .zone[hidden]{display:none;}
-.zone button{min-height:52px;border:none;background:transparent;border-radius:12px;font-weight:600;font-size:.88rem;color:var(--tenue);cursor:pointer;}
+.zone button{min-height:52px;border:none;background:transparent;border-radius:12px;font-weight:600;font-size:.8rem;color:var(--tenue);cursor:pointer;}
 .zone button[aria-current="page"]{background:var(--primario-chiaro);color:var(--primario);font-weight:700;}
 
 .avviso{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);background:var(--testo);color:var(--sfondo);padding:12px 20px;border-radius:100px;z-index:60;font-weight:600;max-width:90%;text-align:center;}
