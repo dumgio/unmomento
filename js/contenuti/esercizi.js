@@ -428,7 +428,7 @@ export const ESERCIZI = [
     stati: ['ansia', 'notte', 'non-so'],
     minuti: 1,
     fonte: { autore: 'Marco Aurelio', opera: 'A se stesso', nota: "vivere nel momento presente" },
-    perche: `L'ansia vive nel futuro e nel passato. I sensi sono sempre nel presente: notare ciò che si vede, si tocca e si sente riporta l'attenzione qui, dove le cose sono ancora affrontabili.`,
+    perche: `L'ansia vive nel futuro e nel passato. I sensi sono sempre nel presente: notare ciò che si vede, si tocca e si sente riporta l'attenzione qui, dove le cose sono ancora affrontabili. Usare i sensi è una tecnica di oggi, coerente con l'invito di Marco Aurelio a vivere nel momento presente.`,
     studio: 'esercizi-spirituali',
     voci: {
       epitteto: {
@@ -459,8 +459,8 @@ export const ESERCIZI = [
     famiglia: 'attenzione',
     stati: ['ansia', 'notte'],
     minuti: 3,
-    fonte: { autore: 'Epitteto', opera: 'Discorsi', nota: "l'attenzione (prosoché) a se stessi" },
-    perche: `Seguire il respiro è il modo più semplice di allenare l'attenzione. Ogni volta che la mente scappa e la riportiamo indietro, rafforziamo la capacità di tornare al presente.`,
+    fonte: { autore: 'Epitteto', opera: 'Discorsi', nota: "l'attenzione a sé (prosoché); il respiro è un sostegno di oggi" },
+    perche: `Gli stoici chiamavano prosoché la vigilanza su di sé. Seguire il respiro non è un loro esercizio: lo usiamo come sostegno di oggi, perché è il modo più semplice di portare l'attenzione qui. Ogni volta che la mente scappa e la riportiamo indietro, rafforziamo la capacità di tornare al presente.`,
     studio: 'esercizi-spirituali',
     voci: {
       epitteto: {

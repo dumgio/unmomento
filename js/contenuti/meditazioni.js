@@ -4,18 +4,24 @@
 export const MEDITAZIONI = [
   {
     id: 'attenzione-presente',
-    titolo: 'Attenzione al respiro e al presente',
-    sotto: 'Cinque minuti per tornare qui, un respiro alla volta.',
+    titolo: "L'attenzione a se stessi",
+    sotto: 'Cinque minuti per restare svegli su ciò che pensi e su ciò che fai, come facevano gli stoici.',
     minuti: 5,
-    fonte: { autore: 'Epitteto', opera: 'Discorsi', nota: "l'attenzione (prosoché) come presenza a se stessi" },
+    fonte: { autore: 'Epitteto e Marco Aurelio', opera: 'Discorsi (IV, 12) e A se stesso (VII, 54)', nota: "l'attenzione a sé, in greco prosoché" },
+    cosaFare: [
+      `Siediti comodo, con gli occhi chiusi o lo sguardo basso.`,
+      `Non devi svuotare la mente né smettere di pensare. Devi restare sveglio su ciò che pensi.`,
+      `Segui le frasi che compaiono: ognuna ti propone una piccola domanda da farti, in silenzio.`,
+    ],
+    perche: `Per gli stoici l'esercizio di base era l'**attenzione a se stessi**: vigilare a ogni istante su ciò che si pensa e su ciò che si fa, ricordando che cosa dipende da noi e che cosa no. Epitteto le dedica un intero discorso. Marco Aurelio la riassume in tre gesti: esaminare l'impressione presente, accettare ciò che accade, comportarsi con giustizia con le persone che si hanno davanti. La meditazione ti fa fare proprio questi tre gesti.`,
     segmenti: [
-      { secondi: 20, suono: 'campana', testo: 'Siediti comodo. Chiudi gli occhi, oppure abbassa lo sguardo. Ora non c\'è nulla da fare.' },
-      { secondi: 40, testo: 'Porta l\'attenzione al respiro. Senti l\'aria che entra e che esce, senza cambiarla.' },
-      { secondi: 60, testo: 'Quando ti accorgi che la mente è altrove, riportala al respiro. Ogni ritorno è l\'esercizio.' },
-      { secondi: 60, testo: 'Ora allarga l\'attenzione ai suoni intorno a te, vicini e lontani. Ascoltali senza scegliere e senza giudicare.' },
-      { secondi: 60, testo: 'Senti il corpo: il peso sulla sedia, i piedi, le mani. Che cosa senti, in questo momento?' },
-      { secondi: 40, testo: 'Ricorda: questo momento è l\'unico che puoi abitare. Il resto è pensiero.' },
-      { secondi: 20, testo: 'Fai un respiro più profondo. Quando sei pronto, riapri gli occhi.' },
+      { secondi: 25, suono: 'campana', testo: 'Siediti comodo. Ora non c\'è nulla da risolvere. Gli stoici non chiedevano di svuotare la mente, ma di restare svegli su ciò che passa nella mente.' },
+      { secondi: 40, testo: 'Nota che cosa c\'è adesso nella tua testa: un pensiero, un\'inquietudine, un\'immagine. Dagli un nome semplice, per esempio «sto pensando a domani».' },
+      { secondi: 60, testo: 'Ricordati che è un\'impressione, non un fatto. Prima di crederle, esaminala: è vera? È utile? Lo stoico non scaccia i pensieri, li guarda con metodo.' },
+      { secondi: 60, testo: 'Ora chiediti: questo dipende da me? Se dipende da te, tienilo per dopo, quando agirai. Se non dipende da te, lascia che sia com\'è.' },
+      { secondi: 50, testo: 'Accetta ciò che sta accadendo in questo momento, senza pretendere che sia diverso. Non devi amarlo: basta smettere di litigare con il fatto che è così.' },
+      { secondi: 50, testo: 'Pensa alle persone che hai vicino oggi. Qual è la cosa giusta, piccola e concreta, che puoi fare per una di loro nella prossima ora?' },
+      { secondi: 15, testo: 'Se in questi minuti la mente ti è scappata, va bene: accorgersene e tornare è già l\'esercizio. Porta con te questo sguardo e riapri gli occhi.' },
     ],
   },
   {
@@ -24,6 +30,12 @@ export const MEDITAZIONI = [
     sotto: 'Dieci minuti per chiudere la giornata, alla maniera di Seneca.',
     minuti: 10,
     fonte: { autore: 'Seneca', opera: "Sull'ira", nota: "l'esame di coscienza della sera" },
+    cosaFare: [
+      `Siediti in silenzio e ripercorri la giornata, dall'inizio alla fine, come guardando un film.`,
+      `Rispondi con onestà a tre domande: che cosa ho fatto bene, dove ho sbagliato, che cosa farò diversamente.`,
+      `Chiudi con il perdono verso te stesso e con la gratitudine. Il fine è correggersi, non punirsi.`,
+    ],
+    perche: `Seneca racconta che ogni sera esaminava la propria giornata, e lo faceva senza severità: riconoscere gli errori per correggerli e poi riposare. Per gli stoici è uno dei modi più semplici di allenare il giudizio su se stessi.`,
     segmenti: [
       { secondi: 30, suono: 'campana', testo: 'Questa meditazione è per la sera. Siediti in silenzio. Per Seneca la giornata si chiude con un colloquio onesto con se stessi.' },
       { secondi: 60, testo: 'Qualche respiro lento, per lasciare la giornata alle spalle.' },
@@ -41,6 +53,12 @@ export const MEDITAZIONI = [
     sotto: 'Cinque minuti per guardare la tua vita da lontano e ritrovare la misura.',
     minuti: 5,
     fonte: { autore: 'Marco Aurelio', opera: 'A se stesso', nota: "lo sguardo dall'alto" },
+    cosaFare: [
+      `Siediti comodo e chiudi gli occhi.`,
+      `Immagina di salire piano piano: dalla tua stanza alla casa, alla città, alla Terra, fino a guardare anche i secoli.`,
+      `Da lassù guarda il tuo problema: è ancora tuo, ma ha la sua misura. Poi scendi con calma.`,
+    ],
+    perche: `Marco Aurelio scrive che è utile guardare le vicende umane dall'alto: da lontano le preoccupazioni ritrovano la loro misura. Gli stoici lo praticavano quando un problema sembrava troppo grande.`,
     segmenti: [
       { secondi: 20, suono: 'campana', testo: 'Siediti comodo e respira. Oggi guarderai la tua vita dall\'alto.' },
       { secondi: 30, testo: 'Sei nella tua stanza. Senti il corpo, il respiro, ciò che ti preoccupa.' },

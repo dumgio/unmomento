@@ -194,7 +194,7 @@ export const PAGINE_STUDIO = [
       { t: 'h', x: 'Come compaiono in Un momento' },
       { t: 'p', x: `Ogni esercizio della app indica la sua famiglia e la sua fonte. «Qui e ora con i cinque sensi» e «Respiro e attenzione» sono esercizi di attenzione. «Prepararsi al peggio» e «La brocca che si può rompere» sono meditazioni. «Fermati, impressione» e «Il fatto e il giudizio» sono esercizi di pensiero. «Il primo gesto piccolo» e «Chi voglio essere qui» sono esercizi attivi.` },
       { t: 'azione', x: 'Esercizio di attenzione: Qui e ora, con i cinque sensi', az: 'esercizio', id: 'qui-e-ora-cinque-sensi' },
-      { t: 'azione', x: 'Meditazione: Attenzione al respiro e al presente', az: 'meditazione', id: 'attenzione-presente' },
+      { t: 'azione', x: "Meditazione: L'attenzione a se stessi", az: 'meditazione', id: 'attenzione-presente' },
     ],
   },
   {
@@ -227,7 +227,7 @@ export const PAGINE_STUDIO = [
         { titolo: 'Fai l\'esercizio un passo alla volta.', testo: `Non devi crederci per forza: provalo. Puoi tornare indietro o fermarti quando vuoi.` },
       ] },
       { t: 'h', x: 'Quando vuoi un momento di calma' },
-      { t: 'p', x: `Nella sezione Esercizi trovi le meditazioni a tempo, per esempio quella sull'attenzione al presente o l'esame della sera. Puoi farle anche senza un motivo preciso.` },
+      { t: 'p', x: `Nella sezione Esercizi trovi le meditazioni a tempo, per esempio quella sull'attenzione a se stessi o l'esame della sera. Puoi farle anche senza un motivo preciso.` },
       { t: 'h', x: 'Quando vuoi capire' },
       { t: 'p', x: `In Studio trovi le pagine che spiegano lo stoicismo e le fonti da cui vengono gli esercizi. Ogni esercizio ha un collegamento alla pagina che lo approfondisce.` },
       { t: 'h', x: 'Alcuni consigli' },

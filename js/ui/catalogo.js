@@ -59,7 +59,11 @@ export function schedaMeditazioneHtml(m) {
   <h1 class="titolo medio">${esc(m.titolo)}</h1>
   <p class="lead">${esc(m.sotto)}</p>
   <p><span class="tag">${m.minuti} minuti</span></p>
+  <h2 class="grp">Che cosa fai</h2>
+  <ul class="info-lista">${m.cosaFare.map((c) => `<li>${ricco(c)}</li>`).join('')}</ul>
   <p class="info-p">${ricco(`Un testo compare a intervalli, con una campana dolce all'inizio e alla fine. Lo schermo resta acceso, se il telefono lo permette. Puoi fermarti in qualsiasi momento.`)}</p>
+  <h2 class="grp">Da dove viene</h2>
+  <p class="info-p">${ricco(m.perche)}</p>
   <p class="fonte">Fonte: ${esc(m.fonte.autore)}, ${esc(m.fonte.opera)}${m.fonte.nota ? ' (' + esc(m.fonte.nota) + ')' : ''}.</p>
   <div class="pila" style="margin-top:18px">
     <button class="btn primario" data-az="inizia-meditazione" data-id="${m.id}">Inizia la meditazione</button>
