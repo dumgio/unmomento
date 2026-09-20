@@ -30,9 +30,9 @@ export const FAMIGLIE = [
 export const DURATE_ESERCIZI = [1, 3, 10];
 
 export const VOCI = [
-  { id: 'epitteto', nome: 'Epitteto', tono: 'secco e diretto' },
-  { id: 'seneca', nome: 'Seneca', tono: 'caldo, come una lettera' },
-  { id: 'marco', nome: 'Marco Aurelio', tono: 'interiore, come un quaderno' },
+  { id: 'epitteto', nome: 'Epitteto', tono: 'secco e diretto', desc: 'Va dritto al punto: poche parole, un invito chiaro a distinguere ciò che dipende da te.' },
+  { id: 'seneca', nome: 'Seneca', tono: 'caldo, come una lettera', desc: 'Ti parla come un amico saggio che ti scrive una lettera: con calore e con esempi.' },
+  { id: 'marco', nome: 'Marco Aurelio', tono: 'interiore, come un quaderno', desc: 'Parla piano, come chi scrive a se stesso nel proprio quaderno: raccolto e personale.' },
 ];
 
 export const TIPI_PASSO = ['testo', 'respiro', 'pausa', 'scrivi', 'scegli', 'colonne'];

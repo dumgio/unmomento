@@ -57,7 +57,7 @@ export const PAGINE_INFO = [
         `**Scegli:** due o tre risposte. Ognuna può portare a un passo diverso.`,
         `**Colonne:** due elenchi, per esempio «dipende da me» e «non dipende da me». Aggiungi le cose e toccale per spostarle.`,
       ] },
-      { t: 'h', x: 'Le tre voci' },
+      { t: 'h', x: 'Chi ti accompagna: le tre voci' },
       { t: 'p', x: `Gli stessi esercizi hanno tre toni: **Epitteto** (secco e diretto), **Seneca** (caldo, come una lettera) e **Marco Aurelio** (interiore, come un quaderno). La voce cambia le frasi di apertura e di chiusura e i pensieri, non i passi. Puoi cambiarla quando vuoi, e la app ricorda la tua scelta.` },
       { t: 'h', x: 'Un pensiero' },
       { t: 'p', x: `Nella zona Ora, «Un pensiero» ti mostra una breve frase, scritta con parole nostre, che riprende un'idea di Epitteto, Seneca o Marco Aurelio, nella voce che hai scelto.` },

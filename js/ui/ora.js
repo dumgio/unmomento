@@ -12,10 +12,12 @@ export function oraHome({ voce, pensiero }) {
     <small>${esc(pensiero.fonte.autore)}, ${esc(pensiero.fonte.opera)}</small>
   </div>
   <button class="btn chiaro piccolo" data-az="altro-pensiero">Un altro pensiero</button>
-  <h2 class="grp">La voce</h2>
+  <h2 class="grp">Chi ti accompagna</h2>
+  <p class="nota">Scegli il tono con cui ti parla l'app. Gli esercizi sono gli stessi: cambiano le frasi di apertura e di chiusura e i pensieri.</p>
   <div class="voci" role="group" aria-label="Scegli la voce">
     ${VOCI.map((x) => `<button class="chip" data-az="voce" data-id="${x.id}" aria-pressed="${x.id === voce}">${esc(x.nome)}<small>${esc(x.tono)}</small></button>`).join('')}
   </div>
+  <p class="nota" aria-live="polite">${esc(VOCI.find((x) => x.id === voce).desc)}</p>
   <p class="piede">Gratuita, senza account e anche senza connessione. Un progetto di Formebrevi APS.</p>`;
 }
 
