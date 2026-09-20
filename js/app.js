@@ -90,14 +90,14 @@ const formatTempo = (s) => Math.floor(s / 60) + ':' + String(Math.floor(s % 60))
 function notaHtml() {
   return `
   <p class="marchio">Formebrevi APS</p>
-  <h1 class="titolo medio">Benvenuto in Un momento</h1>
+  <h1 class="titolo medio">Benvenuto in Stoicismo quotidiano</h1>
   <p class="lead">Una piccola guida per i momenti in cui ti senti in ansia, arrabbiato, sopraffatto o confuso.</p>
   <div class="scheda">
     <p style="margin:0 0 14px"><strong>Come funziona.</strong> Dici che cosa senti e quanto tempo hai: da uno a dieci minuti. L'app ti propone alcuni esercizi e ti guida passo passo, con brevi domande, respiri e pause.</p>
     <p style="margin:0 0 14px"><strong>Da dove viene.</strong> Dagli esercizi degli stoici antichi (Epitteto, Seneca, Marco Aurelio), pensati per allenare il modo di pensare.</p>
     <p style="margin:0 0 14px"><strong>Oltre l'emergenza.</strong> Puoi anche fare una meditazione, leggere le pagine di studio e capire lo stoicismo, oppure scegliere un pensiero da portare con te.</p>
   </div>
-  <p class="nota">Un momento si basa sulla sapienza degli stoici antichi. Non sostituisce il parere del medico né un percorso di cura: se il malessere è forte o dura da tempo, parlane con il tuo medico. L'app è gratuita, funziona anche senza connessione e senza account, e i tuoi dati restano sul tuo telefono.</p>
+  <p class="nota">Stoicismo quotidiano si basa sulla sapienza degli stoici antichi. Non sostituisce il parere del medico né un percorso di cura: se il malessere è forte o dura da tempo, parlane con il tuo medico. L'app è gratuita, funziona anche senza connessione e senza account, e i tuoi dati restano sul tuo telefono.</p>
   <button class="btn primario" data-az="nota-ok">Comincia</button>`;
 }
 
@@ -206,9 +206,9 @@ async function copia(testo) {
   }
 }
 async function condividi() {
-  const testo = 'Un momento: stoicismo per stare meglio. La app gratuita di Formebrevi APS.';
+  const testo = 'Stoicismo quotidiano: esercizi per i momenti difficili. La app gratuita di Formebrevi APS.';
   try {
-    if (navigator.share) { await navigator.share({ title: 'Un momento', text: testo, url: CONTATTI.app }); return; }
+    if (navigator.share) { await navigator.share({ title: 'Stoicismo quotidiano', text: testo, url: CONTATTI.app }); return; }
   } catch (e) { if (e && e.name === 'AbortError') return; }
   await copia(testo + ' ' + CONTATTI.app);
 }

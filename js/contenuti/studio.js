@@ -47,7 +47,7 @@ export const PAGINE_STUDIO = [
       { t: 'h', x: 'Falso: è per persone forti o perfette' },
       { t: 'p', x: `Gli stoici si consideravano dei «progredienti»: persone in cammino. Seneca ed Epitteto parlano continuamente delle proprie difficoltà e di quelle dei loro allievi. Il punto non è essere perfetti, ma esercitarsi.` },
       { t: 'h', x: 'Falso: è una filosofia da citazioni' },
-      { t: 'p', x: `Le frasi celebri, isolate, fanno poco. Il cuore dello stoicismo sono gli **esercizi**: pratiche precise, da ripetere, che cambiano poco a poco il modo di vedere. Per questo Un momento propone esercizi e non soltanto frasi.` },
+      { t: 'p', x: `Le frasi celebri, isolate, fanno poco. Il cuore dello stoicismo sono gli **esercizi**: pratiche precise, da ripetere, che cambiano poco a poco il modo di vedere. Per questo Stoicismo quotidiano propone esercizi e non soltanto frasi.` },
       { t: 'h', x: 'Falso: è fatalismo' },
       { t: 'p', x: `Gli stoici non dicevano «tanto è tutto scritto». Dicevano: impegnati con tutte le forze in ciò che dipende da te, e accetta con calma l'esito. Uno dei loro esercizi consiste proprio nell'agire con una riserva: «lo farò, se nulla lo impedisce».` },
       { t: 'azione', x: 'Leggi che cosa sono le tre discipline', az: 'studio', id: 'tre-discipline' },
@@ -81,7 +81,7 @@ export const PAGINE_STUDIO = [
     titolo: 'Le tre discipline',
     sotto: 'La chiave con cui Epitteto, e dopo di lui Marco Aurelio, ordinano gli esercizi.',
     blocchi: [
-      { t: 'p', x: `Epitteto dice che chi vuole diventare un uomo migliore deve esercitarsi in tre ambiti. Questa tripartizione è la chiave di lettura anche dei pensieri di Marco Aurelio. Sono le **tre discipline**, e in Un momento sono la bussola con cui ti chiediamo: dove ti sei perso?` },
+      { t: 'p', x: `Epitteto dice che chi vuole diventare un uomo migliore deve esercitarsi in tre ambiti. Questa tripartizione è la chiave di lettura anche dei pensieri di Marco Aurelio. Sono le **tre discipline**, e in Stoicismo quotidiano sono la bussola con cui ti chiediamo: dove ti sei perso?` },
       { t: 'passi', x: [
         { titolo: 'La disciplina del desiderio e della paura.', testo: `Riguarda ciò che vogliamo e ciò che temiamo. Insegna a desiderare e a evitare solo ciò che dipende da noi, e ad accogliere con calma il resto. Corrisponde, nella filosofia stoica, alla **fisica**: vedere gli eventi nel loro posto nell'ordine più grande delle cose.` },
         { titolo: "La disciplina dell'azione.", testo: `Riguarda ciò che facciamo e i nostri doveri: agire con giustizia, con misura, pensando agli altri. Corrisponde all'**etica**.` },
@@ -191,7 +191,7 @@ export const PAGINE_STUDIO = [
       ] },
       { t: 'h', x: 'A che cosa servono' },
       { t: 'p', x: `Lo scopo è una vera **conversione dello sguardo**: passare da una vita agitata, dominata da desideri e timori, a una vita più libera e più lucida. Non basta capire un'idea: bisogna ripeterla, provarla, farla propria, come si allena un muscolo.` },
-      { t: 'h', x: 'Come compaiono in Un momento' },
+      { t: 'h', x: 'Come compaiono in Stoicismo quotidiano' },
       { t: 'p', x: `Ogni esercizio della app indica la sua famiglia e la sua fonte. «Qui e ora con i cinque sensi» e «Respiro e attenzione» sono esercizi di attenzione. «Prepararsi al peggio» e «La brocca che si può rompere» sono meditazioni. «Fermati, impressione» e «Il fatto e il giudizio» sono esercizi di pensiero. «Il primo gesto piccolo» e «Chi voglio essere qui» sono esercizi attivi.` },
       { t: 'azione', x: 'Esercizio di attenzione: Qui e ora, con i cinque sensi', az: 'esercizio', id: 'qui-e-ora-cinque-sensi' },
       { t: 'azione', x: "Meditazione: L'attenzione a se stessi", az: 'meditazione', id: 'attenzione-presente' },
@@ -216,10 +216,10 @@ export const PAGINE_STUDIO = [
   },
   {
     id: 'come-usare',
-    titolo: 'Come usare Un momento',
+    titolo: 'Come usare Stoicismo quotidiano',
     sotto: 'Un modo semplice di usare la app, senza obblighi.',
     blocchi: [
-      { t: 'p', x: `Un momento non ti chiede di praticare ogni giorno, di accumulare giorni di fila o di rispondere a notifiche. Lo apri quando ti serve, e lo lasci quando ti basta.` },
+      { t: 'p', x: `Stoicismo quotidiano non ti chiede di praticare ogni giorno, di accumulare giorni di fila o di rispondere a notifiche. Lo apri quando ti serve, e lo lasci quando ti basta.` },
       { t: 'h', x: 'Quando stai male' },
       { t: 'passi', x: [
         { titolo: 'Tocca «Ho bisogno di un momento».', testo: `Scegli che cosa senti e dove ti sei perso.` },
@@ -237,7 +237,7 @@ export const PAGINE_STUDIO = [
         `**Cambia voce se un tono non ti aiuta.** Ognuno risponde a modo suo.`,
         `**Non contare i giorni.** L'unico giorno che conta è quello in cui ti serve.`,
       ] },
-      { t: 'nota', x: `Un momento nasce dalla sapienza degli stoici antichi e propone esercizi di pensiero e di attenzione. Non sostituisce il parere del medico né un percorso di cura o di sostegno psicologico: se il malessere è forte o dura da tempo, parlane con il tuo medico o con un professionista.` },
+      { t: 'nota', x: `Stoicismo quotidiano nasce dalla sapienza degli stoici antichi e propone esercizi di pensiero e di attenzione. Non sostituisce il parere del medico né un percorso di cura o di sostegno psicologico: se il malessere è forte o dura da tempo, parlane con il tuo medico o con un professionista.` },
     ],
   },
   {

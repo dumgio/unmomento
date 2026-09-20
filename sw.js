@@ -1,6 +1,6 @@
-// Service worker di Un momento: salva i file sul telefono così la app funziona senza connessione.
+// Service worker di Stoicismo quotidiano: salva i file sul telefono così la app funziona senza connessione.
 // Quando cambi un file dell'app, cambia anche il numero di versione qui sotto.
-const CACHE = 'unmomento-v7';
+const CACHE = 'stoicismo-v8';
 const FILE = [
   './',
   'index.html',

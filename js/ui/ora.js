@@ -4,7 +4,7 @@ import { esc } from './comuni.js';
 export function oraHome({ voce, pensiero }) {
   return `
   <p class="marchio">Formebrevi APS</p>
-  <h1 class="titolo">Un momento</h1>
+  <h1 class="titolo">Stoicismo quotidiano</h1>
   <p class="lead">Esercizi di filosofia stoica per ritrovare calma e lucidità quando qualcosa ti turba.</p>
   <button class="btn primario grande" data-az="inizia-flusso">Ho bisogno di un momento</button>
   <div class="pensiero" aria-live="polite">

@@ -4,7 +4,7 @@ export const VERSIONE = '1.0 · settembre 2026';
 
 export const CONTATTI = {
   sito: 'https://www.formebrevi.it',
-  app: 'https://unmomento.formebrevi.it',
+  app: 'https://stoicismo.formebrevi.it',
   dialogo: 'https://dialogo.formebrevi.it',
   kalmly: 'https://kalmly.app',
   paypal: 'https://www.paypal.me/formebrevi',
@@ -18,9 +18,9 @@ export const mailto = (oggetto, corpo = '') =>
   'mailto:' + CONTATTI.email + '?subject=' + encodeURIComponent(oggetto) + (corpo ? '&body=' + encodeURIComponent(corpo) : '');
 
 export const MAIL = {
-  problema: mailto('Un momento: segnalazione di un problema', 'Che cosa è successo?\n\nChe telefono e che browser usi?\n'),
-  suggerimento: mailto('Un momento: suggerimento', 'Il mio suggerimento (un esercizio, un pensiero, una pagina):\n'),
-  scrivi: mailto('Messaggio da Un momento'),
+  problema: mailto('Stoicismo quotidiano: segnalazione di un problema', 'Che cosa è successo?\n\nChe telefono e che browser usi?\n'),
+  suggerimento: mailto('Stoicismo quotidiano: suggerimento', 'Il mio suggerimento (un esercizio, un pensiero, una pagina):\n'),
+  scrivi: mailto('Messaggio da Stoicismo quotidiano'),
 };
 
 export const PAGINE_INFO = [
@@ -31,7 +31,7 @@ export const PAGINE_INFO = [
     sotto: 'La guida completa: esercizi, meditazioni, voci, studio e privacy.',
     blocchi: [
       { t: 'h', x: 'In breve' },
-      { t: 'p', x: `Un momento è la app gratuita di Formebrevi APS: **stoicismo per stare meglio**. Ti offre esercizi guidati per i momenti difficili, meditazioni brevi e pagine per capire lo stoicismo. Funziona anche senza connessione e non ti chiede di registrarti.` },
+      { t: 'p', x: `Stoicismo quotidiano è la app gratuita di Formebrevi APS. Ti offre esercizi guidati per i momenti difficili, meditazioni brevi e pagine per capire lo stoicismo. Funziona anche senza connessione e non ti chiede di registrarti.` },
       { t: 'h', x: 'Le quattro zone' },
       { t: 'lista', x: [
         `**Ora:** il pulsante «Ho bisogno di un momento» ti porta, in pochi tocchi, a un esercizio adatto.`,
@@ -66,7 +66,7 @@ export const PAGINE_INFO = [
       { t: 'h', x: 'Il suono' },
       { t: 'p', x: `I suoni (la campana, il segnale della pausa) sono generati dalla app e usano l'audio del telefono. Se il volume è spento, gli esercizi funzionano lo stesso.` },
       { t: 'h', x: 'Privacy' },
-      { t: 'p', x: `Un momento è senza account, senza pubblicità e senza raccolta di dati: nessun dato lascia il telefono. Sul telefono restano soltanto la voce che hai scelto e l'informazione di aver letto la nota di apertura. Ciò che scrivi negli esercizi non viene salvato.` },
+      { t: 'p', x: `La app è senza account, senza pubblicità e senza raccolta di dati: nessun dato lascia il telefono. Sul telefono restano soltanto la voce che hai scelto e l'informazione di aver letto la nota di apertura. Ciò che scrivi negli esercizi non viene salvato.` },
       { t: 'h', x: 'Installarla sul telefono' },
       { t: 'lista', x: [
         `**Android (Chrome):** tocca i tre puntini in alto a destra, poi «Installa app» o «Aggiungi a schermata Home».`,
@@ -74,7 +74,7 @@ export const PAGINE_INFO = [
         `Dopo l'installazione trovi l'icona con le altre app e si apre a schermo intero.`,
       ] },
       { t: 'h', x: 'Senza connessione' },
-      { t: 'p', x: `Apri Un momento una volta con la connessione: da quel momento tutto viene salvato sul telefono e la app si apre anche senza rete. Quando torna la connessione, si aggiorna da sola.` },
+      { t: 'p', x: `Apri Stoicismo quotidiano una volta con la connessione: da quel momento tutto viene salvato sul telefono e la app si apre anche senza rete. Quando torna la connessione, si aggiorna da sola.` },
       { t: 'h', x: 'Domande frequenti' },
       { t: 'lista', x: [
         `**Devo praticare ogni giorno?** No. La app non conta i giorni: la apri quando ti serve.`,
@@ -89,10 +89,10 @@ export const PAGINE_INFO = [
   {
     id: 'che-cose',
     gruppo: 'app',
-    titolo: "Che cos'è Un momento",
+    titolo: "Che cos'è Stoicismo quotidiano",
     sotto: 'Una guida di riflessione ispirata allo stoicismo.',
     blocchi: [
-      { t: 'p', x: `Un momento è una **guida di riflessione ispirata allo stoicismo**. Propone pratiche di pensiero e di attenzione, prese dai testi degli stoici antichi. Non sostituisce il parere del medico né un percorso di cura o di sostegno psicologico: se il malessere è forte o dura da tempo, parlane con il tuo medico o con un professionista.` },
+      { t: 'p', x: `Stoicismo quotidiano è una **guida di riflessione ispirata allo stoicismo**. Propone pratiche di pensiero e di attenzione, prese dai testi degli stoici antichi. Non sostituisce il parere del medico né un percorso di cura o di sostegno psicologico: se il malessere è forte o dura da tempo, parlane con il tuo medico o con un professionista.` },
       { t: 'h', x: 'Su che cosa si basa' },
       { t: 'lista', x: [
         `Gli scritti di **Epitteto**, **Seneca** e **Marco Aurelio**.`,
@@ -101,7 +101,7 @@ export const PAGINE_INFO = [
       { t: 'h', x: 'Come sono scritti i testi' },
       { t: 'p', x: `I testi della app sono stati scritti per questa app. Riprendono le idee degli autori antichi con parole nostre, senza citazioni copiate dalle traduzioni. Ogni esercizio indica la sua fonte, cioè l'autore e l'opera da cui viene l'idea. Trovi l'elenco nella pagina Fonti.` },
       { t: 'h', x: 'Chi la realizza' },
-      { t: 'p', x: `Un momento è un progetto di Formebrevi APS, associazione di promozione sociale di Caltanissetta. È gratuita e senza pubblicità.` },
+      { t: 'p', x: `Stoicismo quotidiano è un progetto di Formebrevi APS, associazione di promozione sociale di Caltanissetta. La app è gratuita e senza pubblicità.` },
     ],
   },
   {
@@ -129,20 +129,20 @@ export const PAGINE_INFO = [
     id: 'sostieni',
     gruppo: 'formebrevi',
     titolo: 'Sostieni Formebrevi',
-    sotto: 'Un momento è gratuita: se ti è utile, aiutaci a continuare.',
+    sotto: 'La app è gratuita: se ti è utile, aiutaci a continuare.',
     blocchi: [
-      { t: 'p', x: `Un momento è gratuita, senza pubblicità e senza account. È realizzata dai volontari di Formebrevi APS. Se ti è stata utile, puoi aiutare l'associazione a continuare.` },
+      { t: 'p', x: `La app è gratuita, senza pubblicità e senza account. È realizzata dai volontari di Formebrevi APS. Se ti è stata utile, puoi aiutare l'associazione a continuare.` },
       { t: 'h', x: 'Dona con PayPal' },
       { t: 'p', x: 'Una donazione libera, di qualsiasi importo.' },
       { t: 'link', x: 'Dona con PayPal', href: 'paypal', stile: 'primario' },
       { t: 'h', x: 'Associati a Formebrevi' },
       { t: 'p', x: `Diventare socio costa 10 € l'anno. Compili la domanda di ammissione, la esamina il Consiglio Direttivo e poi versi la quota. I soci partecipano gratuitamente alle sessioni di dialogo filosofico online.` },
       { t: 'link', x: 'Compila la domanda di ammissione', href: 'iscrizione', stile: 'chiaro' },
-      { t: 'h', x: 'Fai conoscere Un momento' },
+      { t: 'h', x: 'Fai conoscere Stoicismo quotidiano' },
       { t: 'p', x: `Il modo più semplice di aiutarci: parlane a una persona che potrebbe averne bisogno.` },
-      { t: 'azione', x: 'Condividi Un momento', az: 'condividi', stile: 'chiaro' },
+      { t: 'azione', x: 'Condividi Stoicismo quotidiano', az: 'condividi', stile: 'chiaro' },
       { t: 'h', x: 'A che cosa serve il tuo contributo' },
-      { t: 'p', x: `Il contributo aiuta l'associazione a mantenere gratuiti le app e i materiali, come Un momento, Dialogo, Kalmly e i kit didattici. Grazie.` },
+      { t: 'p', x: `Il contributo aiuta l'associazione a mantenere gratuiti le app e i materiali, come Stoicismo quotidiano, Dialogo, Kalmly e i kit didattici. Grazie.` },
     ],
   },
   {
@@ -172,16 +172,16 @@ export const PAGINE_INFO = [
     sotto: 'Autori, licenza, privacy e versione.',
     blocchi: [
       { t: 'h', x: 'Autori' },
-      { t: 'p', x: 'Un momento è realizzata da Formebrevi APS.' },
+      { t: 'p', x: 'La app è realizzata da Formebrevi APS.' },
       { t: 'h', x: 'Contenuti e licenza' },
       { t: 'p', x: `I contenuti sono distribuiti con licenza Creative Commons BY-NC-SA 4.0: puoi usarli e condividerli per scopi non commerciali, citando la fonte. Le idee sono degli autori antichi e degli studiosi indicati nella pagina Fonti; i testi sono stati scritti per questa app.` },
       { t: 'h', x: 'Privacy' },
-      { t: 'p', x: `Un momento è senza account, senza pubblicità e senza raccolta di dati: nessun dato lascia il telefono. Sul telefono restano soltanto la voce scelta e la nota di apertura già letta.` },
+      { t: 'p', x: `La app è senza account, senza pubblicità e senza raccolta di dati: nessun dato lascia il telefono. Sul telefono restano soltanto la voce scelta e la nota di apertura già letta.` },
       { t: 'h', x: 'Altre app di Formebrevi' },
       { t: 'link', x: 'Dialogo, per condurre un dialogo filosofico', href: 'dialogo', stile: 'chiaro' },
       { t: 'link', x: "Kalmly, l'app per l'ADHD", href: 'kalmly', stile: 'chiaro' },
       { t: 'h', x: 'Versione' },
-      { t: 'p', x: `Un momento, versione ${VERSIONE}.` },
+      { t: 'p', x: `Stoicismo quotidiano, versione ${VERSIONE}.` },
     ],
   },
 ];
