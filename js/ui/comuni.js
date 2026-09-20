@@ -43,10 +43,10 @@ export function paginaHtml(p, indietroAz) {
 }
 
 export function elencoHtml(titolo, lead, gruppi, az) {
-  // gruppi: [[nome, [pagine]]] (il nome può essere vuoto)
+  // gruppi: [[nome, [pagine], azione?]] (il nome può essere vuoto; l'azione del gruppo, se c'è, vale al posto di az)
   return `
   <h1 class="titolo medio">${esc(titolo)}</h1>
   <p class="lead">${esc(lead)}</p>
-  ${gruppi.map(([nome, pagine]) => (nome ? `<h2 class="grp">${esc(nome)}</h2>` : '') +
-    `<div class="carte">${pagine.map((p) => `<button class="carta-link" data-az="${az}" data-id="${esc(p.id)}"><strong>${esc(p.titolo)}</strong><span>${esc(p.sotto)}</span></button>`).join('')}</div>`).join('')}`;
+  ${gruppi.map(([nome, pagine, azGruppo]) => (nome ? `<h2 class="grp">${esc(nome)}</h2>` : '') +
+    `<div class="carte">${pagine.map((p) => `<button class="carta-link" data-az="${azGruppo || az}" data-id="${esc(p.id)}"><strong>${esc(p.titolo)}</strong><span>${esc(p.sotto)}</span></button>`).join('')}</div>`).join('')}`;
 }

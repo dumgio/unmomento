@@ -1,5 +1,7 @@
 // Il quaderno: pagine private salvate solo sul telefono. Qui c'è la logica, senza schermo né memoria del telefono.
-import { MODELLI } from '../contenuti/quaderno.js';
+import { MODELLI, FISSI } from '../contenuti/quaderno.js';
+
+const campiFissi = () => FISSI.campi.map((domanda) => ({ domanda, testo: '', fisso: true }));
 
 export const modello = (id) => MODELLI.find((m) => m.id === id);
 
@@ -7,7 +9,8 @@ export const modello = (id) => MODELLI.find((m) => m.id === id);
 export function nuovaPagina(idModello, { adesso = new Date(), id = 'q' + adesso.getTime().toString(36) } = {}) {
   const m = modello(idModello);
   if (!m) throw new Error('Modello inesistente: ' + idModello);
-  const campi = m.domande.length ? m.domande.map((domanda) => ({ domanda, testo: '' })) : [{ domanda: '', testo: '' }];
+  const guida = m.domande.length ? m.domande.map((domanda) => ({ domanda, testo: '' })) : [{ domanda: '', testo: '' }];
+  const campi = [...guida, ...campiFissi()];
   return { id, modello: idModello, creata: adesso.toISOString(), modificata: adesso.toISOString(), titolo: '', campi };
 }
 
@@ -27,7 +30,8 @@ export function altraDomanda(pagina, indice, rand = Math.random) {
   const m = modello(pagina.modello);
   const usate = pagina.campi.map((c) => c.domanda);
   const libere = m.pool.filter((d) => !usate.includes(d));
-  if (!libere.length || !pagina.campi[indice] || !pagina.campi[indice].domanda || pagina.campi[indice].testo.trim()) return pagina;
+  const campo = pagina.campi[indice];
+  if (!libere.length || !campo || campo.fisso || !campo.domanda || campo.testo.trim()) return pagina;
   const nuova = libere[Math.floor(rand() * libere.length)];
   const campi = pagina.campi.map((c, i) => (i === indice ? { ...c, domanda: nuova } : c));
   return { ...pagina, campi };
@@ -51,7 +55,7 @@ export { dataLeggibile };
 
 export function titoloPagina(pagina) {
   if (pagina.titolo.trim()) return pagina.titolo.trim();
-  const primo = pagina.campi.find((c) => c.testo.trim());
+  const primo = pagina.campi.find((c) => !c.fisso && c.testo.trim()) || pagina.campi.find((c) => c.testo.trim());
   const testo = primo ? primo.testo.trim().replace(/\s+/g, ' ') : '';
   const nomeModello = modello(pagina.modello).titolo;
   return testo ? (testo.length > 48 ? testo.slice(0, 47) + '…' : testo) : nomeModello;
@@ -87,11 +91,17 @@ export function paginaDaEsercizio(sessione, { adesso = new Date(), id } = {}) {
   });
   if (!campi.length) return null;
   const base = nuovaPagina('libero', { adesso, id });
-  return { ...base, titolo: sessione.esercizio.titolo, campi };
+  return { ...base, titolo: sessione.esercizio.titolo, campi: [...campi, ...campiFissi()] };
 }
 
 // ---- Memoria del telefono ----
 export const CHIAVE = 'un-momento-quaderno';
+
+// Le pagine salvate prima che esistessero le domande fisse le ricevono al momento della lettura.
+function conFissi(campi) {
+  const mancanti = campiFissi().filter((f) => !campi.some((c) => c.fisso && c.domanda === f.domanda));
+  return [...campi, ...mancanti];
+}
 
 export function leggiElenco(grezzo) {
   try {
@@ -103,7 +113,11 @@ export function leggiElenco(grezzo) {
       .map((p) => ({
         ...p,
         titolo: typeof p.titolo === 'string' ? p.titolo : '',
-        campi: p.campi.map((c) => ({ domanda: String((c && c.domanda) || ''), testo: String((c && c.testo) || '') })),
+        campi: conFissi(p.campi.map((c) => ({
+          domanda: String((c && c.domanda) || ''),
+          testo: String((c && c.testo) || ''),
+          ...(c && c.fisso ? { fisso: true } : {}),
+        }))),
       }));
   } catch { return []; }
 }

@@ -17,6 +17,9 @@ import {
 } from './logica/quaderno.js';
 import { quadernoElenco, quadernoNuova, quadernoPagina } from './ui/quaderno.js';
 import { disegnaVista, livelloAl } from './ui/animazione.js';
+import { PERCORSI } from './contenuti/percorsi.js';
+import { CHIAVE as CHIAVE_PERCORSI, leggiFatti, alterna, serializza as serializzaFatti } from './logica/percorsi.js';
+import { percorsoHtml } from './ui/percorsi.js';
 import { esc, paginaHtml, elencoHtml } from './ui/comuni.js';
 import { oraHome, sceglieStato, sceglieDisciplina, orientaHtml, sceglieTempo, proposteHtml } from './ui/ora.js';
 import { introHtml, passoHtml, chiusuraHtml } from './ui/esercizio.js';
@@ -52,6 +55,7 @@ let quaderno = leggiElenco(leggi(CHIAVE_QUADERNO));
 let pagina = null;
 let salvata = false;
 let animazione = null;
+let fatti = leggiFatti(leggi(CHIAVE_PERCORSI));
 
 const persistiQuaderno = () => scrivi(CHIAVE_QUADERNO, serializza(quaderno));
 
@@ -114,7 +118,10 @@ function notaHtml() {
 }
 
 function studioElenco() {
-  return elencoHtml('Studio', "Per capire lo stoicismo e da dove vengono gli esercizi.", [['', PAGINE_STUDIO]], 'apri-studio');
+  return elencoHtml('Studio', "Per capire lo stoicismo e da dove vengono gli esercizi.", [
+    ['Percorsi di sette giorni', PERCORSI, 'apri-percorso'],
+    ['Le pagine di studio', PAGINE_STUDIO],
+  ], 'apri-studio');
 }
 function infoElenco() {
   return elencoHtml('Info', 'Come funziona la app, le fonti e come sostenere Formebrevi.', [
@@ -143,6 +150,7 @@ function vista(c) {
     case 'quaderno-nuova': return quadernoNuova();
     case 'quaderno-pagina': return quadernoPagina(pagina);
     case 'studio-elenco': return studioElenco();
+    case 'percorso': return percorsoHtml(PERCORSI.find((p) => p.id === c.id), fatti);
     case 'studio-pagina': return paginaHtml(PAGINE_STUDIO.find((p) => p.id === c.id), 'indietro');
     case 'info-elenco': return infoElenco();
     case 'info-pagina': return paginaHtml(PAGINE_INFO.find((p) => p.id === c.id), 'indietro');
@@ -315,6 +323,9 @@ const azioni = {
     }
   },
   'apri-studio': (d) => vai('studio-pagina', { id: d.id }),
+  'apri-percorso': (d) => vai('percorso', { id: d.id }),
+  'percorso-fatto': (d) => { fatti = alterna(fatti, d.id, Number(d.g)); scrivi(CHIAVE_PERCORSI, serializzaFatti(fatti)); disegna(true); },
+  'percorso-quaderno': (d) => { zona = 'quaderno'; pagina = nuovaPagina(d.id); pila = [{ v: 'quaderno' }, { v: 'quaderno-pagina' }]; disegna(); },
   'apri-info': (d) => vai('info-pagina', { id: d.id }),
 
   // Le meditazioni
