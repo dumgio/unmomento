@@ -178,6 +178,7 @@ const PAGINE_BASE = [
       { t: 'azione', x: 'Esercizio: Il peggio, misurato', az: 'esercizio', id: 'il-peggio-misurato' },
       { t: 'azione', x: 'Esercizio: Prepararsi al peggio', az: 'esercizio', id: 'prepararsi-al-peggio' },
       { t: 'azione', x: 'Esercizio: Ciò che dipende da me', az: 'esercizio', id: 'cio-che-dipende-da-me' },
+      { t: 'azione', x: 'Esercizio: La speranza e il timore', az: 'esercizio', id: 'speranza-e-timore' },
     ],
   },
   {

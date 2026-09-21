@@ -167,7 +167,7 @@ export const APPROFONDIMENTI_1 = {
   'l-ostacolo-come-materia': {
     comeFarlo: `Scegli un ostacolo vero, che stai vivendo ora e non puoi eliminare in fretta. Serve un po' di coraggio: invece di lamentarti dell'ostacolo, gli chiedi che cosa può darti. Non serve trovare che è una fortuna: basta trovare che è materiale.`,
     ritmo: `Il primo scritto dà un nome preciso all'ostacolo, che spesso è più piccolo di come lo si sente. La scelta della qualità restringe il campo: non ti chiede di essere migliore su tutto, solo su una cosa. Il secondo scritto porta la qualità sul concreto, che è dove serve.`,
-    stoici: `Marco Aurelio scrive che ciò che ostacola l'azione può diventare azione, e che ciò che sta sulla strada diventa la strada. È l'immagine del fuoco: un fuoco robusto brucia ciò che gli si mette sopra e ne fa altra fiamma. Epitteto dice una cosa vicina: le difficoltà mostrano chi siamo, e chi le affronta è come un atleta a cui è toccato un buon avversario.`,
+    stoici: `Marco Aurelio scrive che ciò che ostacola l'azione può diventare azione, e che ciò che sta sulla strada diventa la strada. È l'immagine del fuoco: un fuoco robusto brucia ciò che gli si mette sopra e ne fa altra fiamma. Epitteto dice una cosa vicina nei *Discorsi*: sono le circostanze a rivelare gli uomini, e quando ne arriva una bisogna ricordare che il maestro ci ha messo di fronte, come un istruttore, un avversario duro.`,
     variante: `Se non hai un ostacolo grande, fallo con un fastidio piccolo di oggi, come un ritardo o una coda. Oppure, la sera, scrivi un ostacolo della giornata e la qualità che ti ha chiesto.`,
     passi: {
       ostacolo: {

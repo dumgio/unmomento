@@ -2,6 +2,7 @@
 // Formato dei passi: vedi tests/contenuti.test.js e app/js/logica/sessione.js.
 
 import { ESERCIZI_3 } from './esercizi3.js';
+import { ESERCIZI_4 } from './esercizi4.js';
 import { APPROFONDIMENTI } from './approfondimenti.js';
 
 const ESERCIZI_BASE = [
@@ -1187,4 +1188,4 @@ const ESERCIZI_BASE = [
 ];
 
 // A ogni esercizio si aggiungono i dettagli (come farlo, come è costruito, gli stoici, una variante, esempi e aiuti per i passi di scrittura).
-export const ESERCIZI = [...ESERCIZI_BASE, ...ESERCIZI_3].map((e) => ({ ...e, dettagli: APPROFONDIMENTI[e.id] }));
+export const ESERCIZI = [...ESERCIZI_BASE, ...ESERCIZI_3, ...ESERCIZI_4].map((e) => ({ ...e, dettagli: APPROFONDIMENTI[e.id] }));

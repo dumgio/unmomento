@@ -42,6 +42,8 @@ export const PAGINE_STUDIO_3B = [
       { t: 'azione', x: 'Il tempo e la morte', az: 'studio', id: 'il-tempo-la-morte' },
       { t: 'azione', x: 'Esercizio: Come se fosse l’ultimo', az: 'esercizio', id: 'come-se-fosse-l-ultimo' },
       { t: 'azione', x: 'Meditazione: Il tempo che hai', az: 'meditazione', id: 'il-tempo-che-hai' },
+      { t: 'azione', x: 'Esercizio: La commedia ben recitata', az: 'esercizio', id: 'la-commedia-ben-recitata' },
+      { t: 'azione', x: 'Esercizio: Lo spauracchio', az: 'esercizio', id: 'lo-spauracchio' },
     ],
   },
   {
@@ -60,6 +62,7 @@ export const PAGINE_STUDIO_3B = [
       { t: 'nota', x: `Accettare non vuol dire approvare. Puoi accettare un fatto (una malattia, un lutto, un torto subito) e allo stesso tempo lavorare per cambiare ciò che si può cambiare.` },
       { t: 'azione', x: 'Esercizio: La brocca che si rompe', az: 'esercizio', id: 'la-brocca-che-si-rompe' },
       { t: 'azione', x: 'Esercizio: Il fiume degli eventi', az: 'esercizio', id: 'il-fiume-degli-eventi' },
+      { t: 'azione', x: 'Esercizio: Seguire o essere trascinati', az: 'esercizio', id: 'seguire-o-essere-trascinati' },
     ],
   },
   {

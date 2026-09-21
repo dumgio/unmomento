@@ -4,7 +4,7 @@ export const APPROFONDIMENTI_5 = {
   'parla-poco': {
     comeFarlo: `Puoi farlo dove sei, anche in mezzo a una giornata di lavoro. Metti da parte il telefono e prova a stare un minuto senza parlare e senza rispondere a nessuno, nemmeno dentro di te. Se ti accorgi di commentare mentalmente, torna al respiro e al corpo.`,
     ritmo: `Il cuore dell'esercizio è il minuto di silenzio, senza scrittura né respiri guidati: sono le parole, dette e pensate, che si tengono ferme. La domanda finale è una scelta: serve dire qualcosa, o no? Entrambe le risposte vanno bene. Il valore sta nell'aver scelto, e non nell'aver parlato.`,
-    stoici: `Nel *Manuale* Epitteto consiglia di tacere per lo più, o di dire poche cose e necessarie, con parole brevi. Chi parla molto, senza esserne consapevole, dice anche ciò che non pensa e ciò che poi rimpiange. Il silenzio scelto è quindi un esercizio di padronanza: si parla quando si decide di farlo.`,
+    stoici: `Nel *Manuale* Epitteto consiglia di tacere per lo più, o di dire poche cose e necessarie, con parole brevi. Chi parla molto, senza esserne consapevole, dice anche ciò che non pensa e ciò che poi rimpiange. Un frammento aggiunge che è più sicuro il tacere del parlare. Il silenzio scelto è quindi un esercizio di padronanza: si parla quando si decide di farlo.`,
     variante: `Prova per un pomeriggio: parla soltanto quando serve, e osserva quanto cambia. Oppure, prima di una risposta importante, concediti tre respiri di silenzio.`,
     passi: {},
   },
@@ -105,7 +105,7 @@ export const APPROFONDIMENTI_5 = {
   'la-scelta-di-oggi': {
     comeFarlo: `Prendi un momento in cui ti senti in balia degli eventi. Chiediti che cosa, di oggi, tocca soltanto a te decidere. Non serve che sia grande: può essere il tono con cui rispondi, o il modo in cui affronti una coda. Scrivilo, poi ripetilo a voce bassa.`,
     ritmo: `Il testo iniziale ricorda lo spazio tra ciò che accade e ciò che facciamo. Il primo scritto trova una scelta: una sola. La ripetizione a voce bassa la fa diventare tua. La pausa di venti secondi è il modo di tenere la scelta in mano prima di tornare alla giornata.`,
-    stoici: `Per Epitteto ciò che davvero ci appartiene è la facoltà di scegliere, che chiama *prohaíresis*: il modo in cui usiamo la volontà, i giudizi, i desideri. Tutto il resto, il corpo, la salute, la reputazione, può essere ostacolato o tolto. La scelta no: nemmeno un tiranno può impedirci di giudicare a modo nostro.`,
+    stoici: `Per Epitteto ciò che davvero ci appartiene è la facoltà di scegliere, che chiama *prohaíresis*: il modo in cui usiamo la volontà, i giudizi, i desideri. Tutto il resto, il corpo, la salute, la reputazione, può essere ostacolato o tolto. La scelta no: nemmeno un tiranno può impedirci di giudicare a modo nostro. Nei *Discorsi* lo dice come una regola di serenità: staccarsi da ciò che sfugge alla scelta, considerare proprio soltanto ciò che lo è davvero, e occuparsi dell'unica cosa veramente nostra.`,
     variante: `Sceglila la sera prima, per la mattina seguente. Oppure, se ti senti bloccato, scegli soltanto come vuoi affrontare il prossimo quarto d'ora.`,
     passi: {
       scelta: {

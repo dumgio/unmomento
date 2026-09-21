@@ -9,5 +9,6 @@ import { APPROFONDIMENTI_2 } from './approfondimenti2.js';
 import { APPROFONDIMENTI_3 } from './approfondimenti3.js';
 import { APPROFONDIMENTI_4 } from './approfondimenti4.js';
 import { APPROFONDIMENTI_5 } from './approfondimenti5.js';
+import { APPROFONDIMENTI_6 } from './approfondimenti6.js';
 
-export const APPROFONDIMENTI = { ...APPROFONDIMENTI_1, ...APPROFONDIMENTI_2, ...APPROFONDIMENTI_3, ...APPROFONDIMENTI_4, ...APPROFONDIMENTI_5 };
+export const APPROFONDIMENTI = { ...APPROFONDIMENTI_1, ...APPROFONDIMENTI_2, ...APPROFONDIMENTI_3, ...APPROFONDIMENTI_4, ...APPROFONDIMENTI_5, ...APPROFONDIMENTI_6 };

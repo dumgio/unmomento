@@ -21,7 +21,7 @@ export const APPROFONDIMENTI_4 = {
   'il-consenso-sospeso': {
     comeFarlo: `Ti serve un pensiero che ti spaventa o ti tormenta, come «andrà male» o «non ce la farò». Scrivilo con le sue parole, senza correggerlo. Poi tienilo a distanza, come un ospite che porta una notizia. La domanda sulla prova è secca: hai un fatto, o hai una sensazione?`,
     ritmo: `Il respiro all'inizio è più lungo del solito perché la paura, quando è forte, toglie la capacità di guardare. La scrittura del pensiero lo distanzia da te. La scelta tra prova e sensazione è il punto centrale: due risposte, due strade. Nessuna delle due è sbagliata, ognuna porta a un gesto diverso.`,
-    stoici: `Per gli stoici l'assenso è il «sì» che diamo a un'impressione: non ci è imposto, lo diamo noi. Epitteto consiglia di fermare le impressioni all'ingresso, dicendo loro che sono soltanto impressioni e di controllarle prima di crederci. È l'idea centrale dell'educazione stoica: tra ciò che appare e ciò che crediamo c'è uno spazio, e in quello spazio siamo liberi.`,
+    stoici: `Per gli stoici l'assenso è il «sì» che diamo a un'impressione: non ci è imposto, lo diamo noi. Epitteto consiglia di fermare le impressioni all'ingresso, dicendo loro che sono soltanto impressioni e di controllarle prima di crederci. Nei *Discorsi* dice che il primo dovere del filosofo è mettere alla prova le impressioni e accogliere soltanto quelle verificate. Tra ciò che appare e ciò che crediamo c'è uno spazio, e in quello spazio siamo liberi.`,
     variante: `Se hai un solo minuto, scrivi il pensiero e accanto: «Prova o sensazione?». Oppure fallo prima di dormire, quando i pensieri sono più insistenti.`,
     passi: {
       pensiero: {
@@ -72,7 +72,7 @@ export const APPROFONDIMENTI_4 = {
   'la-parte-che-recito': {
     comeFarlo: `Prendi un minuto per elencare i tuoi ruoli di oggi, quelli che tocca a te recitare adesso. Poi scegline uno: quello che oggi ti chiede di più. Il tuo compito non è recitare bene tutte le parti, ma fare bene quella che hai davanti. Il resto, per ora, sta fuori dal palco.`,
     ritmo: `Le due scritture sono in ordine: prima i ruoli, poi la parte scelta. La frase di mezzo ti ricorda che ogni ruolo ha misure e doveri propri. La chiusura ti chiede di lasciar andare ciò che non è del ruolo di oggi. Non ci sono pause né respiri, perché l'esercizio serve a mettere ordine con la testa.`,
-    stoici: `Nel *Manuale* Epitteto paragona la vita a una commedia: la parte è stata assegnata da un altro, e a noi spetta recitarla bene, che sia breve o lunga, di povero o di principe. Non scegliamo il ruolo, scegliamo come stare dentro. Panezio aggiunse che ognuno ha anche una natura personale da tenere in conto, e che il dovere cambia con la persona.`,
+    stoici: `Nel *Manuale* Epitteto paragona la vita a una commedia: la parte è stata assegnata da un altro, e a noi spetta recitarla bene, che sia breve o lunga, di povero o di principe. Nei *Discorsi* porta l'esempio dell'attore Polo, che recita la parte di Edipo re con lo stesso impegno con cui recita le altre. Non scegliamo il ruolo, scegliamo come stare dentro. Panezio aggiunse che ognuno ha anche una natura personale da tenere in conto, e che il dovere cambia con la persona.`,
     variante: `Fallo la sera, guardando ai ruoli della giornata: in quale mi sono sentito più a mio agio? In quale ho recitato male? Oppure fallo prima di una riunione o di una cena, scegliendo il ruolo con cui entrerai.`,
     passi: {
       parti: {
@@ -164,7 +164,7 @@ export const APPROFONDIMENTI_4 = {
   'l-invidia-in-tre-mosse': {
     comeFarlo: `Ti serve una persona precisa e una cosa precisa che le invidi. Scrivi con franchezza: l'invidia è comune, e nessuno leggerà. Poi immagina il costo di quella cosa: ore, rinunce, compromessi. Rispondi onestamente alla domanda finale.`,
     ritmo: `Le tre mosse sono in ordine: nominare, misurare il prezzo, decidere. Il primo scritto toglie la vergogna, il secondo cambia il punto di vista, la scelta finale trasforma l'invidia in un'indicazione. Non ci sono pause né respiri: l'esercizio è un piccolo ragionamento, che si fa con la testa fredda.`,
-    stoici: `Nel *Manuale* Epitteto propone un paragone semplice: se una persona ottiene un banchetto, ha pagato il prezzo del banchetto, adulando e aspettando alla porta. Se hai rifiutato di pagare quel prezzo, hai perso poco: hai scelto di tenere ciò che ti costava di più. L'invidia si scioglie quando si guarda l'intero scambio, e non solo il premio.`,
+    stoici: `Nel *Manuale* Epitteto propone un paragone semplice: se una persona ottiene un banchetto, ha pagato il prezzo del banchetto, adulando e aspettando alla porta. Se hai rifiutato di pagare quel prezzo, hai perso poco: hai scelto di tenere ciò che ti costava di più. Nei *Discorsi* l'immagine torna con una lattuga, che costa un obolo, mentre un talento è un'altra cifra: le cose comuni si pagano poco, e chi rifiuta il prezzo delle altre ha perso poco. L'invidia si scioglie quando si guarda l'intero scambio, e non solo il premio.`,
     variante: `Fallo su un'invidia piccola, come il viaggio di un collega. Oppure nota il prezzo di una cosa che invidi per una settimana, e confronta.`,
     passi: {
       invidio: {
