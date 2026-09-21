@@ -143,6 +143,7 @@ export const PAGINE_STUDIO_3B = [
       { t: 'p', x: `Quando i ruoli sembrano in conflitto (il lavoro contro la famiglia), gli stoici invitano a guardare la giustizia: che cosa devo, in questo momento, a chi?` },
       { t: 'azione', x: 'Esercizio: La lista dei doveri', az: 'esercizio', id: 'la-lista-dei-doveri' },
       { t: 'azione', x: 'Esercizio: La parte che recito', az: 'esercizio', id: 'la-parte-che-recito' },
+      { t: 'azione', x: 'Panezio e le quattro maschere', az: 'studio', id: 'panezio' },
     ],
   },
   {

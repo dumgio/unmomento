@@ -4,6 +4,7 @@
 
 import { PAGINE_STUDIO_3A } from './studio3.js';
 import { PAGINE_STUDIO_3B } from './studio4.js';
+import { PAGINE_STUDIO_4 } from './studio5.js';
 
 const PAGINE_BASE = [
   {
@@ -101,6 +102,7 @@ const PAGINE_BASE = [
       { t: 'p', x: `Le tre discipline si tengono insieme: quando cambia il giudizio, cambia anche il desiderio, e cambia l'azione. Puoi partire da qualunque punto.` },
       { t: 'azione', x: 'Esercizio del giudizio: Fermati, impressione', az: 'esercizio', id: 'fermati-impressione' },
       { t: 'azione', x: "Esercizio dell'azione: Il primo gesto piccolo", az: 'esercizio', id: 'il-primo-gesto-piccolo' },
+      { t: 'azione', x: 'Logica, fisica, etica', az: 'studio', id: 'logica-fisica-etica' },
     ],
   },
   {
@@ -198,6 +200,7 @@ const PAGINE_BASE = [
       { t: 'p', x: `Ogni esercizio della app indica la sua famiglia e la sua fonte. «Qui e ora con i cinque sensi» e «Respiro e attenzione» sono esercizi di attenzione. «Prepararsi al peggio» e «La brocca che si può rompere» sono meditazioni. «Fermati, impressione» e «Il fatto e il giudizio» sono esercizi di pensiero. «Il primo gesto piccolo» e «Chi voglio essere qui» sono esercizi attivi.` },
       { t: 'azione', x: 'Esercizio di attenzione: Qui e ora, con i cinque sensi', az: 'esercizio', id: 'qui-e-ora-cinque-sensi' },
       { t: 'azione', x: "Meditazione: L'attenzione a se stessi", az: 'meditazione', id: 'attenzione-presente' },
+      { t: 'azione', x: "La filosofia come cura dell'anima", az: 'studio', id: 'la-cura-dell-anima' },
     ],
   },
   {
@@ -206,7 +209,7 @@ const PAGINE_BASE = [
     sotto: 'Epitteto, Seneca e Marco Aurelio: chi erano e come parlano.',
     blocchi: [
       { t: 'p', x: `Le tre voci della app sono tre autori stoici romani. Sono molto diversi per vita e per tono, e proprio per questo si completano.` },
-      { t: 'h', x: 'Epitteto (circa 50 – circa 135 d.C.)' },
+      { t: 'h', x: 'Epitteto (nato tra il 50 e il 60, morto verso il 138 d.C.)' },
       { t: 'p', x: `Nacque schiavo, in Frigia. Divenne libero e insegnò filosofia prima a Roma e poi a Nicopoli, in Grecia. Non scrisse nulla: le sue lezioni furono messe per iscritto dal suo allievo **Arriano**, che ne ricavò gli *Discorsi* (o *Diatribe*) e il breve *Manuale*. Il suo tono è **secco e diretto**: parla come un maestro che non gira intorno alle cose. Per lui la filosofia è un'officina, una «sala operatoria» dell'anima.` },
       { t: 'h', x: 'Seneca (circa 4 a.C. – 65 d.C.)' },
       { t: 'p', x: `Nato in Spagna, visse a Roma: fu scrittore, uomo di Stato e per anni consigliere dell'imperatore Nerone, che nel 65 d.C. gli ordinò di togliersi la vita. Scrisse trattati (*Sull'ira*, *Sulla brevità della vita*, *Sulla tranquillità dell'animo*) e le *Lettere a Lucilio*, un amico a cui parla da amico esperto. Il suo tono è **caldo e vicino**, come una lettera: spiega, consola, si mette in gioco.` },
@@ -215,6 +218,8 @@ const PAGINE_BASE = [
       { t: 'h', x: 'Come usare le voci' },
       { t: 'p', x: `Nella app puoi cambiare voce quando vuoi. Se hai bisogno di essere scosso, prova Epitteto. Se hai bisogno di essere accompagnato, prova Seneca. Se cerchi un silenzio in cui riflettere, prova Marco Aurelio. Gli esercizi restano gli stessi: cambia il modo di dirli.` },
       { t: 'azione', x: 'Leggi come leggerli', az: 'studio', id: 'come-leggere' },
+      { t: 'azione', x: 'La vita di Seneca', az: 'studio', id: 'la-vita-di-seneca' },
+      { t: 'azione', x: 'Gli stoici sotto gli imperatori', az: 'studio', id: 'gli-stoici-e-il-potere' },
     ],
   },
   {
@@ -550,6 +555,7 @@ const PAGINE_BASE = [
       { t: 'p', x: `Nella pratica: quando ti pesa un avvenimento, ricordarti che fa parte di un ordine più ampio aiuta ad accoglierlo senza sentirti perseguitato.` },
       { t: 'azione', x: 'Meditazione: Vista dall\'alto', az: 'meditazione', id: 'vista-dall-alto-guidata' },
       { t: 'azione', x: 'Esercizio: Il fiume degli eventi', az: 'esercizio', id: 'il-fiume-degli-eventi' },
+      { t: 'azione', x: 'Posidonio', az: 'studio', id: 'posidonio' },
     ],
   },
   {
@@ -566,6 +572,8 @@ const PAGINE_BASE = [
       { t: 'h', x: 'Perché ne restano solo frammenti' },
       { t: 'p', x: `Le opere degli stoici antichi sono andate quasi tutte perdute. Ne restano citazioni e riassunti in altri autori, che gli studiosi hanno raccolto: la raccolta classica è quella di Hans von Arnim, *Stoici antichi. Tutti i frammenti*. Per questo, per conoscere lo stoicismo, si comincia dai testi romani, che ci sono arrivati interi.` },
       { t: 'azione', x: 'Come leggere gli stoici', az: 'studio', id: 'come-leggere' },
+      { t: 'azione', x: 'Come conosciamo i primi stoici', az: 'studio', id: 'come-conosciamo-i-primi-stoici' },
+      { t: 'azione', x: 'La scuola in tre età', az: 'studio', id: 'le-tre-eta-della-stoa' },
     ],
   },
   {
@@ -662,4 +670,17 @@ const PAGINE_BASE = [
   },
 ];
 
-export const PAGINE_STUDIO = [...PAGINE_BASE, ...PAGINE_STUDIO_3A, ...PAGINE_STUDIO_3B];
+export const PAGINE_STUDIO = [...PAGINE_BASE, ...PAGINE_STUDIO_3A, ...PAGINE_STUDIO_3B, ...PAGINE_STUDIO_4];
+
+// Come si presenta l'elenco dello Studio: gruppi tematici, in ordine di lettura. Ogni pagina sta in un solo gruppo.
+export const GRUPPI_STUDIO = [
+  { nome: 'Per cominciare', ids: ['cose-lo-stoicismo', 'falsi-miti', 'come-usare', 'come-leggere', 'domande-sullo-stoicismo', 'errori-di-chi-comincia', 'un-giorno-stoico', 'un-mese-di-pratica', 'cosa-dice-la-ricerca'] },
+  { nome: 'Le idee di fondo', ids: ['tre-discipline', 'logica-fisica-etica', 'cio-che-dipende-da-noi', 'dicotomia-in-pratica', 'impressioni-giudizio', 'la-parte-guida', 'la-natura-e-il-cosmo', 'indifferenti-e-preferibili', 'i-doveri-e-i-ruoli', 'il-progresso-e-il-sapiente', 'la-cura-dell-anima', 'esercizi-spirituali'] },
+  { nome: 'Le passioni e le virtù', ids: ['paura-desiderio', 'mappa-delle-passioni', 'le-quattro-passioni', 'le-quattro-virtu', 'virtu-saggezza', 'virtu-giustizia', 'virtu-coraggio', 'virtu-temperanza'] },
+  { nome: 'Quando qualcosa pesa', ids: ['l-ira-secondo-seneca', 'la-paura-del-futuro', 'il-dolore-e-la-perdita', 'il-perdono-e-la-clemenza', 'accettare-cio-che-accade', 'la-tranquillita-dell-animo', 'la-premeditazione-dei-mali', 'il-ricordo-della-fine', 'il-tempo-la-morte'] },
+  { nome: 'Le pratiche di ogni giorno', ids: ['l-esame-di-coscienza', 'scrivere-per-pensare', 'vista-dall-alto', 'la-gratitudine', 'il-tempo-secondo-seneca'] },
+  { nome: 'Nelle situazioni della vita', ids: ['il-denaro-e-la-ricchezza', 'la-fama-e-il-giudizio-degli-altri', 'il-corpo-e-la-malattia', 'la-solitudine-e-la-compagnia', 'amicizia-e-comunita', 'stoicismo-e-lavoro', 'stoicismo-e-relazioni'] },
+  { nome: 'Gli autori', ids: ['tre-maestri', 'autore-epitteto', 'il-manuale-di-epitteto', 'autore-seneca', 'la-vita-di-seneca', 'autore-marco-aurelio', 'autore-musonio', 'autore-zenone', 'autore-cleante', 'autore-crisippo'] },
+  { nome: 'La storia della scuola', ids: ['le-tre-eta-della-stoa', 'stoici-antichi', 'come-conosciamo-i-primi-stoici', 'panezio', 'posidonio', 'lo-stoicismo-a-roma', 'gli-stoici-e-il-potere'] },
+  { nome: 'Glossario', ids: ['glossario', 'glossario-2'] },
+];

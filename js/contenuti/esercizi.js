@@ -1123,7 +1123,7 @@ const ESERCIZI_BASE = [
     stati: ['sopraffatto', 'colpa'],
     minuti: 3,
     fonte: { autore: 'Seneca', opera: 'Sulla brevità della vita', nota: 'la vita è lunga se sappiamo usarla, breve se la disperdiamo' },
-    perche: `Seneca sostiene che non abbiamo poco tempo: ne perdiamo molto. Il problema non è la durata della vita ma il modo in cui la impieghiamo. Guardare con onestà dove finiscono le nostre ore è il primo passo per riprenderne il controllo, senza colpevolizzarsi.`,
+    perche: `Seneca sostiene che non abbiamo poco tempo: ne perdiamo molto. Il problema sta meno nella lunghezza della vita che nell'uso che ne facciamo. Guardare con onestà dove finiscono le nostre ore è il primo passo per riprenderne il controllo, senza colpevolizzarsi.`,
     studio: 'il-tempo-la-morte',
     voci: {
       epitteto: { apertura: 'Il tempo è l\'unica cosa che hai davvero. Dove va, oggi?', chiusura: 'Ciò che decidi ora vale più di ogni rimpianto.' },

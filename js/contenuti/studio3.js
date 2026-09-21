@@ -178,7 +178,7 @@ export const PAGINE_STUDIO_3A = [
     titolo: 'Epitteto',
     sotto: 'Uno schiavo diventato maestro: la filosofia come esercizio quotidiano.',
     blocchi: [
-      { t: 'p', x: `Epitteto nacque verso il 50 d.C. a Hierapolis, in Frigia, e da giovane fu schiavo a Roma. Ottenuta la libertà, insegnò filosofia. Quando l'imperatore Domiziano cacciò i filosofi dall'Italia, si stabilì a Nicopoli, in Grecia, dove ebbe una scuola frequentata da molti giovani. Morì verso il 135.` },
+      { t: 'p', x: `Epitteto nacque a Ierapoli, in Frigia, tra il 50 e il 60 d.C., e da giovane fu schiavo a Roma. Ottenuta la libertà, insegnò filosofia. Quando l'imperatore Domiziano cacciò i filosofi dall'Italia, si stabilì a Nicopoli, in Grecia, dove ebbe una scuola frequentata da molti giovani. Morì in tarda età, verso il 138, negli stessi anni dell'imperatore Adriano.` },
       { t: 'h', x: 'Le opere' },
       { t: 'p', x: `Epitteto non scrisse nulla. Le sue lezioni ci sono arrivate grazie a un allievo, **Arriano**, che le trascrisse nei *Discorsi* (di cui restano quattro libri) e ne trasse un piccolo compendio, il *Manuale* (*Encheiridion*).` },
       { t: 'h', x: 'Le idee centrali' },
@@ -219,6 +219,7 @@ export const PAGINE_STUDIO_3A = [
       { t: 'p', x: `Seneca visse nella ricchezza e nel potere, e già i contemporanei glielo rimproveravano. Lui lo ammetteva: diceva di scrivere per chi cerca di migliorare, senza salire su un piedistallo. Questa onestà rende le sue pagine più credibili, non meno.` },
       { t: 'azione', x: "L'ira secondo Seneca", az: 'studio', id: 'l-ira-secondo-seneca' },
       { t: 'azione', x: 'Esercizio: Esame della sera', az: 'esercizio', id: 'esame-della-sera' },
+      { t: 'azione', x: 'La vita di Seneca', az: 'studio', id: 'la-vita-di-seneca' },
     ],
   },
   {
@@ -247,7 +248,7 @@ export const PAGINE_STUDIO_3A = [
     titolo: 'Musonio Rufo',
     sotto: 'Il maestro di Epitteto: una filosofia da praticare ogni giorno.',
     blocchi: [
-      { t: 'p', x: `Gaio Musonio Rufo nacque in Etruria attorno al 30 d.C. e fu cavaliere romano. Insegnò filosofia a Roma e fu esiliato più volte, sotto Nerone e sotto Vespasiano, per le sue idee libere. Fu maestro di Epitteto. Morì attorno al 100.` },
+      { t: 'p', x: `Gaio Musonio Rufo nacque in Etruria attorno al 30 d.C. e fu cavaliere romano. Insegnò filosofia a Roma e fu esiliato più volte, sotto Nerone e sotto Vespasiano, per le sue idee libere. Fu maestro di Epitteto. Richiamato a Roma dall'imperatore Tito, vi insegnò ancora per molti anni.` },
       { t: 'h', x: 'Le opere' },
       { t: 'p', x: `Come Epitteto, non scrisse libri. Un allievo, **Lucio**, raccolse appunti delle sue lezioni: ci restano una ventina di brevi discorsi e alcuni frammenti.` },
       { t: 'h', x: 'Le idee centrali' },
@@ -261,6 +262,7 @@ export const PAGINE_STUDIO_3A = [
       { t: 'p', x: `Musonio dà l'impressione di un uomo che parla in una stanza, ai suoi allievi, con parole semplici. È utile per capire da dove viene la sobrietà pratica di Epitteto.` },
       { t: 'azione', x: 'Come leggere gli stoici', az: 'studio', id: 'come-leggere' },
       { t: 'azione', x: 'Esercizio: Quanto basta', az: 'esercizio', id: 'quanto-basta' },
+      { t: 'azione', x: 'Gli stoici sotto gli imperatori', az: 'studio', id: 'gli-stoici-e-il-potere' },
     ],
   },
   {
@@ -279,6 +281,7 @@ export const PAGINE_STUDIO_3A = [
         `**Il valore della semplicità:** una vita frugale, coerente con ciò che si pensa.`,
       ] },
       { t: 'azione', x: 'Gli stoici antichi', az: 'studio', id: 'stoici-antichi' },
+      { t: 'azione', x: 'La scuola in tre età', az: 'studio', id: 'le-tre-eta-della-stoa' },
     ],
   },
   {
@@ -286,7 +289,7 @@ export const PAGINE_STUDIO_3A = [
     titolo: 'Cleante',
     sotto: 'Il pugile che diventò filosofo: un lavoratore instancabile.',
     blocchi: [
-      { t: 'p', x: `Cleante nacque ad Asso, nella Troade, attorno al 331 a.C. Secondo la tradizione fu pugile e, arrivato ad Atene, faceva il portatore d'acqua di notte per pagarsi le lezioni di Zenone. Gli succedette alla guida della scuola e la tenne per circa trent'anni.` },
+      { t: 'p', x: `Cleante nacque ad Asso, nella Troade, nel 331 a.C. secondo la tradizione antica, ma forse più tardi. Fu pugile, dice la tradizione, e, arrivato ad Atene, faceva il portatore d'acqua di notte per pagarsi le lezioni di Zenone. Gli succedette alla guida della scuola e la tenne per circa trent'anni.` },
       { t: 'h', x: "L'opera" },
       { t: 'p', x: `Di Cleante ci resta soprattutto l'**Inno a Zeus**, una preghiera in versi. Vi esprime la fiducia in un ordine razionale del mondo e chiede di accettarlo senza lamento. Fu un testo caro agli stoici, che Epitteto ricorda volentieri.` },
       { t: 'h', x: 'Le idee centrali' },

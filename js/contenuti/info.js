@@ -1,6 +1,6 @@
 // Pagine informative, contatti e messaggi di posta già pronti. Nel testo **così** è grassetto e *così* è corsivo.
 
-export const VERSIONE = '1.2 · settembre 2026';
+export const VERSIONE = '1.3 · settembre 2026';
 
 export const CONTATTI = {
   sito: 'https://www.formebrevi.it',
@@ -124,6 +124,8 @@ export const PAGINE_INFO = [
         `**Andrea E. Cavanna e altri,** *The Western origins of mindfulness therapy in ancient Rome*, Neurological Sciences, 2023.`,
         `**Georgina King,** *Modern Stoicism and mental health: a randomised controlled trial*, tesi di dottorato, Royal Holloway, University of London, 2025.`,
         `**Hans von Arnim,** *Stoici antichi. Tutti i frammenti*, a cura di Roberto Radice.`,
+        `**Max Pohlenz,** *La Stoa. Storia di un movimento spirituale*, a cura di Giovanni Reale.`,
+        `**Epitteto,** *Le diatribe e i frammenti*.`,
       ] },
       { t: 'nota', x: `Le pagine di Studio spiegano come leggerli e da dove cominciare.` },
       { t: 'azione', x: 'Come leggere gli stoici', az: 'studio', id: 'come-leggere' },

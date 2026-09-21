@@ -1,6 +1,6 @@
 import { ESERCIZI } from './contenuti/esercizi.js';
 import { PENSIERI } from './contenuti/pensieri.js';
-import { PAGINE_STUDIO } from './contenuti/studio.js';
+import { PAGINE_STUDIO, GRUPPI_STUDIO } from './contenuti/studio.js';
 import { MEDITAZIONI } from './contenuti/meditazioni.js';
 import { PAGINE_INFO, CONTATTI } from './contenuti/info.js';
 import { VOCI } from './contenuti/comuni.js';
@@ -120,7 +120,7 @@ function notaHtml() {
 function studioElenco() {
   return elencoHtml('Studio', "Per capire lo stoicismo e da dove vengono gli esercizi.", [
     ['Percorsi di sette giorni', PERCORSI, 'apri-percorso'],
-    ['Le pagine di studio', PAGINE_STUDIO],
+    ...GRUPPI_STUDIO.map((g) => [g.nome, g.ids.map((id) => PAGINE_STUDIO.find((p) => p.id === id))]),
   ], 'apri-studio');
 }
 function infoElenco() {
