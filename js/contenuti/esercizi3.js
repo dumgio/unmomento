@@ -13,7 +13,7 @@ export const ESERCIZI_3 = [
     perche: `Un pensiero che ci spaventa arriva con una forza che sembra una prova. Gli stoici chiamavano «assenso» il sì che gli diamo. Sospenderlo, anche solo per un minuto, ci lascia il tempo di controllare se il pensiero è vero prima di viverlo come se lo fosse.`,
     studio: 'impressioni-giudizio',
     voci: {
-      epitteto: { apertura: `Un pensiero ti pesa? Non dargli ancora il tuo sì. Prima esaminalo.`, chiusura: `Un pensiero senza il tuo consenso è solo un pensiero.` },
+      epitteto: { apertura: "Un pensiero ti pesa? Puoi non dargli ancora il tuo sì. Prima dagli un'occhiata.", chiusura: "Un pensiero senza il tuo consenso è solo un pensiero." },
       seneca: { apertura: `Fermiamoci un momento, tu e io. Prima di credere a ciò che ti dice la paura, chiediamole con calma su che cosa si basa.`, chiusura: `Hai dato al pensiero il tempo di mostrarsi per quello che è. Già questo alleggerisce.` },
       marco: { apertura: `Il pensiero è arrivato. Io non sono obbligato a dirgli di sì.`, chiusura: `Ho guardato il pensiero senza farlo mio. Resta la calma di chi decide.` },
     },
@@ -37,7 +37,7 @@ export const ESERCIZI_3 = [
     perche: `Per gli stoici ogni passione contiene un giudizio: «mi hanno tolto ciò che mi spetta», «senza questo non sto bene». Dare un nome preciso a ciò che si sente aiuta a trovare il giudizio nascosto e a esaminarlo. Un'emozione con un nome è meno confusa.`,
     studio: 'mappa-delle-passioni',
     voci: {
-      epitteto: { apertura: `Che cosa senti, esattamente? Dagli un nome. Poi cerca il giudizio che c'è sotto.`, chiusura: `Sotto ogni passione c'è un giudizio. Trovalo e potrai discuterlo.` },
+      epitteto: { apertura: "Che cosa senti, esattamente? Dagli un nome. Poi cerca il giudizio che c'è sotto.", chiusura: "Sotto ogni passione c'è un giudizio. Trovalo e potrai discuterlo." },
       seneca: { apertura: `Quando stai male, spesso non sai nemmeno che cosa hai. Proviamo a dare un nome a ciò che si muove dentro di te.`, chiusura: `Un dolore con un nome fa meno paura. Adesso lo conosci un po' meglio.` },
       marco: { apertura: `Che cosa sta succedendo in me? Lo nomino, e lo guardo.`, chiusura: `L'ho chiamato per nome. Ora è più piccolo.` },
     },
@@ -60,7 +60,7 @@ export const ESERCIZI_3 = [
     perche: `Epitteto dice che ogni cosa ha due manici: una parte per cui si sopporta e una per cui pesa. Il fatto è lo stesso, ma dipende da dove lo afferriamo. Cercare l'altro manico non cancella il problema: ci permette di portarlo.`,
     studio: 'impressioni-giudizio',
     voci: {
-      epitteto: { apertura: `Stai afferrando la cosa dal lato che pesa. Cerca l'altro manico.`, chiusura: `Il fatto è uno. Scegli da che parte prenderlo.` },
+      epitteto: { apertura: "Stai afferrando la cosa dal lato che pesa. Prova a cercare l'altro manico.", chiusura: "Il fatto è uno. Puoi scegliere da che parte prenderlo." },
       seneca: { apertura: `Ciò che ti pesa ha anche un lato più mite. Cerchiamolo insieme, senza fingere che il problema non esista.`, chiusura: `Non hai cambiato le cose. Hai cambiato la presa, e ora si porta meglio.` },
       marco: { apertura: `Come sto prendendo questa cosa? Provo l'altro manico.`, chiusura: `La stessa cosa, da un'altra parte, pesa di meno.` },
     },
@@ -83,7 +83,7 @@ export const ESERCIZI_3 = [
     perche: `Epitteto paragona la vita a una commedia: la parte non l'hai scelta tu, ma il modo di recitarla sì. Concentrarti su come recitare bene la parte di oggi (genitore, collega, figlio, amico) ti toglie dal confronto con tutte le parti che non hai.`,
     studio: 'il-manuale-di-epitteto',
     voci: {
-      epitteto: { apertura: `Hai una parte da recitare oggi. Non l'hai scelta tu: recitala bene.`, chiusura: `Non spetta a te scegliere la parte. Spetta a te recitarla con onore.` },
+      epitteto: { apertura: "Oggi hai una parte da recitare. Non l'hai scelta tu, ma puoi recitarla bene.", chiusura: "Scegliere la parte non spetta a te. Recitarla con cura, sì." },
       seneca: { apertura: `Nessuno può fare tutto. Guardiamo quale parte ti spetta, e facciamo quella con cura.`, chiusura: `Fare bene la propria parte basta a una giornata.` },
       marco: { apertura: `Qual è il mio posto oggi? Lo occupo con serietà.`, chiusura: `La parte è piccola, ma è mia. La recito.` },
     },
@@ -105,7 +105,7 @@ export const ESERCIZI_3 = [
     perche: `Marco Aurelio si ricorda di essere come uno scoglio che resta fermo mentre le onde si infrangono. Le onde sono le circostanze, che arrivano e passano. Immaginarsi saldi, senza irrigidirsi, aiuta a stare in mezzo a ciò che agita.`,
     studio: 'paura-desiderio',
     voci: {
-      epitteto: { apertura: `Le onde arrivano. Tu sei lo scoglio: resta dove sei.`, chiusura: `Le onde passano. Chi resta saldo, resta.` },
+      epitteto: { apertura: "Le onde arrivano. Tu sei lo scoglio: puoi restare dove sei.", chiusura: "Le onde passano. Chi resta saldo, resta." },
       seneca: { apertura: `Immagina un promontorio sul mare, con le onde che si rompono ai suoi piedi. Prova a sentirti così: fermo, e tranquillo.`, chiusura: `Le onde torneranno, e tu con loro. Ma adesso hai imparato a restare.` },
       marco: { apertura: `Sono lo scoglio, e il mare mi batte intorno. Resto fermo.`, chiusura: `Ho lasciato passare le onde. Sono ancora qui.` },
     },
@@ -127,7 +127,7 @@ export const ESERCIZI_3 = [
     perche: `Marco Aurelio scrive che la perfezione del carattere sta nel passare ogni giorno come se fosse l'ultimo, senza agitazione né indifferenza. Non si tratta di paura: è un modo di dare a ogni ora il suo peso, e di lasciare andare ciò che non conta.`,
     studio: 'il-tempo-la-morte',
     voci: {
-      epitteto: { apertura: `Se oggi fosse l'ultimo giorno, che cosa faresti con più cura? Fallo.`, chiusura: `Il giorno è breve. Usalo per ciò che merita.` },
+      epitteto: { apertura: "Se oggi fosse l'ultimo giorno, che cosa faresti con più cura? Prova a farlo.", chiusura: "Il giorno è breve. Usalo per ciò che merita." },
       seneca: { apertura: `Il tempo è la tua vera ricchezza. Spendilo bene: come sceglieresti oggi, se fosse l'ultimo?`, chiusura: `Un giorno vissuto con attenzione vale più di molti giorni distratti.` },
       marco: { apertura: `Oggi potrebbe essere l'ultimo. Lo vivo con calma e con cura.`, chiusura: `Un giorno alla volta, senza fretta e senza dispersione.` },
     },
@@ -148,7 +148,7 @@ export const ESERCIZI_3 = [
     perche: `Quando tutto sembra urgente, la confusione nasce dal mettere sullo stesso piano cose diverse. Epitteto misura i doveri sui ruoli che abbiamo: se so di essere genitore, collega, amico, vedo che cosa mi compete e che cosa posso lasciare da parte.`,
     studio: 'dicotomia-in-pratica',
     voci: {
-      epitteto: { apertura: `Troppe cose, tutte insieme? Ordinale per ruolo. Poi fai ciò che compete al tuo ruolo.`, chiusura: `Non tutto è tuo da fare. Ciò che è tuo, fallo.` },
+      epitteto: { apertura: "Troppe cose tutte insieme? Ordinale per ruolo. Poi fai ciò che spetta al tuo ruolo.", chiusura: "Non tutto è tuo da fare. Ciò che è tuo, fallo con calma." },
       seneca: { apertura: `Quando il carico è troppo, aiuta scrivere. Mettiamo su carta ciò che ti pesa e vediamo a chi spetta.`, chiusura: `Una lista chiara pesa meno di mille pensieri in testa.` },
       marco: { apertura: `Troppe cose. Le scrivo, le ordino, scelgo la prima.`, chiusura: `Una cosa alla volta. Ora so qual è la prima.` },
     },
@@ -172,7 +172,7 @@ export const ESERCIZI_3 = [
     perche: `Hadot descrive l'attenzione a sé come una vigilanza continua sui propri pensieri. Non si tratta di respingerli: si tratta di stare alla porta come una sentinella che vede chi arriva e lo lascia passare. Basta osservare, senza seguire ogni pensiero.`,
     studio: 'esercizi-spirituali',
     voci: {
-      epitteto: { apertura: `Mettiti alla porta della mente. Osserva chi entra. Non seguire nessuno.`, chiusura: `Chi osserva i pensieri non ne è più trascinato.` },
+      epitteto: { apertura: "Mettiti alla porta della mente. Osserva chi entra, senza seguire nessuno.", chiusura: "Chi osserva i pensieri ne è trascinato meno." },
       seneca: { apertura: `Siediti alla porta dei tuoi pensieri come un amico accorto: saluta chi arriva, e lascialo andare.`, chiusura: `Oggi hai guardato i pensieri passare, senza inseguirli.` },
       marco: { apertura: `Sto alla porta e guardo. I pensieri vanno e vengono.`, chiusura: `La sentinella ha fatto il suo turno. Può riposare.` },
     },
@@ -194,7 +194,7 @@ export const ESERCIZI_3 = [
     perche: `Epitteto consiglia di sospendere, per ora, ogni desiderio, e di usare solo l'impulso ad agire, con leggerezza e con riserva. Quando desideriamo qualcosa che non dipende da noi, ci mettiamo in mano ad altri. Sospendere dà pace.`,
     studio: 'paura-desiderio',
     voci: {
-      epitteto: { apertura: `Stai desiderando qualcosa che non dipende da te. Sospendi. Per ora.`, chiusura: `Ciò che non dipende da te, per ora lo lasci. Il resto è tuo.` },
+      epitteto: { apertura: "Stai desiderando qualcosa che non dipende da te. Puoi metterlo in pausa. Per ora.", chiusura: "Ciò che non dipende da te, per ora lo lasci. Il resto è tuo." },
       seneca: { apertura: `Il desiderio fa tremare chi lo porta. Vediamo se ciò che vuoi è in tuo potere.`, chiusura: `Sospendere non è rinunciare. È scegliere quando e come desiderare.` },
       marco: { apertura: `Che cosa voglio con tanta ansia? Lo metto da parte per un momento.`, chiusura: `Il desiderio è rimasto lì, ma non mi guida.` },
     },
@@ -217,7 +217,7 @@ export const ESERCIZI_3 = [
     perche: `Epitteto osserva che ciò che gli altri ottengono ha un prezzo: tempo, servilismo, rinunce. Se rifiuti di pagare quel prezzo, hai poco da rimpiangere: ciò che l'altro ha ottenuto costava troppo. L'invidia si scioglie guardando il costo.`,
     studio: 'mappa-delle-passioni',
     voci: {
-      epitteto: { apertura: `Invidi qualcuno? Guarda il prezzo che ha pagato. Lo pagheresti tu?`, chiusura: `Ognuno riceve ciò che paga. Anche tu.` },
+      epitteto: { apertura: "Invidi qualcuno? Guarda il prezzo che ha pagato. Lo pagheresti tu?", chiusura: "Ognuno riceve ciò che paga. Anche tu." },
       seneca: { apertura: `L'invidia ci fa guardare il bene altrui e dimenticare il nostro. Proviamo a rimettere le cose a posto.`, chiusura: `Ciò che hai è tuo. Ciò che ha lui è suo, e ha avuto un costo.` },
       marco: { apertura: `Che cosa ha lui che io non ho? E a quale prezzo?`, chiusura: `Ho guardato l'altro senza guardare il mio prezzo. Ora riguardo me.` },
     },
@@ -240,7 +240,7 @@ export const ESERCIZI_3 = [
     perche: `Il confronto con gli altri riguarda quasi sempre ciò che non dipende da noi: aspetto, successo, fortuna. Epitteto ricorda che il nostro valore sta nel modo in cui usiamo ciò che è nostro, non nei beni degli altri.`,
     studio: 'cio-che-dipende-da-noi',
     voci: {
-      epitteto: { apertura: `Ti confronti? Chiediti su che cosa. Il tuo valore sta in ciò che dipende da te.`, chiusura: `Il confronto giusto è con te di ieri.` },
+      epitteto: { apertura: "Ti stai confrontando? Chiediti su che cosa. Il tuo valore sta in ciò che dipende da te.", chiusura: "Il confronto più giusto è con te di ieri." },
       seneca: { apertura: `Guardare gli altri ci fa sentire poveri. Torniamo a ciò che possiedi davvero.`, chiusura: `Non hai bisogno di essere il primo. Hai bisogno di essere onesto.` },
       marco: { apertura: `Mi paragono. Su che cosa? E che cosa conta davvero?`, chiusura: `Mi misuro su ciò che posso scegliere. Il resto è altrui.` },
     },
@@ -262,7 +262,7 @@ export const ESERCIZI_3 = [
     perche: `Seneca dice che il bene fatto senza aspettarsi di essere ripagato è quello che più ci libera. Fare un piccolo favore a qualcuno, senza dirlo, sposta l'attenzione da sé agli altri e ci ricorda che possiamo essere utili. Spesso il sollievo viene dall'azione.`,
     studio: 'amicizia-e-comunita',
     voci: {
-      epitteto: { apertura: `Puoi fare qualcosa di utile per qualcuno. Fallo, senza dirlo a nessuno.`, chiusura: `Il bene fatto in silenzio resta tuo, e non ti costa niente.` },
+      epitteto: { apertura: "Puoi fare qualcosa di utile per qualcuno. Provaci, senza dirlo a nessuno.", chiusura: "Il bene fatto in silenzio resta tuo, e costa poco." },
       seneca: { apertura: `Fare bene a qualcuno è uno dei modi più antichi per stare meglio. Pensa a chi puoi aiutare oggi, in piccolo.`, chiusura: `Un favore senza pubblico fa bene a chi lo riceve e a chi lo fa.` },
       marco: { apertura: `Nato per collaborare: che cosa posso fare per qualcuno, oggi?`, chiusura: `Ho fatto la mia parte, piccola. Basta così.` },
     },
@@ -284,7 +284,7 @@ export const ESERCIZI_3 = [
     perche: `Epitteto invita a tacere per lo più, o a dire poche cose e necessarie. Quando siamo agitati, le parole in più peggiorano le cose. Un minuto di silenzio scelto dà tempo al giudizio di tornare, e a ciò che dirai di essere più giusto.`,
     studio: 'l-ira-secondo-seneca',
     voci: {
-      epitteto: { apertura: `Tace chi sa. Per un minuto, di' poco e solo ciò che serve.`, chiusura: `Di un silenzio si pente di rado.` },
+      epitteto: { apertura: "Chi sa, tace volentieri. Per un minuto, dì poco e solo ciò che serve.", chiusura: "Di un silenzio ci si pente di rado." },
       seneca: { apertura: `Quando l'animo è in tumulto, il silenzio è un buon amico. Concediti un minuto senza parole.`, chiusura: `Ora, se serve, potrai parlare con più chiarezza.` },
       marco: { apertura: `Un minuto senza parole. Per lasciare posto ai pensieri giusti.`, chiusura: `Il silenzio mi ha restituito la voce giusta.` },
     },
@@ -307,7 +307,7 @@ export const ESERCIZI_3 = [
     perche: `Marco Aurelio si esorta a fare con cura ciò che ha in mano, senza distrarsi con tutto il resto. La sensazione di essere sommersi nasce dal guardare tutto insieme. Restringere lo sguardo alla cosa di adesso rende il carico sopportabile.`,
     studio: 'stoicismo-e-lavoro',
     voci: {
-      epitteto: { apertura: `Una cosa alla volta. Quella che hai in mano ora.`, chiusura: `Il lavoro di oggi è quello che stai facendo.` },
+      epitteto: { apertura: "Una cosa alla volta. Quella che hai in mano ora.", chiusura: "Il lavoro di oggi è quello che stai facendo." },
       seneca: { apertura: `Chi vuole fare tutto insieme non fa nulla bene. Torniamo a ciò che hai davanti.`, chiusura: `Un gesto ben fatto vale più di dieci abbozzati.` },
       marco: { apertura: `Che cosa ho in mano? Lo faccio con cura, e con serietà.`, chiusura: `Ho un compito, e lo compio.` },
     },
@@ -329,7 +329,7 @@ export const ESERCIZI_3 = [
     perche: `Seneca scrive che la vita non è breve: ne perdiamo molta. Rimandare è uno dei modi di perderla. Guardare l'elenco di ciò che rimandiamo ci fa vedere che spesso la fatica sta nell'attesa, non nel fare.`,
     studio: 'il-tempo-secondo-seneca',
     voci: {
-      epitteto: { apertura: `Rimandi? Guarda l'elenco. Poi scegli una cosa e falla ora.`, chiusura: `Ciò che rimandi pesa più di ciò che fai.` },
+      epitteto: { apertura: "Stai rimandando? Guarda l'elenco. Poi scegli una cosa, e falla ora se ti va.", chiusura: "Ciò che si rimanda pesa spesso più di ciò che si fa." },
       seneca: { apertura: `Il tempo che rimandiamo è tempo che perdiamo. Guardiamo insieme che cosa hai lasciato in attesa.`, chiusura: `Hai riconquistato un pezzo di tempo. Ne hai molto più di quanto pensavi.` },
       marco: { apertura: `Che cosa rimando? Lo guardo, senza scuse.`, chiusura: `Un passo oggi vale più di un piano domani.` },
     },
@@ -353,7 +353,7 @@ export const ESERCIZI_3 = [
     perche: `Seneca esaminava la giornata ogni sera, senza nascondersi nulla. Anche una versione di un minuto, con tre domande, tiene vivo il gesto: riconoscere ciò che è andato bene, correggere ciò che si può, e poi riposare senza portarsi dietro la giornata.`,
     studio: 'un-giorno-stoico',
     voci: {
-      epitteto: { apertura: `Un minuto, tre domande. Poi dormi.`, chiusura: `Il giorno è chiuso. Ciò che resta lo riprendi domani.` },
+      epitteto: { apertura: "Un minuto, tre domande. Poi puoi dormire.", chiusura: "Il giorno è chiuso. Ciò che resta lo riprendi domani." },
       seneca: { apertura: `Prima di dormire, ripercorriamo la giornata, con benevolenza e senza sconti. Bastano tre domande.`, chiusura: `Hai guardato la giornata. Ora puoi riposare, con la coscienza in ordine.` },
       marco: { apertura: `Sera. Rivedo il giorno in tre domande.`, chiusura: `Il giorno è passato. Lo lascio andare.` },
     },
@@ -374,7 +374,7 @@ export const ESERCIZI_3 = [
     perche: `Marco Aurelio richiama spesso le vite di chi è vissuto prima di lui: hanno avuto lutti, guerre, malattie, e sono andati avanti. Serve a ricordare, senza sminuire il dolore, che altri lo hanno già sopportato e che si può.`,
     studio: 'il-dolore-e-la-perdita',
     voci: {
-      epitteto: { apertura: `Non sei il primo a soffrire così. Altri hanno portato lo stesso peso. E lo hanno portato.`, chiusura: `Ciò che altri hanno sopportato, puoi sopportarlo anche tu.` },
+      epitteto: { apertura: "Non sei il primo a soffrire così. Altri hanno portato lo stesso peso, e ce l'hanno fatta.", chiusura: "Ciò che altri hanno sopportato, puoi sopportarlo anche tu." },
       seneca: { apertura: `Pensa a chi, prima di te, ha attraversato un dolore come il tuo. Non sei solo.`, chiusura: `Ti unisci a una lunga fila di persone che hanno tenuto duro.` },
       marco: { apertura: `Quanti hanno vissuto questo, prima di me? E hanno continuato.`, chiusura: `Non sono il primo. Non sarò l'ultimo. Posso farcela.` },
     },
@@ -396,7 +396,7 @@ export const ESERCIZI_3 = [
     perche: `Di notte i pensieri sembrano più grandi, e la mente cerca di risolvere tutto subito. Scrivere ciò che ti preoccupa e affidarlo al domani gli dà un posto sicuro. Seneca ricorda che la mente ha bisogno di riposo come di attività.`,
     studio: 'la-paura-del-futuro',
     voci: {
-      epitteto: { apertura: `Di notte non si decide niente. Scrivi, e rimanda la decisione al mattino.`, chiusura: `Il pensiero resta scritto. Tu puoi dormire.` },
+      epitteto: { apertura: "Di notte le cose sembrano più grandi. Scrivi, e lascia la decisione al mattino.", chiusura: "Il pensiero resta scritto. Tu puoi dormire." },
       seneca: { apertura: `L'animo, come il corpo, ha bisogno di riposo. Mettiamo per iscritto ciò che ti agita e lo lasciamo al mattino.`, chiusura: `Il domani ti aspetta, con un appunto e con una mente più fresca.` },
       marco: { apertura: `Ciò che mi agita lo scrivo. Poi lo lascio al giorno.`, chiusura: `L'ho scritto. Posso lasciar andare.` },
     },
@@ -418,7 +418,7 @@ export const ESERCIZI_3 = [
     perche: `Per Epitteto ciò che davvero ci appartiene è la facoltà di scegliere: come rispondere, che cosa fare, in che direzione andare. Quando ci sentiamo in balia degli eventi, ricordare una sola scelta che spetta a noi restituisce un senso di forza.`,
     studio: 'cio-che-dipende-da-noi',
     voci: {
-      epitteto: { apertura: `Non puoi scegliere gli eventi. Puoi scegliere come rispondere. Qual è la tua scelta?`, chiusura: `La scelta è l'unica cosa che nessuno può toglierti.` },
+      epitteto: { apertura: "Gli eventi non li scegli. Come rispondere sì. Qual è la tua scelta?", chiusura: "La scelta è l'unica cosa che nessuno può toglierti." },
       seneca: { apertura: `Ti senti in balia delle cose? Tra tutto ciò che non decidi, c'è sempre qualcosa che scegli. Cerchiamolo.`, chiusura: `Hai scelto. È già un modo di essere libero.` },
       marco: { apertura: `Qual è la mia scelta, oggi? Una sola, per cominciare.`, chiusura: `Ho scelto, e la scelta è mia.` },
     },
@@ -440,7 +440,7 @@ export const ESERCIZI_3 = [
     perche: `Seneca consigliava di scegliere ogni tanto qualche giorno di vita più semplice, per accorgersi che si può stare senza molte cose che si temono di perdere. La paura di perdere qualcosa nasce dall'abitudine: provare a farne a meno, per poco, la ridimensiona.`,
     studio: 'virtu-temperanza',
     voci: {
-      epitteto: { apertura: `Hai paura di perdere qualcosa? Prova a farne a meno, di tua scelta, per un poco.`, chiusura: `Chi ha provato a fare senza, teme meno di perdere.` },
+      epitteto: { apertura: "Hai paura di perdere qualcosa? Prova a farne a meno, per scelta tua, per un poco.", chiusura: "Chi ha provato a fare senza teme meno di perdere." },
       seneca: { apertura: `Ogni tanto conviene esercitarsi alla mancanza, con serenità. Scegliamo insieme una piccola rinuncia.`, chiusura: `Hai visto che si può. La paura, adesso, ha meno presa.` },
       marco: { apertura: `Di che cosa ho paura di restare senza? Provo a farne a meno, per poco.`, chiusura: `Ho fatto a meno, e sono rimasto in piedi.` },
     },
@@ -464,7 +464,7 @@ export const ESERCIZI_3 = [
     perche: `Il primo pensiero della giornata spesso corre in avanti, tra cose da fare e cose da temere. Fermarsi a un respiro, prima di alzarsi, permette di cominciare dal presente e non dall'ansia. È il modo più breve per esercitare l'attenzione.`,
     studio: 'un-giorno-stoico',
     voci: {
-      epitteto: { apertura: `Prima di alzarti, un respiro. Poi decidi come cominciare.`, chiusura: `La giornata è tua da guidare. Comincia bene.` },
+      epitteto: { apertura: "Prima di alzarti, un respiro. Poi scegli come cominciare.", chiusura: "La giornata è tua da guidare. Buon inizio." },
       seneca: { apertura: `Il mattino è un piccolo inizio. Concediti un respiro prima di correre.`, chiusura: `Buona giornata. Hai cominciato con calma.` },
       marco: { apertura: `Mi sveglio. Un respiro, e sono qui.`, chiusura: `Il giorno comincia. Io con lui.` },
     },
@@ -485,7 +485,7 @@ export const ESERCIZI_3 = [
     perche: `Nelle conversazioni difficili rispondiamo a ciò che temiamo che l'altro voglia dire, non a ciò che dice. Marco Aurelio insiste sull'ascoltare con attenzione, entrando nel pensiero dell'altro. Un momento di ascolto vero può evitare una lite.`,
     studio: 'stoicismo-e-relazioni',
     voci: {
-      epitteto: { apertura: `Prima di rispondere, capisci che cosa vuole dire l'altro. Poi rispondi.`, chiusura: `Chi ascolta bene risponde meglio.` },
+      epitteto: { apertura: "Prima di rispondere, prova a capire che cosa vuole dire l'altro. Poi rispondi.", chiusura: "Chi ascolta bene risponde meglio." },
       seneca: { apertura: `Nelle discussioni si parla troppo e si ascolta poco. Proviamo a fare il contrario.`, chiusura: `Hai ascoltato con pazienza. Il resto viene più facile.` },
       marco: { apertura: `Che cosa intende, davvero? Provo a entrare nel suo pensiero.`, chiusura: `Ho ascoltato prima di rispondere.` },
     },
@@ -507,7 +507,7 @@ export const ESERCIZI_3 = [
     perche: `Quando accettiamo tutto, ci carichiamo cose che non ci competono e finiamo per covare rancore. Dire di no con gentilezza, e senza offendere, fa parte della giustizia verso se stessi. Epitteto ricorda di custodire ciò che dipende da noi.`,
     studio: 'virtu-giustizia',
     voci: {
-      epitteto: { apertura: `Puoi dire di no senza offendere. Custodisci ciò che è tuo.`, chiusura: `Un limite chiaro è un atto di giustizia.` },
+      epitteto: { apertura: "Puoi dire di no senza offendere. Custodisci con garbo ciò che è tuo.", chiusura: "Un limite chiaro è un atto di giustizia." },
       seneca: { apertura: `Dire sì a tutti significa dire no a se stessi. Cerchiamo un modo gentile di fissare un confine.`, chiusura: `Il tuo tempo è tuo. Ora lo sai anche dire.` },
       marco: { apertura: `Fin dove arriva ciò che devo? Dove comincia il mio limite?`, chiusura: `Ho fissato un limite, con garbo.` },
     },
@@ -529,7 +529,7 @@ export const ESERCIZI_3 = [
     perche: `Marco Aurelio nota che ciò che ci ostacola diventa esercizio: una perdita insegna pazienza, un torto insegna equità, un fallimento insegna umiltà. Cercare che cosa si può imparare non consola subito, ma dà un senso a ciò che pesa.`,
     studio: 'il-dolore-e-la-perdita',
     voci: {
-      epitteto: { apertura: `Ciò che ti pesa è anche un allenamento. Che cosa ti insegna?`, chiusura: `Ogni ostacolo è un maestro, se lo ascolti.` },
+      epitteto: { apertura: "Ciò che ti pesa è anche un allenamento. Che cosa ti sta insegnando?", chiusura: "Ogni ostacolo è un maestro, se hai voglia di ascoltarlo." },
       seneca: { apertura: `Nessuna difficoltà è del tutto inutile. Cerchiamo che cosa sta insegnandoti questa.`, chiusura: `Hai trovato un frutto, anche piccolo, in ciò che ti pesa.` },
       marco: { apertura: `Che cosa mi insegna questo ostacolo? Lo chiedo a lui.`, chiusura: `L'ostacolo è diventato il sentiero.` },
     },
@@ -551,7 +551,7 @@ export const ESERCIZI_3 = [
     perche: `Marco Aurelio ricorda che siamo nati per collaborare, come le due mani o i due occhi. Quando ci sentiamo soli o inutili, ricordare che facciamo parte di un insieme e che possiamo servire a qualcuno cambia lo sguardo su di noi.`,
     studio: 'amicizia-e-comunita',
     voci: {
-      epitteto: { apertura: `Non sei solo: fai parte di una comunità. Pensa a chi ti sta vicino.`, chiusura: `Sei una parte utile di un insieme più grande.` },
+      epitteto: { apertura: "Sei in compagnia: fai parte di una comunità. Pensa a chi ti sta vicino.", chiusura: "Sei una parte utile di un insieme più grande." },
       seneca: { apertura: `Nessuno vive per sé soltanto. Pensiamo alle persone che contano per te, e a quelle per cui conti.`, chiusura: `La vita è meno pesante quando la si sente condivisa.` },
       marco: { apertura: `Sono parte di un insieme, come una mano di un corpo.`, chiusura: `Non sono solo. Ho un posto, e un compito.` },
     },

@@ -14,13 +14,13 @@ export const ESERCIZI_4 = [
     perche: `Chi aspetta con ansia un esito spera e teme insieme: sono due facce della stessa attesa. Seneca osserva che il timore cala quando si scioglie la speranza attaccata all'esito. Il punto è staccare la propria pace dall'esito, e continuare a volere le cose.`,
     studio: 'paura-desiderio',
     voci: {
-      epitteto: { apertura: `Speri e temi insieme: è una sola attesa. Guarda che cosa hai attaccato all'esito.`, chiusura: `Fai ciò che dipende da te. L'esito aspetta senza la tua pace in pegno.` },
+      epitteto: { apertura: "Speri e temi insieme: è un'unica attesa. Guarda che cosa hai legato all'esito.", chiusura: "Fai ciò che dipende da te. L'esito può aspettare, senza che la tua pace resti in pegno." },
       seneca: { apertura: `Vieni, guardiamo la tua attesa: speranza e timore sono come due prigionieri legati alla stessa catena.`, chiusura: `Hai sciolto un nodo. Puoi ancora sperare, ma con la mano libera.` },
       marco: { apertura: `Che cosa aspetto, e che cosa temo di non ottenere? È la stessa attesa, vista da due lati.`, chiusura: `Ho fatto la mia parte. L'esito è affare di altri.` },
     },
     passi: [
       { tipo: 'testo', testo: `Pensa a qualcosa che aspetti con ansia: una risposta, un esito, una decisione degli altri. Chi aspetta così spera e teme allo stesso tempo. Guardiamo tutte e due le cose.` },
-      { tipo: 'scrivi', chiave: 'spero', testo: `Che cosa speri che accada? Scrivilo con onestà, senza vergognarti.`, segnaposto: 'Spero che…' },
+      { tipo: 'scrivi', chiave: 'spero', testo: `Che cosa speri che accada? Scrivilo come viene, anche se è una cosa che di solito non diresti.`, segnaposto: 'Spero che…' },
       { tipo: 'scrivi', chiave: 'temo', testo: `E che cosa temi che accada, se la tua speranza non si realizza?`, segnaposto: 'Temo che…' },
       { tipo: 'testo', testo: `Vedi quanto sono legate? Seneca le paragona a due prigionieri incatenati insieme: dove c'è l'una, presto arriva l'altra. Non serve smettere di volere: serve staccare la tua pace dall'esito.` },
       { tipo: 'scegli', chiave: 'dipende', testo: `L'esito dipende soltanto da te?`, opzioni: [{ testo: 'Sì, in gran parte', vai: 'agisci' }, { testo: 'No, dipende anche da altri o dal caso', vai: 'resta' }] },
@@ -40,7 +40,7 @@ export const ESERCIZI_4 = [
     perche: `Alcune cose non si possono cambiare. Su quelle resta una scelta: opporsi lamentandosi, oppure accettarle e cercare che cosa fare dentro di esse. Seneca ricorda un verso di Cleante: il destino guida chi lo segue e trascina chi si oppone. La strada è la stessa, cambia il modo di percorrerla. Accettare non significa approvare.`,
     studio: 'accettare-cio-che-accade',
     voci: {
-      epitteto: { apertura: `Ciò che è già accaduto non chiede il tuo permesso. Scegli come stargli davanti.`, chiusura: `La strada è la stessa. Tu scegli se camminarla o farti trascinare.` },
+      epitteto: { apertura: "Ciò che è già accaduto non chiede il tuo permesso. Puoi scegliere come stargli davanti.", chiusura: "La strada è la stessa. Puoi scegliere se camminarla o farti trascinare." },
       seneca: { apertura: `Fermiamoci un momento su ciò che non puoi cambiare: di lì passa quasi tutta la pace che cerchi.`, chiusura: `Non hai approvato niente: hai smesso di lottare contro ciò che è già qui. Ora hai più forze.` },
       marco: { apertura: `Ciò che è avvenuto doveva avvenire. Ora chiedo a me stesso come starci dentro.`, chiusura: `Ho seguito, non sono stato trascinato. Torno a ciò che posso fare.` },
     },
@@ -67,7 +67,7 @@ export const ESERCIZI_4 = [
     perche: `Un bambino ha paura di una maschera finché non scopre che è una maschera. Epitteto ricorda che Socrate chiamava «spauracchi» le paure della morte: la cosa in sé non è il male, lo è l'opinione che ne abbiamo. Guardare la paura per com'è, con calma, non la cancella, ma ne mostra i contorni.`,
     studio: 'il-ricordo-della-fine',
     voci: {
-      epitteto: { apertura: `Che cosa ti spaventa davvero? Guardalo in faccia: dietro la maschera c'è un'opinione.`, chiusura: `Ciò che hai guardato in faccia fa meno paura. Torna a ciò che dipende da te.` },
+      epitteto: { apertura: "Che cosa ti spaventa davvero? Guardalo con calma: dietro la maschera c'è un'opinione.", chiusura: "Ciò che hai guardato con calma fa meno paura. Puoi tornare a ciò che dipende da te." },
       seneca: { apertura: `Parliamo con calma di ciò che ti fa paura. Nessuno ti chiede di non provarla: solo di guardarla.`, chiusura: `Hai guardato la tua paura senza scappare. Già questo la rende più piccola.` },
       marco: { apertura: `Prendo la paura e la esamino come una cosa che sta sul tavolo: che cos'è, esattamente?`, chiusura: `La paura c'è ancora, ma la conosco. Posso tornare alla mia giornata.` },
     },
@@ -95,7 +95,7 @@ export const ESERCIZI_4 = [
     perche: `Chi teme la fine misura spesso la vita dalla lunghezza. Seneca propone un altro criterio: come in una commedia, ciò che conta è quanto bene viene recitata. La domanda cambia, da «quanto mi resta?» a «come sto recitando la parte di oggi?». Non toglie la paura, ma dà qualcosa da fare.`,
     studio: 'il-ricordo-della-fine',
     voci: {
-      epitteto: { apertura: `Non decidi quanto durerà la commedia. Decidi come recitarla, oggi.`, chiusura: `Hai guardato la tua parte. Ora torna a recitarla bene.` },
+      epitteto: { apertura: "Quanto durerà la commedia non lo decidi tu. Puoi decidere come recitarla, oggi.", chiusura: "Hai guardato la tua parte. Ora puoi tornare a recitarla bene." },
       seneca: { apertura: `Siediti con me, e parliamo della vita come di una commedia: lunga o breve, conta come si recita.`, chiusura: `Hai guardato ciò che è stato recitato bene e ciò che vuoi ancora recitare. È un lavoro d'amore.` },
       marco: { apertura: `Guardo la mia vita dall'esterno, come una scena. Non quanto dura: come la vivo.`, chiusura: `Ho ricordato chi voglio essere. Torno alla scena di oggi.` },
     },
