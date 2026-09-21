@@ -1,6 +1,6 @@
 // Pagine informative, contatti e messaggi di posta già pronti. Nel testo **così** è grassetto e *così* è corsivo.
 
-export const VERSIONE = '1.5 · settembre 2026';
+export const VERSIONE = '1.6 · settembre 2026';
 
 export const CONTATTI = {
   sito: 'https://www.formebrevi.it',
@@ -158,6 +158,7 @@ export const PAGINE_INFO = [
         `**Hans von Arnim,** *Stoici antichi. Tutti i frammenti*, a cura di Roberto Radice.`,
         `**Max Pohlenz,** *La Stoa. Storia di un movimento spirituale*, a cura di Giovanni Reale.`,
         `**Epitteto,** *Le diatribe e i frammenti*.`,
+        `**Epitteto,** *Il manuale di Epitteto (Enchiridion)*, traduzione di Giacomo Leopardi (Liber Liber).`,
       ] },
       { t: 'nota', x: `Le pagine di Studio spiegano come leggerli e da dove cominciare.` },
       { t: 'azione', x: 'Come leggere gli stoici', az: 'studio', id: 'come-leggere' },

@@ -190,8 +190,8 @@ export const ESERCIZI_3 = [
     famiglia: 'pensiero',
     stati: ['ansia', 'sconforto'],
     minuti: 3,
-    fonte: { autore: 'Epitteto', opera: 'Manuale', nota: 'sospendere il desiderio per ciò che non dipende da noi' },
-    perche: `Epitteto consiglia di sospendere, per ora, i desideri che riguardano cose fuori dal nostro controllo, e di usare solo l'impulso ad agire in modo giusto. Quando desideriamo qualcosa che non dipende da noi, ci mettiamo in mano ad altri. Sospenderlo dà pace.`,
+    fonte: { autore: 'Epitteto', opera: 'Manuale', nota: 'sospendere il desiderio, per ora' },
+    perche: `Epitteto consiglia di sospendere, per ora, ogni desiderio, e di usare solo l'impulso ad agire, con leggerezza e con riserva. Quando desideriamo qualcosa che non dipende da noi, ci mettiamo in mano ad altri. Sospendere dà pace.`,
     studio: 'paura-desiderio',
     voci: {
       epitteto: { apertura: `Stai desiderando qualcosa che non dipende da te. Sospendi. Per ora.`, chiusura: `Ciò che non dipende da te, per ora lo lasci. Il resto è tuo.` },

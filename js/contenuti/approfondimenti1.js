@@ -4,7 +4,7 @@ export const APPROFONDIMENTI_1 = {
   'fermati-impressione': {
     comeFarlo: `Puoi farlo dove sei: in piedi, in coda, seduto alla scrivania. Ti serve un pensiero preciso che ti sta turbando adesso, anche piccolo. Se non ne hai uno, prendi l'ultima cosa che ti ha dato fastidio oggi. Non cercare la risposta giusta: cerca la frase che descrive meglio come la cosa ti appare.`,
     ritmo: `Il respiro all'inizio ti fa scendere di un gradino, così puoi guardare il pensiero invece di esserci dentro. La scrittura serve a tirarlo fuori dalla testa: una frase scritta ha un inizio e una fine, un pensiero che gira no. La scelta finale ti porta a distinguere subito ciò che puoi fare da ciò che devi soltanto attraversare.`,
-    stoici: `Per Epitteto il primo esercizio della giornata è dire a ogni impressione che è soltanto un'impressione, e non ancora la cosa che sembra rappresentare. Poi la si mette alla prova con un criterio semplice: riguarda ciò che dipende da me? Se no, non è affar mio. Chi si esercita così, dice Epitteto, impara con il tempo a non lasciarsi trascinare dalla prima apparenza.`,
+    stoici: `Nel *Manuale* Epitteto invita ad abituarsi a dire, davanti a ogni impressione, che è soltanto un'impressione, e non ancora la cosa che sembra rappresentare. Poi la si mette alla prova con un criterio semplice: riguarda ciò che dipende da me? Se no, non è affar mio. Chi si esercita così, dice Epitteto, impara con il tempo a non lasciarsi trascinare dalla prima apparenza.`,
     variante: `Quando non puoi scrivere, dillo a voce bassa, o solo dentro di te: «Mi sembra che…». Poi aggiungi: «Ma è un'impressione, e la esamino». Bastano dieci secondi.`,
     passi: {
       sembra: {
@@ -103,7 +103,7 @@ export const APPROFONDIMENTI_1 = {
   'la-brocca-che-si-rompe': {
     comeFarlo: `È un esercizio delicato e va fatto con la mente libera. Scegli qualcosa o qualcuno a cui tieni ma senza il timore più grande: meglio una persona in salute, un oggetto caro, un animale. Se ti sembra troppo, fermati: puoi riprenderlo un altro giorno.`,
     ritmo: `Il respiro lento, in mezzo, ti aiuta a tenere il pensiero senza esserne travolto. La scrittura sulla gratitudine sposta l'attenzione da ciò che potresti perdere a ciò che hai già ricevuto. Il gesto finale trasforma un sentimento in un atto piccolo e presente.`,
-    stoici: `Epitteto propone un esempio quotidiano: se ami una brocca, ricordati che è una brocca, così quando si rompe non ti turbi. Poi lo estende a chi si ama: un figlio, un amico. Non lo dice per freddezza. Il senso è che chi ricorda la fragilità delle cose ama con più presenza e soffre meno per l'illusione che siano nostre per sempre. Seneca torna sulla stessa idea nelle sue lettere di consolazione.`,
+    stoici: `Epitteto propone un esempio quotidiano: se ami una pentola (in altre traduzioni una brocca), ricordati che è una pentola, così quando si rompe non ti turbi. Poi lo estende a chi si ama: un figlio, la moglie. Non lo dice per freddezza. Il senso è che chi ricorda la fragilità delle cose ama con più presenza e soffre meno per l'illusione che siano nostre per sempre. Seneca torna sulla stessa idea nelle sue lettere di consolazione.`,
     variante: `Prova a farlo con una cosa piccola, come una tazza a cui sei affezionato. Oppure scrivi una lettera di ringraziamento che non spedirai, a chi ti è caro, prima che sia troppo tardi per dirlo.`,
     passi: {
       grazie: {

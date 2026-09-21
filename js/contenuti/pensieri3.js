@@ -1,6 +1,7 @@
 // Pensieri da portare con te della Fase 3 (100 in più, per arrivare a 300). Formulazioni originali, senza citazioni dai libri.
 
 const E = { autore: 'Epitteto', opera: 'Manuale' };
+const EM = { autore: 'Epitteto', opera: 'sulla scia del Manuale' };
 const ED = { autore: 'Epitteto', opera: 'Discorsi' };
 const SL = { autore: 'Seneca', opera: 'Lettere a Lucilio' };
 const SI = { autore: 'Seneca', opera: "Sull'ira" };
@@ -12,13 +13,13 @@ const M = { autore: 'Marco Aurelio', opera: 'A se stesso' };
 export const PENSIERI_3 = [
   { id: 'e68', voce: 'epitteto', testo: 'Prima di reagire, chiediti: questa cosa dipende da me? Se la risposta è no, risparmia le forze.', fonte: E },
   { id: 'e69', voce: 'epitteto', testo: 'Chi vuole essere libero non desidera ciò che dipende da altri. Comincia a contare le cose che sono tue.', fonte: E },
-  { id: 'e70', voce: 'epitteto', testo: 'Le parole degli altri sono suono finché non le fai tue. Tu decidi se lasciarle entrare.', fonte: E },
-  { id: 'e71', voce: 'epitteto', testo: 'Non aspettarti un premio per ogni cosa giusta. Farla è già il premio.', fonte: E },
+  { id: 'e70', voce: 'epitteto', testo: 'Non daresti il tuo corpo al primo che passa. Perché dai la tua mente a chiunque abbia una parola brutta?', fonte: E },
+  { id: 'e71', voce: 'epitteto', testo: 'Non aspettarti un premio per ogni cosa giusta. Farla è già il premio.', fonte: EM },
   { id: 'e72', voce: 'epitteto', testo: 'Quando qualcosa ti disturba, dagli il nome che ha: un fatto o un giudizio? Poi decidi.', fonte: E },
   { id: 'e73', voce: 'epitteto', testo: 'Tutti vorrebbero cambiare il mondo. Pochi cominciano dal proprio modo di guardarlo.', fonte: ED },
   { id: 'e74', voce: 'epitteto', testo: 'Ogni giorno hai una parte da recitare: recitala senza invidiare le parti degli altri.', fonte: E },
-  { id: 'e75', voce: 'epitteto', testo: 'Se ti offende un insulto, guarda chi lo dice e quanto vale il suo giudizio. Poi decidi se pesarlo.', fonte: E },
-  { id: 'e76', voce: 'epitteto', testo: 'La calma non si trova nelle cose: si costruisce nel modo in cui le accogli.', fonte: E },
+  { id: 'e75', voce: 'epitteto', testo: 'Se ti offende un insulto, guarda chi lo dice e quanto vale il suo giudizio. Poi decidi se pesarlo.', fonte: EM },
+  { id: 'e76', voce: 'epitteto', testo: 'La calma non si trova nelle cose: si costruisce nel modo in cui le accogli.', fonte: EM },
   { id: 'e77', voce: 'epitteto', testo: 'Prima di dire che qualcosa è terribile, misura che cosa è davvero accaduto.', fonte: E },
   { id: 'e78', voce: 'epitteto', testo: 'Non è la malattia a togliere libertà, ma il giudizio che ne dai. Il corpo può soffrire e la mente restare libera.', fonte: ED },
   { id: 'e79', voce: 'epitteto', testo: 'Quando ti senti trattato ingiustamente, ricorda che chi sbaglia crede di fare bene.', fonte: E },
@@ -33,11 +34,11 @@ export const PENSIERI_3 = [
   { id: 'e88', voce: 'epitteto', testo: 'Sapere che cosa è tuo e che cosa è altrui è la metà della serenità.', fonte: E },
   { id: 'e89', voce: 'epitteto', testo: 'Non giudicare una persona dal suo lavoro o dalla sua fortuna: giudicala da come usa la sua scelta.', fonte: E },
   { id: 'e90', voce: 'epitteto', testo: 'Quando ti chiedi che cosa devi fare, guarda il tuo ruolo: figlio, amico, cittadino. La risposta è lì.', fonte: E },
-  { id: 'e91', voce: 'epitteto', testo: 'Non avere fretta di avere ragione: la verità resta vera anche se la dici piano.', fonte: E },
+  { id: 'e91', voce: 'epitteto', testo: 'Non avere fretta di avere ragione: la verità resta vera anche se la dici piano.', fonte: EM },
   { id: 'e92', voce: 'epitteto', testo: 'Chi teme di perdere ciò che ha, lo possiede male. Godilo con mano leggera.', fonte: E },
   { id: 'e93', voce: 'epitteto', testo: 'Ogni sera chiediti che cosa è dipeso da te, oggi, e come lo hai usato.', fonte: ED },
   { id: 'e94', voce: 'epitteto', testo: 'Il coraggio comincia dal dire a se stessi la verità. Il resto viene più facile.', fonte: ED },
-  { id: 'e95', voce: 'epitteto', testo: 'Non serve avere tutte le risposte. Serve fare bene la prossima cosa.', fonte: E },
+  { id: 'e95', voce: 'epitteto', testo: 'Non serve avere tutte le risposte. Serve fare bene la prossima cosa.', fonte: EM },
   { id: 'e96', voce: 'epitteto', testo: 'Chi si lamenta di tutto è schiavo di tutto. Scegli un lamento in meno, oggi.', fonte: E },
   { id: 'e97', voce: 'epitteto', testo: 'Una buona giornata è fatta di molte piccole scelte giuste. Falle una alla volta.', fonte: ED },
   { id: 'e98', voce: 'epitteto', testo: 'Quando ti senti fragile, ricordati che nessuno decide per te che cosa pensare.', fonte: E },

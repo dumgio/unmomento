@@ -1,6 +1,6 @@
 // Service worker di Stoicismo quotidiano: salva i file sul telefono così la app funziona senza connessione.
 // Quando cambi un file dell'app, cambia anche il numero di versione qui sotto.
-const CACHE = 'stoicismo-v16';
+const CACHE = 'stoicismo-v17';
 const FILE = [
   './',
   'index.html',
