@@ -119,3 +119,9 @@ input[type=text],input[type=search]{min-height:48px;}
 .avviso{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);background:var(--testo);color:var(--sfondo);padding:12px 20px;border-radius:100px;z-index:60;font-weight:600;max-width:90%;text-align:center;}
 @media (min-width:700px){#app{max-width:660px;}.zone{max-width:660px;}.titolo{font-size:3rem;}}
 @media (prefers-reduced-motion: reduce){*{transition:none !important;}.btn:active{transform:none;}}
+
+/* Esempi e aiuti nei passi degli esercizi */
+.esempio{font-size:.95rem;color:var(--tenue);font-style:italic;margin:-10px 0 14px;}
+details.aiuto{margin:10px 0 4px;font-size:.92rem;}
+details.aiuto summary{cursor:pointer;color:var(--tenue);font-weight:600;padding:6px 0;}
+details.aiuto p{margin:6px 0 4px;line-height:1.55;}

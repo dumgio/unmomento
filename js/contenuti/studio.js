@@ -201,6 +201,7 @@ const PAGINE_BASE = [
       { t: 'azione', x: 'Esercizio di attenzione: Qui e ora, con i cinque sensi', az: 'esercizio', id: 'qui-e-ora-cinque-sensi' },
       { t: 'azione', x: "Meditazione: L'attenzione a se stessi", az: 'meditazione', id: 'attenzione-presente' },
       { t: 'azione', x: "La filosofia come cura dell'anima", az: 'studio', id: 'la-cura-dell-anima' },
+      { t: 'azione', x: 'Perché respiri, pause e scrittura', az: 'info', id: 'perche-respiri-pause-scrittura' },
     ],
   },
   {

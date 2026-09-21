@@ -42,3 +42,11 @@ export const DOMANDE_ORIENTAMENTO = [
   { id: 'futuro', testo: 'Il pensiero che mi turba riguarda qualcosa che potrebbe succedere?' },
   { id: 'fare', testo: 'Mi pesa qualcosa che devo ancora fare o decidere?' },
 ];
+
+// Perché in un esercizio ci sono respiri, pause e scrittura. Compaiono sotto il passo, in un riquadro da aprire («Perché questo passo?»).
+export const SPIEGAZIONI_PASSO = {
+  respiro: `Un respiro lento, con l'uscita più lunga dell'entrata, dice al corpo che può rallentare. Molti studi sulla respirazione lenta vanno in questa direzione, ma non serve crederci sulla parola: prova, e guarda se le spalle scendono. Serve anche a un'altra cosa. Per qualche secondo hai un solo compito, e la mente smette di correre avanti.`,
+  pausa: `La pausa è la parte più stoica dell'esercizio. Tra ciò che accade e ciò che facciamo c'è un breve spazio, ed è lì che si può esaminare un pensiero prima di dargli ragione. Epitteto consiglia di farlo con le impressioni, e Seneca di rimandare la risposta quando si è in collera. Un minuto di silenzio non è tempo perso: è quello spazio, allargato.`,
+  scrivi: `Scrivere obbliga a mettere il pensiero in parole precise, e ciò che in testa resta vago sulla pagina si vede meglio. Marco Aurelio scriveva appunti a se stesso e Seneca lettere: per gli antichi la scrittura era un esercizio, non un ricordo. Non serve scrivere bene, basta scrivere il vero. Il testo resta sul tuo telefono.`,
+  colonne: `Spostare le voci da una colonna all'altra è un modo di decidere con le mani. Vedere davanti a sé ciò che dipende da noi e ciò che non dipende da noi, in due elenchi, rende il confine più chiaro che tenerlo a mente.`,
+};

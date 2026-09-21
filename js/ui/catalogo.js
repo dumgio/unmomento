@@ -45,6 +45,11 @@ export function schedaEsercizioHtml(e) {
   <p><span class="tag">${e.minuti} ${e.minuti === 1 ? 'minuto' : 'minuti'}</span><span class="tag">${esc(nomeDisc(e.disciplina))}</span>${e.sostegno ? '<span class="tag">Sostegno di oggi</span>' : ''}${e.stati.map((s) => `<span class="tag">${esc(nomeStato(s))}</span>`).join('')}</p>
   <h3 class="info-h">A che cosa serve</h3>
   <p class="info-p">${esc(e.perche)}</p>
+  ${e.dettagli ? `<h3 class="info-h">Come farlo</h3><p class="info-p">${esc(e.dettagli.comeFarlo)}</p>
+  <h3 class="info-h">Come è costruito</h3><p class="info-p">${esc(e.dettagli.ritmo)}</p>
+  <button class="btn chiaro" data-az="apri" data-tipo="info" data-id="perche-respiri-pause-scrittura">Perché respiri, pause e scrittura</button>
+  <h3 class="info-h">Come lo facevano gli stoici</h3><p class="info-p">${esc(e.dettagli.stoici)}</p>
+  <h3 class="info-h">Una variante</h3><p class="info-p">${esc(e.dettagli.variante)}</p>` : ''}
   <h3 class="info-h">Fonte</h3>
   <p class="info-p">${esc(e.fonte.autore)}, *${esc(e.fonte.opera)}*${e.fonte.nota ? ': ' + esc(e.fonte.nota) : ''}.</p>
   <div class="pila" style="margin-top:18px">

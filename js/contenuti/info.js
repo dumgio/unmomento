@@ -1,6 +1,6 @@
 // Pagine informative, contatti e messaggi di posta già pronti. Nel testo **così** è grassetto e *così* è corsivo.
 
-export const VERSIONE = '1.3 · settembre 2026';
+export const VERSIONE = '1.4 · settembre 2026';
 
 export const CONTATTI = {
   sito: 'https://www.formebrevi.it',
@@ -58,6 +58,8 @@ export const PAGINE_INFO = [
         `**Scegli:** due o tre risposte. Ognuna può portare a un passo diverso.`,
         `**Colonne:** due elenchi, per esempio «dipende da me» e «non dipende da me». Aggiungi le cose e toccale per spostarle.`,
       ] },
+      { t: 'p', x: `Respiri, pause e scrittura non sono riempitivi: sono le parti che lavorano. Sotto ogni passo trovi un riquadro «Perché questo passo?», e sotto ogni richiesta di scrittura un esempio e un aiuto per quando ci si blocca.` },
+      { t: 'azione', x: 'Perché respiri, pause e scrittura', az: 'info', id: 'perche-respiri-pause-scrittura', stile: 'chiaro' },
       { t: 'h', x: 'Chi ti accompagna: le tre voci' },
       { t: 'p', x: `Gli stessi esercizi hanno tre toni: **Epitteto** (secco e diretto), **Seneca** (caldo, come una lettera) e **Marco Aurelio** (interiore, come un quaderno). La voce cambia le frasi di apertura e di chiusura e i pensieri, non i passi. Puoi cambiarla quando vuoi, e la app ricorda la tua scelta.` },
       { t: 'h', x: 'Un pensiero' },
@@ -88,6 +90,36 @@ export const PAGINE_INFO = [
         `**È gratuita?** Sì. Se ti è utile, puoi sostenere Formebrevi dalla pagina «Sostieni Formebrevi».`,
       ] },
       { t: 'azione', x: 'Serve aiuto? Vai a «Supporto»', az: 'info', id: 'supporto' },
+    ],
+  },
+  {
+    id: 'perche-respiri-pause-scrittura',
+    gruppo: 'app',
+    titolo: 'Perché respiri, pause e scrittura',
+    sotto: 'Le tre cose che tornano in ogni esercizio, e a che cosa servono.',
+    blocchi: [
+      { t: 'p', x: `In quasi ogni esercizio trovi tre tipi di passo che sembrano semplici: un respiro lento, una pausa di silenzio, un momento di scrittura. Non sono riempitivi: sono la parte che lavora. Qui spieghiamo perché ci sono, dicendo anche che cosa sappiamo e che cosa no.` },
+      { t: 'h', x: 'Il respiro lento' },
+      { t: 'p', x: `Quando siamo agitati il respiro diventa corto e alto, e il corpo si prepara ad agire: cuore veloce, muscoli tesi. Rallentare, con un'uscita più lunga dell'entrata, manda al corpo il segnale opposto. Il cerchio della app segue questo ritmo: di solito quattro secondi dentro e sei fuori, e sette fuori negli esercizi per la notte.` },
+      { t: 'p', x: `Diversi studi sulla respirazione lenta hanno trovato una riduzione di ansia e di tensione, spesso modesta, e la qualità delle prove varia. Il respiro non cura niente da solo. Ha uno scopo più semplice: abbassa il volume quanto basta per poter pensare. Nell'antichità non era un esercizio stoico, a parte l'attenzione che richiede: per questo lo consideriamo un sostegno di oggi.` },
+      { t: 'h', x: 'La pausa' },
+      { t: 'p', x: `La pausa è la parte più antica. Gli stoici parlavano di uno spazio: tra ciò che appare e il sì che gli diamo, come dice Epitteto, e tra la collera e l'azione, come dice Seneca quando consiglia di rimandare la risposta. Se reagisci subito, risponde l'abitudine. Se aspetti anche solo trenta secondi, puoi rispondere tu.` },
+      { t: 'p', x: `Nella app le pause hanno un conto alla rovescia, da quindici secondi a un minuto. Servono a restare con ciò che senti senza scappare: la paura, l'irritazione e la fretta salgono, arrivano a un punto e poi calano. Puoi sempre passare avanti se non ti serve.` },
+      { t: 'h', x: 'La scrittura' },
+      { t: 'p', x: `Scrivere mette il pensiero fuori dalla testa, dove si può guardare. Ha tre effetti pratici:` },
+      { t: 'lista', x: [
+        `**Precisione:** una frase vaga diventa una frase chiara. Ciò che resta confuso in testa, sulla pagina si vede.`,
+        `**Distanza:** un pensiero scritto è un pensiero, e non la realtà. Si può rileggere, discutere, correggere.`,
+        `**Decisione:** un piano scritto, con un orario, si realizza più facilmente di un buon proposito.`,
+      ] },
+      { t: 'p', x: `Gli antichi la usavano così. Marco Aurelio scrisse appunti a se stesso, Seneca lettere a un amico, e Hadot parla della scrittura come di un vero esercizio spirituale. Oggi gli studi sulla scrittura riflessiva, soprattutto dopo esperienze difficili, indicano benefici in molti casi ma non in tutti. Per questo la app ti chiede pochi minuti e poche righe, non pagine intere.` },
+      { t: 'p', x: `Ciò che scrivi resta sul tuo telefono. Alla fine puoi salvarlo nel quaderno, oppure lasciarlo cadere.` },
+      { t: 'h', x: 'Se un passo non fa per te' },
+      { t: 'p', x: `Ogni passo si può saltare con «Avanti». Nessun esercizio è un test. Chi è molto agitato può fare solo il respiro, chi ha la testa piena può fare solo la scrittura. Sotto ogni passo trovi un riquadro «Perché questo passo?», e sotto ogni richiesta di scrittura un esempio e un aiuto per quando ci si blocca.` },
+      { t: 'nota', x: `Questi esercizi sono una riflessione, non una cura. Se il malessere è forte o dura da tempo, parlane con il tuo medico o con un professionista.` },
+      { t: 'azione', x: 'Vai a «Come funziona»', az: 'info', id: 'come-funziona', stile: 'chiaro' },
+      { t: 'azione', x: 'Gli esercizi spirituali', az: 'studio', id: 'esercizi-spirituali', stile: 'chiaro' },
+      { t: 'azione', x: 'La filosofia come cura dell\'anima', az: 'studio', id: 'la-cura-dell-anima', stile: 'chiaro' },
     ],
   },
   {

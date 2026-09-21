@@ -1,4 +1,4 @@
-import { VOCI } from '../contenuti/comuni.js';
+import { VOCI, SPIEGAZIONI_PASSO } from '../contenuti/comuni.js';
 import { esc, ricco } from './comuni.js';
 import { avanzamento, passoCorrente } from '../logica/sessione.js';
 
@@ -18,6 +18,9 @@ export function introHtml(sess) {
   <p class="nota">${e.minuti} ${e.minuti === 1 ? 'minuto' : 'minuti'} · ${esc(e.fonte.autore)}, ${esc(e.fonte.opera)}</p>
   <button class="btn primario" data-az="comincia">Comincia</button>`;
 }
+
+// Riquadro da aprire: perché questo passo (respiro, pausa, scrittura, colonne).
+const perche = (tipo) => SPIEGAZIONI_PASSO[tipo] ? `<details class="aiuto"><summary>Perché questo passo?</summary><p>${esc(SPIEGAZIONI_PASSO[tipo])}</p></details>` : '';
 
 function colonneHtml(p, sess) {
   const c = sess.risposte[p.chiave] || { sinistra: [], destra: [] };
@@ -41,20 +44,27 @@ export function passoHtml(sess) {
     case 'respiro':
       corpo = `<p class="passo">${ricco(p.testo)}</p>
         <div class="cerchio-area" aria-hidden="true"><div class="cerchio" id="cerchio"><span id="cerchio-testo">Dentro</span></div></div>
-        <p class="nota" style="text-align:center" id="respiri">Respiro 1 di ${p.cicli}</p>${comandi(avantiBtn)}`; break;
+        <p class="nota" style="text-align:center" id="respiri">Respiro 1 di ${p.cicli}</p>${perche('respiro')}${comandi(avantiBtn)}`; break;
     case 'pausa':
-      corpo = `<p class="passo">${ricco(p.testo)}</p><div class="conto" id="conto" role="timer">${p.secondi}</div>${comandi(avantiBtn)}`; break;
-    case 'scrivi':
+      corpo = `<p class="passo">${ricco(p.testo)}</p><div class="conto" id="conto" role="timer">${p.secondi}</div>${perche('pausa')}${comandi(avantiBtn)}`; break;
+    case 'scrivi': {
+      const d = ((sess.esercizio.dettagli || {}).passi || {})[p.chiave] || {};
       corpo = `<p class="passo">${ricco(p.testo)}</p>
+        ${d.esempio ? `<p class="esempio">${ricco(d.esempio)}</p>` : ''}
         <label class="campo" for="scritto">La tua risposta</label>
         <textarea id="scritto" data-campo="${esc(p.chiave)}" placeholder="${esc(p.segnaposto)}">${esc(sess.risposte[p.chiave] || '')}</textarea>
-        <p class="nota">Resta su questo telefono. Alla fine puoi salvarlo nel quaderno, se vuoi.</p>${comandi(avantiBtn)}`; break;
+        <p class="nota">Resta su questo telefono. Alla fine puoi salvarlo nel quaderno, se vuoi.</p>
+        ${d.aiuto ? `<details class="aiuto"><summary>Se ti blocchi</summary><p>${ricco(d.aiuto)}</p></details>` : ''}
+        ${perche('scrivi')}${comandi(avantiBtn)}`; break;
+    }
     case 'scegli':
       corpo = `<p class="passo">${ricco(p.testo)}</p>
         ${p.opzioni.map((o, i) => `<button class="opzione" data-az="opzione" data-i="${i}"><strong>${esc(o.testo)}</strong></button>`).join('')}
         ${haIndietro ? '<div class="comandi solo"><button class="btn chiaro" data-az="indietro-passo">Indietro</button></div>' : ''}`; break;
-    case 'colonne':
-      corpo = `<p class="passo">${ricco(p.testo)}</p>${colonneHtml(p, sess)}<p class="nota">Tocca una voce per spostarla nell'altra colonna. Alla fine puoi salvare le colonne nel quaderno.</p>${comandi(avantiBtn)}`; break;
+    case 'colonne': {
+      const dc = ((sess.esercizio.dettagli || {}).passi || {})[p.chiave] || {};
+      corpo = `<p class="passo">${ricco(p.testo)}</p>${dc.esempio ? `<p class="esempio">${ricco(dc.esempio)}</p>` : ''}${colonneHtml(p, sess)}<p class="nota">Tocca una voce per spostarla nell'altra colonna. Alla fine puoi salvare le colonne nel quaderno.</p>${perche('colonne')}${comandi(avantiBtn)}`; break;
+    }
     default: corpo = '';
   }
   return `${testata(sess)}${corpo}`;
@@ -69,6 +79,7 @@ export function chiusuraHtml(sess, pensiero, { puoSalvare = false, salvata = fal
   <p class="voce-apertura">${esc(e.voci[sess.voce].chiusura)}</p>
   <div class="pensiero"><p>${esc(pensiero.testo)}</p><small>Da portare con te · ${esc(pensiero.fonte.autore)}, ${esc(pensiero.fonte.opera)}</small></div>
   <p class="fonte">Perché funziona: ${esc(e.perche)}</p>
+  ${e.dettagli && e.dettagli.variante ? `<p class="fonte">Un'altra volta: ${esc(e.dettagli.variante)}</p>` : ''}
   <div class="pila" style="margin-top:18px">
     <button class="btn primario" data-az="altro-esercizio">Un altro esercizio</button>
     ${puoSalvare ? `<button class="btn chiaro" data-az="salva-quaderno"${salvata ? ' disabled' : ''}>${salvata ? 'Salvato nel quaderno' : 'Salva nel quaderno'}</button>` : ''}
