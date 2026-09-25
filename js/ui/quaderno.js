@@ -12,7 +12,7 @@ export function quadernoElenco(elenco) {
   ${pagine.length ? `<h2 class="grp">Le tue pagine</h2>
   <div class="carte">${pagine.map((p) => `<button class="carta-link" data-az="quaderno-apri" data-id="${esc(p.id)}"><strong>${esc(titoloPagina(p))}</strong><span>${esc(modello(p.modello).titolo)} · ${esc(dataLeggibile(p.modificata))}</span></button>`).join('')}</div>
   <div class="pila" style="margin-top:18px"><button class="btn chiaro" data-az="quaderno-copia-tutto">Copia tutto</button></div>`
-    : `<div class="scheda" style="margin-top:18px"><p style="margin:0">Non hai ancora scritto niente. Puoi cominciare da una pagina della <strong>mattina</strong> o della <strong>sera</strong>, oppure salvare ciò che scrivi durante un esercizio.</p></div>`}
+    : `<div class="scheda" style="margin-top:18px"><p style="margin:0">Non hai ancora scritto niente. Puoi cominciare da una pagina della <strong>mattina</strong> o della <strong>sera</strong>, oppure dalla domanda di una lezione del corso.</p></div>`}
   <p class="nota" style="margin-top:18px">Il quaderno resta soltanto su questo telefono: non viene inviato a nessuno. Se cancelli i dati del browser o disinstalli la app, le pagine si perdono. Con «Copia tutto» puoi conservarne una copia.</p>`;
 }
 

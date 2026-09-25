@@ -125,3 +125,11 @@ input[type=text],input[type=search]{min-height:48px;}
 details.aiuto{margin:10px 0 4px;font-size:.92rem;}
 details.aiuto summary{cursor:pointer;color:var(--tenue);font-weight:600;padding:6px 0;}
 details.aiuto p{margin:6px 0 4px;line-height:1.55;}
+
+/* Corso */
+.carta-link.in-arrivo{opacity:.6;cursor:default;}
+.testi{display:grid;gap:12px;}
+.rif-dove{margin:0 0 6px;}
+.ricorda{font-family:var(--titoli);font-size:1.15rem;line-height:1.5;font-style:italic;margin:0 0 8px;}
+.rif .info-p:last-child{margin-bottom:0;}
+.link-in-riga{background:none;border:0;padding:0;color:inherit;text-decoration:underline;font:inherit;cursor:pointer;}

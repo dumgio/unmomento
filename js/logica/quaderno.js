@@ -75,23 +75,10 @@ export function testoTutto(elenco) {
   return ordinate(elenco).map(testoPagina).join('\n\n———\n\n');
 }
 
-// Una pagina «libera» con le risposte scritte durante un esercizio. Senza risposte, restituisce null.
-export function paginaDaEsercizio(sessione, { adesso = new Date(), id } = {}) {
-  const campi = [];
-  sessione.esercizio.passi.forEach((p, i) => {
-    if (p.tipo === 'scrivi') {
-      const t = sessione.risposte[p.chiave || 'p' + i];
-      if (typeof t === 'string' && t.trim()) campi.push({ domanda: p.testo, testo: t.trim() });
-    } else if (p.tipo === 'colonne') {
-      const c = sessione.risposte[p.chiave];
-      if (c && (c.sinistra.length || c.destra.length)) {
-        campi.push({ domanda: p.testo, testo: `${p.sinistra}: ${c.sinistra.join('; ') || '—'}\n${p.destra}: ${c.destra.join('; ') || '—'}` });
-      }
-    }
-  });
-  if (!campi.length) return null;
+// Una pagina libera che parte dalla domanda di una lezione del corso.
+export function paginaDaDomanda(domanda, titolo, { adesso = new Date(), id } = {}) {
   const base = nuovaPagina('libero', { adesso, id });
-  return { ...base, titolo: sessione.esercizio.titolo, campi: [...campi, ...campiFissi()] };
+  return { ...base, titolo, campi: [{ domanda, testo: '' }, ...campiFissi()] };
 }
 
 // ---- Memoria del telefono ----

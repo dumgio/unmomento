@@ -75,7 +75,6 @@ export const PAGINE_STUDIO_4 = [
       { t: 'h', x: 'Perché ci interessa' },
       { t: 'p', x: `In questa app le pagine sui doveri e sui ruoli continuano la sua idea: prima di decidere, chiediti quali parti stai recitando e che cosa chiedono. E ricorda che uno stoico può essere sereno senza essere di ferro.` },
       { t: 'azione', x: 'I doveri e i ruoli', az: 'studio', id: 'i-doveri-e-i-ruoli' },
-      { t: 'azione', x: 'Esercizio: La parte che recito', az: 'esercizio', id: 'la-parte-che-recito' },
       { t: 'azione', x: 'Posidonio', az: 'studio', id: 'posidonio' },
     ],
   },
@@ -96,7 +95,6 @@ export const PAGINE_STUDIO_4 = [
       { t: 'p', x: `Secondo le testimonianze antiche, Posidonio indicava come scopo della vita osservare la verità del mondo e il suo ordine, e cooperare a metterlo in atto per quanto si può. Una vita di studio, insomma, ma per il bene comune.` },
       { t: 'p', x: `Le sue opere sono perdute. Sappiamo di lui da altri, e l'influenza arriva a Seneca: un allievo di Posidonio, Asclepiodoto, si occupò dell'origine dei terremoti, e i suoi materiali servirono a Seneca per le *Questioni naturali*.` },
       { t: 'azione', x: 'La natura e il cosmo', az: 'studio', id: 'la-natura-e-il-cosmo' },
-      { t: 'azione', x: 'Meditazione: La natura ci accoglie', az: 'meditazione', id: 'la-natura-ci-accoglie' },
       { t: 'azione', x: 'Le quattro passioni', az: 'studio', id: 'le-quattro-passioni' },
     ],
   },
@@ -178,7 +176,6 @@ export const PAGINE_STUDIO_4 = [
       { t: 'nota', x: `Non serve conoscere la logica tecnica degli antichi per esercitarsi. Basta ricordare che i tre passi vanno insieme: capire, accettare, agire.` },
       { t: 'azione', x: 'Le tre discipline', az: 'studio', id: 'tre-discipline' },
       { t: 'azione', x: 'Le impressioni e il giudizio', az: 'studio', id: 'impressioni-giudizio' },
-      { t: 'azione', x: 'Esercizio: Il fatto e il giudizio', az: 'esercizio', id: 'fatto-e-giudizio' },
     ],
   },
   {
@@ -186,7 +183,7 @@ export const PAGINE_STUDIO_4 = [
     titolo: 'La filosofia come cura dell\'anima',
     sotto: 'Da Socrate a Seneca: perché gli antichi volevano guarire e non solo spiegare.',
     blocchi: [
-      { t: 'p', x: `Per gli antichi la filosofia non era un sapere da accumulare: era una **cura**. L'idea ha un nome, la «cura dell'anima», e ha una storia lunga. È la ragione per cui questa app propone esercizi e non lezioni.` },
+      { t: 'p', x: `Per gli antichi la filosofia non era un sapere da accumulare: era una **cura**. L'idea ha un nome, la «cura dell'anima», e ha una storia lunga. È la ragione per cui questo corso racconta anche come gli stoici mettevano in pratica le loro idee.` },
       { t: 'h', x: 'Socrate' },
       { t: 'p', x: `Socrate girava per Atene a ripetere a tutti la stessa cosa: prima del corpo, della ricchezza e della fama, prenditi cura della tua anima, che diventi il più buona possibile. Per lui conoscere se stessi voleva dire esaminare che cosa si è capaci di fare e di essere.` },
       { t: 'h', x: 'Platone: l\'erba e la formula' },
@@ -198,8 +195,8 @@ export const PAGINE_STUDIO_4 = [
       { t: 'p', x: `Seneca porta l'idea alle conseguenze estreme. I grandi mali, dice, stanno meno nelle cose che nel valore che diamo loro. Quindi non serve cambiare le cose: serve cambiare il modo di valutarle. Come un medico, scrive lettere e trattati per curare ciò che chiama i mali dell'anima: l'ira, la paura, il lutto, la fretta, il tempo sprecato.` },
       { t: 'h', x: 'Che cosa significa per te' },
       { t: 'lista', x: [
-        `Gli **esercizi** dell'app sono le medicine: piccoli, ripetibili, da provare.`,
-        `Le **pagine di studio** sono la diagnosi: aiutano a capire che cosa si sta curando.`,
+        `Le **pratiche** degli stoici sono le medicine: la preparazione del mattino, l'esame della sera, la riserva, lo sguardo dall'alto.`,
+        `Le **pagine della Biblioteca** sono la diagnosi: aiutano a capire che cosa si sta curando.`,
         `Il **quaderno** è il diario della cura: serve a vedere i giudizi che ripetiamo.`,
       ] },
       { t: 'nota', x: `Ricordati il confine: è una cura dell'anima nel senso degli antichi, cioè un lavoro su come pensi e su come vivi. Non sostituisce il parere di un medico né una terapia.` },

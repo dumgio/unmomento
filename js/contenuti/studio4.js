@@ -20,8 +20,6 @@ export const PAGINE_STUDIO_3B = [
       ] },
       { t: 'h', x: 'Un avvertimento' },
       { t: 'p', x: `Se un pensiero ti prende troppo, fermati: l'esercizio non deve diventare rimuginio. Gli stoici lo facevano con serenità e per poco. Quando la paura sale, torna al presente e riprendi un'altra volta.` },
-      { t: 'azione', x: 'Esercizio: Prepararsi al peggio', az: 'esercizio', id: 'prepararsi-al-peggio' },
-      { t: 'azione', x: 'Meditazione: Guardare il peggio con calma', az: 'meditazione', id: 'guardare-il-peggio' },
     ],
   },
   {
@@ -40,10 +38,6 @@ export const PAGINE_STUDIO_3B = [
       { t: 'h', x: 'Che cosa non è' },
       { t: 'p', x: `Non è pessimismo né desiderio di morire. Gli stoici amavano la vita e la volevano vivere bene. Il pensiero della fine serve a **scegliere meglio come viverla**. Se ti pesa o ti turba, puoi lasciarlo per un altro momento: nessuna pratica va forzata.` },
       { t: 'azione', x: 'Il tempo e la morte', az: 'studio', id: 'il-tempo-la-morte' },
-      { t: 'azione', x: 'Esercizio: Come se fosse l’ultimo', az: 'esercizio', id: 'come-se-fosse-l-ultimo' },
-      { t: 'azione', x: 'Meditazione: Il tempo che hai', az: 'meditazione', id: 'il-tempo-che-hai' },
-      { t: 'azione', x: 'Esercizio: La commedia ben recitata', az: 'esercizio', id: 'la-commedia-ben-recitata' },
-      { t: 'azione', x: 'Esercizio: Lo spauracchio', az: 'esercizio', id: 'lo-spauracchio' },
     ],
   },
   {
@@ -60,9 +54,6 @@ export const PAGINE_STUDIO_3B = [
       { t: 'h', x: 'Una frase del maestro' },
       { t: 'p', x: `Epitteto invita a non pretendere che le cose vadano come vogliamo, ma a volere che vadano come vanno. Cleante, nel suo inno, si dice pronto a seguire senza esitazione ciò che il destino dispone. Sono due modi di dire la stessa cosa: la pace nasce quando smettiamo di litigare con la realtà.` },
       { t: 'nota', x: `Accettare non vuol dire approvare. Puoi accettare un fatto (una malattia, un lutto, un torto subito) e allo stesso tempo lavorare per cambiare ciò che si può cambiare.` },
-      { t: 'azione', x: 'Esercizio: La brocca che si rompe', az: 'esercizio', id: 'la-brocca-che-si-rompe' },
-      { t: 'azione', x: 'Esercizio: Il fiume degli eventi', az: 'esercizio', id: 'il-fiume-degli-eventi' },
-      { t: 'azione', x: 'Esercizio: Seguire o essere trascinati', az: 'esercizio', id: 'seguire-o-essere-trascinati' },
     ],
   },
   {
@@ -86,8 +77,6 @@ export const PAGINE_STUDIO_3B = [
         `**Semplicità.** Limitare le cose che ci possiedono.`,
       ] },
       { t: 'p', x: `Seneca non promette una serenità perfetta. Invita a ritrovarla, ogni volta che si perde, con gesti semplici e ripetuti.` },
-      { t: 'azione', x: 'Meditazione: La calma della sera', az: 'meditazione', id: 'la-calma-della-sera' },
-      { t: 'azione', x: 'Esercizio: Quanto basta', az: 'esercizio', id: 'quanto-basta' },
     ],
   },
   {
@@ -107,7 +96,6 @@ export const PAGINE_STUDIO_3B = [
       { t: 'p', x: `I progressi si vedono di rado da un giorno all'altro: si vedono su mesi. Per questo giova un quaderno, dove segnare di tanto in tanto come è andata. Gli stoici stessi tornavano sugli stessi esercizi per tutta la vita, senza vergogna.` },
       { t: 'nota', x: `Se ti senti indietro, ricordati di Seneca: scriveva agli amici di essere ancora un principiante. Nessuno arriva. Si continua.` },
       { t: 'azione', x: 'Il quaderno: modello Sera', az: 'studio', id: 'scrivere-per-pensare' },
-      { t: 'azione', x: 'Esercizio: Esame della sera', az: 'esercizio', id: 'esame-della-sera' },
     ],
   },
   {
@@ -125,8 +113,6 @@ export const PAGINE_STUDIO_3B = [
         `**Nutrirla** di buone letture, buone conversazioni, buoni esempi.`,
         `**Riposarla,** perché anche la ragione si stanca.`,
       ] },
-      { t: 'azione', x: 'Esercizio: Il rifugio dentro', az: 'esercizio', id: 'il-rifugio-dentro' },
-      { t: 'azione', x: 'Meditazione: Il rifugio interiore', az: 'meditazione', id: 'il-rifugio-interiore' },
     ],
   },
   {
@@ -144,8 +130,6 @@ export const PAGINE_STUDIO_3B = [
         `**Quello di essere umano:** verso chiunque incontriamo.`,
       ] },
       { t: 'p', x: `Quando i ruoli sembrano in conflitto (il lavoro contro la famiglia), gli stoici invitano a guardare la giustizia: che cosa devo, in questo momento, a chi?` },
-      { t: 'azione', x: 'Esercizio: La lista dei doveri', az: 'esercizio', id: 'la-lista-dei-doveri' },
-      { t: 'azione', x: 'Esercizio: La parte che recito', az: 'esercizio', id: 'la-parte-che-recito' },
       { t: 'azione', x: 'Panezio e le quattro maschere', az: 'studio', id: 'panezio' },
     ],
   },
@@ -165,7 +149,6 @@ export const PAGINE_STUDIO_3B = [
       ] },
       { t: 'nota', x: `Questo è un modo per non diventare schiavi delle cose. Non è un invito a farne a meno.` },
       { t: 'azione', x: 'Le quattro virtù', az: 'studio', id: 'le-quattro-virtu' },
-      { t: 'azione', x: 'Esercizio: Ciò che dipende da me', az: 'esercizio', id: 'cio-che-dipende-da-me' },
     ],
   },
   {
@@ -182,8 +165,6 @@ export const PAGINE_STUDIO_3B = [
       ] },
       { t: 'h', x: 'La differenza dal senso di colpa' },
       { t: 'p', x: `Il senso di colpa guarda indietro e punisce. L'esame guarda avanti e corregge. Seneca chiude con una frase gentile: ti perdono, ma stai attento la prossima volta. Il perdono a se stessi rende possibile il cambiamento.` },
-      { t: 'azione', x: 'Esercizio: La sera in un minuto', az: 'esercizio', id: 'la-sera-in-un-minuto' },
-      { t: 'azione', x: 'Meditazione: Esame della sera', az: 'meditazione', id: 'esame-della-sera-guidato' },
     ],
   },
   {
@@ -202,7 +183,6 @@ export const PAGINE_STUDIO_3B = [
       ] },
       { t: 'p', x: `Vale anche per se stessi: essere clementi con i propri errori è il primo passo per correggerli.` },
       { t: 'azione', x: "L'ira secondo Seneca", az: 'studio', id: 'l-ira-secondo-seneca' },
-      { t: 'azione', x: 'Esercizio: Per ora ti perdono', az: 'esercizio', id: 'ti-perdono-per-ora' },
     ],
   },
   {
@@ -220,7 +200,6 @@ export const PAGINE_STUDIO_3B = [
       { t: 'p', x: `Gli stoici non promettono di eliminare il dolore. Suggeriscono di **non aggiungere sofferenza alla sofferenza**: evitare il catastrofismo, restare nel presente, chiedere aiuto, farsi curare. Il pensiero filosofico è un compagno della cura, mai un suo sostituto.` },
       { t: 'nota', x: `Questa pagina è una riflessione, non un consiglio medico. Per qualsiasi problema di salute, fisico o psicologico, rivolgiti a un medico o a un professionista.` },
       { t: 'azione', x: 'Il dolore e la perdita', az: 'studio', id: 'il-dolore-e-la-perdita' },
-      { t: 'azione', x: 'Esercizio: Il peggio, misurato', az: 'esercizio', id: 'il-peggio-misurato' },
     ],
   },
   {
@@ -238,8 +217,6 @@ export const PAGINE_STUDIO_3B = [
       ] },
       { t: 'h', x: 'Un esercizio antico' },
       { t: 'p', x: `Seneca suggeriva di provare, ogni tanto, alcuni giorni di vita semplice: pasti poveri, vestiti modesti. Serve a scoprire che si può stare con poco, e a perdere la paura di perdere. Fallo con serenità e per poco.` },
-      { t: 'azione', x: 'Esercizio: Quanto basta', az: 'esercizio', id: 'quanto-basta' },
-      { t: 'azione', x: 'Esercizio: Il rimedio dell’abitudine', az: 'esercizio', id: 'il-rimedio-dell-abitudine' },
     ],
   },
   {
@@ -256,8 +233,6 @@ export const PAGINE_STUDIO_3B = [
       ] },
       { t: 'h', x: 'Che cosa fare' },
       { t: 'p', x: `Non serve disinteressarsi degli altri: serve **scegliere chi ascoltare**. Se una critica è vera, è un aiuto. Se è falsa, puoi lasciarla. Il criterio è sempre lo stesso: mi aiuta a essere migliore?` },
-      { t: 'azione', x: 'Esercizio: Lodi e biasimi', az: 'esercizio', id: 'lodi-e-biasimi' },
-      { t: 'azione', x: 'Esercizio: Accogli la correzione', az: 'esercizio', id: 'accogli-la-correzione' },
     ],
   },
   {
@@ -276,7 +251,6 @@ export const PAGINE_STUDIO_3B = [
       { t: 'p', x: `Scegli persone con cui parlare del vero. Seneca scriveva che la frequentazione di chi è migliore di noi ci migliora. E ricordava di essere anche noi quella persona per qualcuno.` },
       { t: 'nota', x: `Se la solitudine ti pesa da tempo, parlane con qualcuno di fiducia. Nessuna filosofia sostituisce le relazioni.` },
       { t: 'azione', x: 'Amicizia e comunità', az: 'studio', id: 'amicizia-e-comunita' },
-      { t: 'azione', x: 'Esercizio: Le due mani', az: 'esercizio', id: 'le-due-mani' },
     ],
   },
   {
@@ -294,8 +268,6 @@ export const PAGINE_STUDIO_3B = [
       ] },
       { t: 'h', x: 'Seneca e i benefici' },
       { t: 'p', x: `Seneca dedicò un trattato al ricevere e al dare i benefici. Vi sostiene che chi riceve un bene deve ricordarlo con gratitudine, e chi lo dà deve dimenticarlo. Questa asimmetria è il segreto della generosità.` },
-      { t: 'azione', x: 'Esercizio: Ciò che ho ricevuto', az: 'esercizio', id: 'cio-che-ho-ricevuto' },
-      { t: 'azione', x: 'Esercizio: Un favore in silenzio', az: 'esercizio', id: 'un-favore-in-silenzio' },
     ],
   },
   {
@@ -313,7 +285,7 @@ export const PAGINE_STUDIO_3B = [
         `**Farne una gara.** Lo stoicismo non è un modo di sentirsi superiori.`,
       ] },
       { t: 'h', x: 'Che cosa fare' },
-      { t: 'p', x: `Torna spesso alle basi: ciò che dipende da te, i giudizi, le virtù. Scegli pochi esercizi e ripetili. E se una pratica ti fa stare peggio, mettila da parte: gli stoici volevano una vita migliore, non una prova di resistenza.` },
+      { t: 'p', x: `Torna spesso alle basi: ciò che dipende da te, i giudizi, le virtù. Scegli poche pratiche e ripetile. E se una pratica ti fa stare peggio, mettila da parte: gli stoici volevano una vita migliore, non una prova di resistenza.` },
       { t: 'azione', x: 'Falsi miti sullo stoicismo', az: 'studio', id: 'falsi-miti' },
       { t: 'azione', x: 'Come usare questa app', az: 'studio', id: 'come-usare' },
     ],
@@ -325,15 +297,14 @@ export const PAGINE_STUDIO_3B = [
     blocchi: [
       { t: 'p', x: `Gli stoici insistevano: la filosofia si impara **con l'esercizio**. Ecco un piano leggero, per un mese. Puoi cambiarlo come vuoi: le pratiche servono più dei piani.` },
       { t: 'h', x: 'Prima settimana: guardare' },
-      { t: 'p', x: `Ogni giorno, una volta, ferma il pensiero e chiediti: è un fatto o un giudizio? Bastano due minuti. Puoi usare l'esercizio **Fermati, impressione**.` },
+      { t: 'p', x: `Ogni giorno, una volta, ferma il pensiero e chiediti: è un fatto o un giudizio? Epitteto suggeriva di dire all'impressione: sei soltanto un'impressione. Bastano due minuti.` },
       { t: 'h', x: 'Seconda settimana: distinguere' },
-      { t: 'p', x: `Ogni giorno scrivi due colonne: ciò che dipende da te e ciò che non dipende da te. Servono pochi minuti, e cambiano il modo di affrontare la giornata.` },
+      { t: 'p', x: `Davanti a ciò che ti preoccupa, fai la domanda con cui si apre il *Manuale*: dipende da me? Se sì, che cosa posso fare? Se no, posso lasciarlo andare. Servono pochi istanti, e cambiano il modo di affrontare la giornata.` },
       { t: 'h', x: 'Terza settimana: agire' },
       { t: 'p', x: `Ogni mattina scegli un compito piccolo e lo fai con attenzione. La sera, guardi come è andata.` },
       { t: 'h', x: 'Quarta settimana: esaminare' },
-      { t: 'p', x: `Ogni sera fai l'esame della giornata, in tre domande. Nel fine settimana rileggi le pagine del quaderno e nota che cosa è cambiato.` },
+      { t: 'p', x: `Ogni sera fai l'esame della giornata, con le domande che Seneca prendeva da Sestio. Nel fine settimana rileggi le pagine del quaderno e nota che cosa è cambiato.` },
       { t: 'nota', x: `Se salti un giorno, riprendi dal successivo. Nessuno ti valuta: l'abitudine si costruisce con la ripresa, non con la perfezione.` },
-      { t: 'azione', x: 'Esercizio: Fermati, impressione', az: 'esercizio', id: 'fermati-impressione' },
     ],
   },
 ];

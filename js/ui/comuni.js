@@ -9,15 +9,10 @@ export const ricco = (t) => esc(t).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong
 
 export const risolviHref = (h) => (h.startsWith('mail:') ? MAIL[h.slice(5)] : CONTATTI[h]);
 
-export function chips(chiave, valori, corrente) {
-  return `<div class="chips">${valori.map(([v, testo]) =>
-    `<button class="chip" data-az="filtro" data-k="${chiave}" data-v="${esc(v)}" aria-pressed="${String(v) === String(corrente)}">${esc(testo)}</button>`).join('')}</div>`;
-}
-
 // Un blocco delle pagine di studio e informative.
 export function blocco(b) {
   switch (b.t) {
-    case 'h': return `<h3 class="info-h">${esc(b.x)}</h3>`;
+    case 'h': return `<h2 class="info-h">${esc(b.x)}</h2>`;
     case 'p': return `<p class="info-p">${ricco(b.x)}</p>`;
     case 'lista': return `<ul class="info-lista">${b.x.map((v) => `<li>${ricco(v)}</li>`).join('')}</ul>`;
     case 'passi': return `<ol class="info-passi">${b.x.map((v) => `<li><strong>${ricco(v.titolo)}</strong> ${ricco(v.testo)}</li>`).join('')}</ol>`;
@@ -34,11 +29,11 @@ export function blocco(b) {
   }
 }
 
-export function paginaHtml(p, indietroAz) {
+export function paginaHtml(p, indietroAz, prima = '') {
   return `
   <button class="indietro" data-az="${indietroAz}">← Indietro</button>
   <h1 class="titolo medio">${esc(p.titolo)}</h1>
-  <p class="lead">${esc(p.sotto)}</p>
+  <p class="lead">${esc(p.sotto)}</p>${prima}
   <div class="info">${p.blocchi.map(blocco).join('')}</div>`;
 }
 

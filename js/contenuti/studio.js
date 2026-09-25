@@ -1,6 +1,6 @@
 // Pagine di studio sullo stoicismo. Testi originali: le idee sono degli autori antichi, le parole sono nostre.
 // Tipi di blocco: h (titolo), p (testo), lista, passi, nota, azione. Nel testo, **così** diventa grassetto.
-// Un blocco «azione» apre un esercizio (az: 'esercizio'), una pagina di studio (az: 'studio') o una meditazione (az: 'meditazione').
+// Un blocco «azione» apre una pagina di studio (az: 'studio').
 
 import { PAGINE_STUDIO_3A } from './studio3.js';
 import { PAGINE_STUDIO_3B } from './studio4.js';
@@ -31,7 +31,6 @@ const PAGINE_BASE = [
       ] },
       { t: 'h', x: 'Che cosa promette e che cosa no' },
       { t: 'p', x: `Lo stoicismo promette una **libertà interiore**: un modo di stare nelle cose che dipende meno da ciò che accade. Non promette una vita senza dolore né un carattere di ferro. Promette un lavoro, da fare a poco a poco, con esercizi semplici.` },
-      { t: 'azione', x: 'Prova un primo esercizio: Ciò che dipende da me', az: 'esercizio', id: 'cio-che-dipende-da-me' },
     ],
   },
   {
@@ -51,7 +50,7 @@ const PAGINE_BASE = [
       { t: 'h', x: 'Falso: è per persone forti o perfette' },
       { t: 'p', x: `Gli stoici si consideravano dei «progredienti»: persone in cammino. Seneca ed Epitteto parlano continuamente delle proprie difficoltà e di quelle dei loro allievi. Il punto non è essere perfetti, ma esercitarsi.` },
       { t: 'h', x: 'Falso: è una filosofia da citazioni' },
-      { t: 'p', x: `Le frasi celebri, isolate, fanno poco. Il cuore dello stoicismo sono gli **esercizi**: pratiche precise, da ripetere, che cambiano poco a poco il modo di vedere. Per questo Stoicismo quotidiano propone esercizi e non soltanto frasi.` },
+      { t: 'p', x: `Le frasi celebri, isolate, fanno poco. Il cuore dello stoicismo sono gli **esercizi**: pratiche precise, da ripetere, che cambiano poco a poco il modo di vedere. Per questo le lezioni di Stoicismo quotidiano raccontano anche come gli stoici mettevano in pratica le loro idee.` },
       { t: 'h', x: 'Falso: è fatalismo' },
       { t: 'p', x: `Gli stoici non dicevano «tanto è tutto scritto». Dicevano: impegnati con tutte le forze in ciò che dipende da te, e accetta con calma l'esito. Uno dei loro esercizi consiste proprio nell'agire con una riserva: «lo farò, se nulla lo impedisce».` },
       { t: 'azione', x: 'Leggi che cosa sono le tre discipline', az: 'studio', id: 'tre-discipline' },
@@ -77,7 +76,6 @@ const PAGINE_BASE = [
         `Se lo stoicismo funziona meglio o peggio delle altre pratiche, come la mindfulness o la terapia cognitiva.`,
       ] },
       { t: 'nota', x: `Gli esercizi stoici sono un aiuto per il pensiero e l'attenzione. Possono affiancare, ma non sostituire, il parere del medico o un percorso di cura.` },
-      { t: 'azione', x: 'Prova un esercizio', az: 'esercizio', id: 'cio-che-dipende-da-me' },
     ],
   },
   {
@@ -100,8 +98,6 @@ const PAGINE_BASE = [
         `**Azione:** «Che cosa devo fare, adesso, davvero?»`,
       ] },
       { t: 'p', x: `Le tre discipline si tengono insieme: quando cambia il giudizio, cambia anche il desiderio, e cambia l'azione. Puoi partire da qualunque punto.` },
-      { t: 'azione', x: 'Esercizio del giudizio: Fermati, impressione', az: 'esercizio', id: 'fermati-impressione' },
-      { t: 'azione', x: "Esercizio dell'azione: Il primo gesto piccolo", az: 'esercizio', id: 'il-primo-gesto-piccolo' },
       { t: 'azione', x: 'Logica, fisica, etica', az: 'studio', id: 'logica-fisica-etica' },
     ],
   },
@@ -131,8 +127,6 @@ const PAGINE_BASE = [
       { t: 'p', x: `Non significa disinteressarsi delle cose: significa mettere il proprio impegno dove serve. Tieni alla salute, al lavoro, alle persone: fai tutto ciò che è in tuo potere. Poi accetta con calma che l'esito non sia nelle tue mani. Gli stoici lo dicevano con la formula «se nulla lo impedisce».` },
       { t: 'h', x: 'Le zone grigie' },
       { t: 'p', x: `Molte situazioni sono miste: la salute dipende in parte da come ti curi, il lavoro in parte da come lo fai. In quei casi fai la tua parte con impegno e lascia il resto. La domanda utile è sempre la stessa: che cosa, qui, è davvero in mano mia?` },
-      { t: 'azione', x: 'Fai l\'esercizio: Ciò che dipende da me', az: 'esercizio', id: 'cio-che-dipende-da-me' },
-      { t: 'azione', x: 'Fai l\'esercizio: Se nulla lo impedisce', az: 'esercizio', id: 'se-nulla-lo-impedisce' },
     ],
   },
   {
@@ -152,9 +146,6 @@ const PAGINE_BASE = [
       { t: 'p', x: `Marco Aurelio propone un esercizio di esattezza: descrivere ogni cosa nuda, per ciò che è, senza le aggiunte dell'opinione. Un pranzo pregiato diventa «un pesce morto e un po' d'uva»: non per disgusto, ma per togliere il fumo che ci mette la vanità.` },
       { t: 'h', x: 'I primi movimenti' },
       { t: 'p', x: `Seneca ricorda che le prime reazioni del corpo (un sussulto, un rossore, un brivido) sfuggono al nostro controllo e non sono ancora passioni. La passione comincia quando ci diamo ragione: «è giusto che io mi arrabbi». Lì possiamo fermarci.` },
-      { t: 'azione', x: 'Esercizio: Fermati, impressione', az: 'esercizio', id: 'fermati-impressione' },
-      { t: 'azione', x: 'Esercizio: Descrivi senza aggiungere', az: 'esercizio', id: 'descrivi-senza-aggiungere' },
-      { t: 'azione', x: 'Esercizio: Il fatto e il giudizio', az: 'esercizio', id: 'fatto-e-giudizio' },
     ],
   },
   {
@@ -175,10 +166,6 @@ const PAGINE_BASE = [
       { t: 'p', x: `Il metodo stoico agisce sul giudizio e sull'abitudine. Si esamina ciò che si teme (è davvero un male? dipende da me?), si misura la sua probabilità, si immagina con calma il caso peggiore per preparare una risposta, e si ricorda che tutto ciò che possediamo può finire. Sono gli esercizi della premeditazione dei mali e del ricordo della fragilità delle cose.` },
       { t: 'h', x: 'Come si cura il desiderio' },
       { t: 'p', x: `Si desidera con misura ciò che dipende da noi, e si accoglie il resto senza pretendere. Epitteto propone di cominciare dalle piccole cose: rinunciare a un desiderio da poco, per allenarsi a quelli più grandi.` },
-      { t: 'azione', x: 'Esercizio: Il peggio, misurato', az: 'esercizio', id: 'il-peggio-misurato' },
-      { t: 'azione', x: 'Esercizio: Prepararsi al peggio', az: 'esercizio', id: 'prepararsi-al-peggio' },
-      { t: 'azione', x: 'Esercizio: Ciò che dipende da me', az: 'esercizio', id: 'cio-che-dipende-da-me' },
-      { t: 'azione', x: 'Esercizio: La speranza e il timore', az: 'esercizio', id: 'speranza-e-timore' },
     ],
   },
   {
@@ -198,11 +185,8 @@ const PAGINE_BASE = [
       { t: 'h', x: 'A che cosa servono' },
       { t: 'p', x: `Lo scopo è una vera **conversione dello sguardo**: passare da una vita agitata, dominata da desideri e timori, a una vita più libera e più lucida. Non basta capire un'idea: bisogna ripeterla, provarla, farla propria, come si allena un muscolo.` },
       { t: 'h', x: 'Come compaiono in Stoicismo quotidiano' },
-      { t: 'p', x: `Ogni esercizio della app indica la sua famiglia e la sua fonte. «Qui e ora con i cinque sensi» e «Respiro e attenzione» sono esercizi di attenzione. «Prepararsi al peggio» e «La brocca che si può rompere» sono meditazioni. «Fermati, impressione» e «Il fatto e il giudizio» sono esercizi di pensiero. «Il primo gesto piccolo» e «Chi voglio essere qui» sono esercizi attivi.` },
-      { t: 'azione', x: 'Esercizio di attenzione: Qui e ora, con i cinque sensi', az: 'esercizio', id: 'qui-e-ora-cinque-sensi' },
-      { t: 'azione', x: "Meditazione: L'attenzione a se stessi", az: 'meditazione', id: 'attenzione-presente' },
+      { t: 'p', x: `Nelle lezioni del corso, la sezione «Nella vita di tutti i giorni» racconta queste pratiche come le descrivono i testi: la preparazione del mattino di Marco Aurelio, l'esame della sera di Seneca, la vista dall'alto, la riserva «se nulla lo impedisce», la scrittura per sé.` },
       { t: 'azione', x: "La filosofia come cura dell'anima", az: 'studio', id: 'la-cura-dell-anima' },
-      { t: 'azione', x: 'Perché respiri, pause e scrittura', az: 'info', id: 'perche-respiri-pause-scrittura' },
     ],
   },
   {
@@ -210,15 +194,15 @@ const PAGINE_BASE = [
     titolo: 'I tre maestri',
     sotto: 'Epitteto, Seneca e Marco Aurelio: chi erano e come parlano.',
     blocchi: [
-      { t: 'p', x: `Le tre voci della app sono tre autori stoici romani. Sono molto diversi per vita e per tono, e proprio per questo si completano.` },
+      { t: 'p', x: `I tre maestri di questo corso sono tre autori stoici dell'età romana. Sono molto diversi per vita e per tono, e proprio per questo si completano.` },
       { t: 'h', x: 'Epitteto (nato tra il 50 e il 60, morto verso il 138 d.C.)' },
       { t: 'p', x: `Nacque schiavo, in Frigia. Divenne libero e insegnò filosofia prima a Roma e poi a Nicopoli, in Grecia. Non scrisse nulla: le sue lezioni furono messe per iscritto dal suo allievo **Arriano**, che ne ricavò gli *Discorsi* (o *Diatribe*) e il breve *Manuale*. Il suo tono è **secco e diretto**: parla come un maestro che non gira intorno alle cose. Per lui la filosofia è un'officina, una «sala operatoria» dell'anima.` },
       { t: 'h', x: 'Seneca (circa 4 a.C. – 65 d.C.)' },
       { t: 'p', x: `Nato in Spagna, visse a Roma: fu scrittore, uomo di Stato e per anni consigliere dell'imperatore Nerone, che nel 65 d.C. gli ordinò di togliersi la vita. Scrisse trattati (*Sull'ira*, *Sulla brevità della vita*, *Sulla tranquillità dell'animo*) e le *Lettere a Lucilio*, un amico a cui parla da amico esperto. Il suo tono è **caldo e vicino**, come una lettera: spiega, consola, si mette in gioco.` },
       { t: 'h', x: 'Marco Aurelio (121–180 d.C.)' },
       { t: 'p', x: `Fu imperatore romano dal 161 al 180. Nei momenti liberi, spesso durante le campagne militari, scrisse in greco appunti per se stesso, che noi conosciamo con il titolo *A se stesso* (o *Ricordi*). Non erano destinati a nessuno: sono un quaderno di esercizi personali. Il suo tono è **interiore e riservato**, di chi parla a se stesso.` },
-      { t: 'h', x: 'Come usare le voci' },
-      { t: 'p', x: `Nella app puoi cambiare voce quando vuoi. Se hai bisogno di essere scosso, prova Epitteto. Se hai bisogno di essere accompagnato, prova Seneca. Se cerchi un silenzio in cui riflettere, prova Marco Aurelio. Gli esercizi restano gli stessi: cambia il modo di dirli.` },
+      { t: 'h', x: 'Da chi cominciare' },
+      { t: 'p', x: `Se hai bisogno di essere scosso, prova Epitteto. Se hai bisogno di essere accompagnato, prova Seneca. Se cerchi un silenzio in cui riflettere, prova Marco Aurelio. Dicono spesso le stesse cose, ciascuno con la sua voce.` },
       { t: 'azione', x: 'Leggi come leggerli', az: 'studio', id: 'come-leggere' },
       { t: 'azione', x: 'La vita di Seneca', az: 'studio', id: 'la-vita-di-seneca' },
       { t: 'azione', x: 'Gli stoici sotto gli imperatori', az: 'studio', id: 'gli-stoici-e-il-potere' },
@@ -229,25 +213,21 @@ const PAGINE_BASE = [
     titolo: 'Come usare Stoicismo quotidiano',
     sotto: 'Un modo semplice di usare la app, senza obblighi.',
     blocchi: [
-      { t: 'p', x: `Stoicismo quotidiano non ti chiede di praticare ogni giorno, di accumulare giorni di fila o di rispondere a notifiche. Lo apri quando ti serve, e lo lasci quando ti basta.` },
-      { t: 'h', x: 'Quando stai male' },
-      { t: 'passi', x: [
-        { titolo: 'Tocca «Ho bisogno di un momento».', testo: `Scegli che cosa senti e dove ti sei perso.` },
-        { titolo: 'Scegli quanto tempo hai.', testo: `Un minuto basta per cominciare. Se hai più tempo, un esercizio più lungo va più a fondo.` },
-        { titolo: 'Fai l\'esercizio un passo alla volta.', testo: `Non devi crederci per forza: provalo. Puoi tornare indietro o fermarti quando vuoi.` },
-      ] },
-      { t: 'h', x: 'Quando vuoi un momento di calma' },
-      { t: 'p', x: `Nella sezione Esercizi trovi le meditazioni a tempo, per esempio quella sull'attenzione a se stessi o l'esame della sera. Puoi farle anche senza un motivo preciso.` },
-      { t: 'h', x: 'Quando vuoi capire' },
-      { t: 'p', x: `In Studio trovi le pagine che spiegano lo stoicismo e le fonti da cui vengono gli esercizi. Ogni esercizio ha un collegamento alla pagina che lo approfondisce.` },
+      { t: 'p', x: `Stoicismo quotidiano non ti chiede di studiare ogni giorno, di accumulare giorni di fila o di rispondere a notifiche. Lo apri quando vuoi, e lo lasci quando ti basta.` },
+      { t: 'h', x: 'Il corso' },
+      { t: 'p', x: `Le lezioni seguono l'ordine in cui Epitteto insegnava. Puoi leggerle in ordine, dalla prima all'ultima, oppure aprire quella che ti serve. Ogni lezione spiega un'idea, ti indica dove leggerla nei testi antichi e racconta come gli stoici la vivevano ogni giorno.` },
+      { t: 'h', x: 'Il quaderno' },
+      { t: 'p', x: `Ogni lezione si chiude con una domanda. Se vuoi, puoi scriverci sopra nel Quaderno: scrivere per sé era una pratica degli stoici stessi.` },
+      { t: 'h', x: 'La biblioteca' },
+      { t: 'p', x: `Nella Biblioteca trovi le pagine che approfondiscono le idee, gli autori e la storia della scuola. Ogni lezione rimanda alle pagine collegate.` },
       { t: 'h', x: 'Alcuni consigli' },
       { t: 'lista', x: [
-        `**Comincia dai brevi.** Un esercizio da uno o tre minuti, fatto davvero, vale più di uno lungo lasciato a metà.`,
-        `**Ripeti quelli che funzionano.** Gli esercizi stoici sono fatti per essere ripetuti: la seconda volta è più facile.`,
-        `**Cambia voce se un tono non ti aiuta.** Ognuno risponde a modo suo.`,
-        `**Non contare i giorni.** L'unico giorno che conta è quello in cui ti serve.`,
+        `**Vai piano.** Una lezione alla settimana, riletta con calma, vale più di tre lette in fretta.`,
+        `**Torna sulle idee.** Gli stoici ripetevano le stesse cose finché diventavano abitudini: rileggere una lezione è normale.`,
+        `**Leggi i testi.** Quando un passo ti incuriosisce, cercalo nel libro: le lezioni ti dicono dove.`,
+        `**Niente scadenze.** Il corso si segue al proprio ritmo, senza contare i giorni.`,
       ] },
-      { t: 'nota', x: `Stoicismo quotidiano nasce dalla sapienza degli stoici antichi e propone esercizi di pensiero e di attenzione. Non sostituisce il parere del medico né un percorso di cura o di sostegno psicologico: se il malessere è forte o dura da tempo, parlane con il tuo medico o con un professionista.` },
+      { t: 'nota', x: `Stoicismo quotidiano nasce dalla sapienza degli stoici antichi. Non sostituisce il parere del medico né un percorso di cura o di sostegno psicologico: se il malessere è forte o dura da tempo, parlane con il tuo medico o con un professionista.` },
     ],
   },
   {
@@ -274,8 +254,6 @@ const PAGINE_BASE = [
         `**Sii gentile con te stesso.** Seneca si correggeva senza punirsi.`,
         `**Poche righe bastano.** Meglio tre righe oneste che una pagina di buone intenzioni.`,
       ] },
-      { t: 'azione', x: 'Esercizio: Prepara la giornata', az: 'esercizio', id: 'prepara-la-giornata' },
-      { t: 'azione', x: 'Meditazione: La mattina', az: 'meditazione', id: 'la-mattina' },
     ],
   },
   {
@@ -316,8 +294,6 @@ const PAGINE_BASE = [
       { t: 'h', x: 'Ciò che ami è fragile' },
       { t: 'p', x: `Gli stoici invitavano a ricordare anche la fragilità delle cose e delle persone care. Non per amarle di meno, ma per amarle con più attenzione, con le mani aperte, senza pretendere che durino.` },
       { t: 'nota', x: `Sono temi delicati. Se un esercizio su questo ti pesa, fermati e passa ad altro: è una pratica da fare quando ti senti pronto.` },
-      { t: 'azione', x: 'Esercizio: La brocca che si può rompere', az: 'esercizio', id: 'la-brocca-che-si-rompe' },
-      { t: 'azione', x: 'Esercizio: Esame della sera', az: 'esercizio', id: 'esame-della-sera' },
     ],
   },
   {
@@ -336,7 +312,6 @@ const PAGINE_BASE = [
         { titolo: 'Guarda anche il tempo.', testo: `Le epoche passate, i secoli che verranno. Quanto pesava, tra mille anni, ciò che ti agita oggi?` },
         { titolo: 'Torna giù.', testo: `Riporta questo sguardo nel tuo problema: è ancora tuo, ma è meno grande di prima.` },
       ] },
-      { t: 'azione', x: "Meditazione guidata: Vista dall'alto", az: 'meditazione', id: 'vista-dall-alto-guidata' },
     ],
   },
   {
@@ -367,7 +342,6 @@ const PAGINE_BASE = [
         { titolo: 'Accetta la seconda.', testo: `Su ciò che sfugge al tuo controllo non puoi agire. Puoi scegliere come stare, senza pretendere che vada altrimenti.` },
       ] },
       { t: 'nota', x: `Nel Quaderno questa distinzione è sempre con te: ogni pagina si chiude con le due domande «Che cosa dipende da me?» e «Che cosa non dipende da me?».` },
-      { t: 'azione', x: 'Esercizio: Ciò che dipende da me', az: 'esercizio', id: 'cio-che-dipende-da-me' },
     ],
   },
   {
@@ -387,8 +361,6 @@ const PAGINE_BASE = [
         `**L'esame della sera.** Ripassare la giornata, senza indulgenza e senza severità, per capire che cosa ci ha fatto arrabbiare.`,
       ] },
       { t: 'nota', x: `Seneca chiede di lasciarsi guidare dalla ragione, e non dall'emozione. Prima si respira, poi si sceglie che cosa fare.` },
-      { t: 'azione', x: 'Esercizio: Aspetta prima di rispondere', az: 'esercizio', id: 'aspetta-prima-di-rispondere' },
-      { t: 'azione', x: 'Esercizio: Non somigliargli', az: 'esercizio', id: 'non-somigliargli' },
     ],
   },
   {
@@ -409,8 +381,6 @@ const PAGINE_BASE = [
         { titolo: 'Dipende da me?', testo: `Se dipende da te, prepara ciò che puoi. Se non dipende da te, lascia andare il controllo.` },
         { titolo: 'Che cosa farei, se accadesse?', testo: `Spesso la risposta esiste, e rassicura più dell'ansia.` },
       ] },
-      { t: 'azione', x: 'Esercizio: Il peggio misurato', az: 'esercizio', id: 'il-peggio-misurato' },
-      { t: 'azione', x: 'Esercizio: Un momento alla volta', az: 'esercizio', id: 'un-momento-alla-volta' },
     ],
   },
   {
@@ -428,8 +398,6 @@ const PAGINE_BASE = [
         `Il lutto ha i suoi tempi: nessuno chiede di finirlo in fretta.`,
       ] },
       { t: 'nota', x: `Se il dolore è troppo grande, o dura da tempo, parlane con il tuo medico o con una persona di fiducia: non sostituiamo un sostegno vero.` },
-      { t: 'azione', x: 'Esercizio: Ciò che ho ricevuto', az: 'esercizio', id: 'cio-che-ho-ricevuto' },
-      { t: 'azione', x: 'Esercizio: La brocca che si rompe', az: 'esercizio', id: 'la-brocca-che-si-rompe' },
     ],
   },
   {
@@ -446,8 +414,6 @@ const PAGINE_BASE = [
       ] },
       { t: 'h', x: 'Un uso pratico' },
       { t: 'p', x: `Ogni situazione difficile chiama una virtù. Davanti a un torto, la giustizia e la temperanza. Davanti a una paura, il coraggio. Davanti a una scelta complessa, la saggezza. Chiedersi «quale virtù serve qui?» è un modo semplice di orientarsi.` },
-      { t: 'azione', x: 'Esercizio: Sii ciò che cerchi', az: 'esercizio', id: 'sii-l-uomo-buono' },
-      { t: 'azione', x: 'Esercizio: Un testimone esemplare', az: 'esercizio', id: 'un-testimone-esemplare' },
     ],
   },
   {
@@ -466,7 +432,6 @@ const PAGINE_BASE = [
       { t: 'p', x: `Gli stoici non sognavano un essere umano senza emozioni. Parlavano anche di emozioni buone, che nascono da un giudizio giusto: la **gioia** (per ciò che è davvero bene), la **volontà** ragionevole (che desidera ciò che è giusto) e la **cautela** (che si difende dal male vero, cioè dal fare il male, e non dal disagio).` },
       { t: 'h', x: 'A che cosa serve la mappa' },
       { t: 'p', x: `Riconoscere in quale famiglia cade ciò che sentiamo è già un passo: se è desiderio o paura, lavoriamo sul futuro e su ciò che non dipende da noi. Se è dolore, guardiamo il giudizio sul presente. È la ragione per cui, in Stoicismo quotidiano, cominci scegliendo che cosa senti.` },
-      { t: 'azione', x: 'Esercizio: Fermati, impressione', az: 'esercizio', id: 'fermati-impressione' },
     ],
   },
   {
@@ -483,8 +448,6 @@ const PAGINE_BASE = [
       ] },
       { t: 'h', x: 'Che cosa suggerisce' },
       { t: 'p', x: `Seneca non invita ad affannarsi di più: invita a scegliere. Il tempo è l'unica cosa che ci è davvero affidata, e conviene dedicarlo a ciò che vale. Ognuno può cominciare da un gesto: ridurre una cosa inutile e proteggere una cosa che conta.` },
-      { t: 'azione', x: 'Meditazione: Il tempo che hai', az: 'meditazione', id: 'il-tempo-che-hai' },
-      { t: 'azione', x: 'Esercizio: Il tempo che perdi', az: 'esercizio', id: 'il-tempo-che-perdi' },
     ],
   },
   {
@@ -501,8 +464,6 @@ const PAGINE_BASE = [
         `L'amicizia mette in comune ciò che accade, le gioie e le pene.`,
         `Un amico è chi ti dice la verità con affetto, e chi accetta la tua.`,
       ] },
-      { t: 'azione', x: 'Esercizio: Vivere anche per gli altri', az: 'esercizio', id: 'vivere-anche-per-gli-altri' },
-      { t: 'azione', x: 'Meditazione: La città comune', az: 'meditazione', id: 'la-citta-comune' },
     ],
   },
   {
@@ -519,8 +480,6 @@ const PAGINE_BASE = [
       ] },
       { t: 'h', x: 'Quando il lavoro ti travolge' },
       { t: 'p', x: `Scegli una cosa sola, la più vicina, e falla con attenzione. Poi la successiva. Se il peso è cronico e ti consuma, non è un problema di filosofia: parlane con il tuo medico o con chi può aiutarti.` },
-      { t: 'azione', x: 'Esercizio: Un compito per oggi', az: 'esercizio', id: 'un-compito-per-oggi' },
-      { t: 'azione', x: 'Esercizio: Il riposo ha la sua misura', az: 'esercizio', id: 'il-riposo-ha-la-sua-misura' },
     ],
   },
   {
@@ -538,8 +497,6 @@ const PAGINE_BASE = [
       ] },
       { t: 'h', x: 'Quando sei tu a sbagliare' },
       { t: 'p', x: `Riconoscilo senza nasconderti, correggiti e lasciati andare. Seneca si diceva: «Stai attento la prossima volta; per ora ti perdono». Chiedere scusa è un atto di giustizia, non di debolezza.` },
-      { t: 'azione', x: 'Esercizio: Quattro ragioni per non odiare', az: 'esercizio', id: 'quattro-ragioni' },
-      { t: 'azione', x: 'Esercizio: Accogli la correzione', az: 'esercizio', id: 'accogli-la-correzione' },
     ],
   },
   {
@@ -555,8 +512,6 @@ const PAGINE_BASE = [
         `**La ragione ci accomuna.** Da qui la fraternità tra gli esseri umani: il cosmo come una grande città.`,
       ] },
       { t: 'p', x: `Nella pratica: quando ti pesa un avvenimento, ricordarti che fa parte di un ordine più ampio aiuta ad accoglierlo senza sentirti perseguitato.` },
-      { t: 'azione', x: 'Meditazione: Vista dall\'alto', az: 'meditazione', id: 'vista-dall-alto-guidata' },
-      { t: 'azione', x: 'Esercizio: Il fiume degli eventi', az: 'esercizio', id: 'il-fiume-degli-eventi' },
       { t: 'azione', x: 'Posidonio', az: 'studio', id: 'posidonio' },
     ],
   },
@@ -639,8 +594,7 @@ const PAGINE_BASE = [
         `**Capitolo 33:** scegli un carattere e mantienilo, sia da solo sia in compagnia.`,
       ] },
       { t: 'h', x: 'Come leggerlo' },
-      { t: 'p', x: `Non di seguito, come un romanzo. Un capitolo al giorno, magari la mattina, e poi un pensiero da portare con sé. Molti dei nostri esercizi nascono da questi capitoli.` },
-      { t: 'azione', x: 'Esercizio: Ciò che dipende da me', az: 'esercizio', id: 'cio-che-dipende-da-me' },
+      { t: 'p', x: `Non di seguito, come un romanzo. Un capitolo al giorno, magari la mattina, e poi un pensiero da portare con sé. Molte lezioni del corso partono da questi capitoli.` },
       { t: 'azione', x: 'Come leggere gli stoici', az: 'studio', id: 'come-leggere' },
     ],
   },
@@ -654,20 +608,16 @@ const PAGINE_BASE = [
       { t: 'p', x: `Marco Aurelio comincia la giornata ricordandosi che incontrerà persone difficili e che ognuno ha un compito suo. Pochi minuti per chiedersi: che cosa potrebbe mettermi alla prova? Come voglio essere?` },
       { t: 'lista', x: [
         `Nel Quaderno: la pagina **Mattina**.`,
-        `Un esercizio breve: **Prepara la giornata**.`,
-        `Una meditazione di cinque minuti: **La mattina**.`,
+        `Nel corso: la lezione **La mattina**.`,
       ] },
       { t: 'h', x: 'Durante il giorno: fermarsi e guardare' },
-      { t: 'p', x: `Quando qualcosa ti agita, tra un impegno e l'altro, fermati un momento. Chiediti: che cosa sto pensando? dipende da me? che cosa posso fare adesso? Sono le tre domande sottomano. Bastano un minuto e un respiro.` },
+      { t: 'p', x: `Quando qualcosa ti agita, tra un impegno e l'altro, fermati un momento. Chiediti: che cosa sto pensando? dipende da me? che cosa posso fare adesso? Bastano pochi istanti.` },
       { t: 'h', x: 'La sera: esaminare' },
-      { t: 'p', x: `Seneca ogni sera ripassava la giornata, senza nascondersi nulla e senza punirsi. Tre domande: che cosa ho fatto bene? dove ho sbagliato? che cosa farò diversamente? Poi si dorme, e si comincia da capo.` },
+      { t: 'p', x: `Seneca ogni sera ripassava la giornata, senza nascondersi nulla e senza punirsi, con le domande del filosofo Sestio: quale difetto ho curato oggi? a quale cattiva inclinazione ho resistito? in che cosa sono migliorato? Poi si dorme, e si comincia da capo.` },
       { t: 'lista', x: [
         `Nel Quaderno: la pagina **Sera**.`,
-        `Una meditazione di dieci minuti: **Esame della sera**.`,
-        `Un esercizio breve: **Per ora ti perdono**.`,
+        `Nel corso: la lezione **La sera**.`,
       ] },
-      { t: 'azione', x: 'Meditazione: La mattina', az: 'meditazione', id: 'la-mattina' },
-      { t: 'azione', x: 'Meditazione: Esame della sera', az: 'meditazione', id: 'esame-della-sera-guidato' },
     ],
   },
 ];

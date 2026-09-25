@@ -49,7 +49,6 @@ export const PAGINE_STUDIO_3A = [
       { t: 'h', x: 'Come usarla' },
       { t: 'p', x: `Quando stai male, prova a cercare la voce che ti somiglia di più. Poi chiediti: quale giudizio c'è sotto? Per esempio, dietro il **bisogno** c'è spesso «senza questo non sto bene», e dietro la **vergogna** c'è «il parere degli altri decide il mio valore». Sono giudizi che si possono esaminare.` },
       { t: 'azione', x: 'Le quattro passioni', az: 'studio', id: 'le-quattro-passioni' },
-      { t: 'azione', x: 'Esercizio: Fermati, impressione', az: 'esercizio', id: 'fermati-impressione' },
     ],
   },
   {
@@ -70,7 +69,6 @@ export const PAGINE_STUDIO_3A = [
       { t: 'h', x: 'Un errore comune' },
       { t: 'p', x: `Saggezza non vuol dire sapere tutto né avere sempre ragione. Gli stoici stessi dicevano che il saggio perfetto è raro, forse mai esistito. Conta il **progresso**: essere oggi un po' più chiari di ieri.` },
       { t: 'azione', x: 'Le quattro virtù', az: 'studio', id: 'le-quattro-virtu' },
-      { t: 'azione', x: 'Esercizio: Descrivi senza aggiungere', az: 'esercizio', id: 'descrivi-senza-aggiungere' },
     ],
   },
   {
@@ -90,8 +88,6 @@ export const PAGINE_STUDIO_3A = [
       { t: 'p', x: `La giustizia comincia nei gesti piccoli: rispondere a un messaggio, restituire ciò che si è preso, ascoltare fino in fondo, riconoscere il merito altrui. Epitteto insisteva sui **ruoli**: figlio, genitore, amico, cittadino, collega. Ogni ruolo ha i suoi doveri, e viverli bene è un modo di essere giusti.` },
       { t: 'h', x: 'Con chi ci fa torto' },
       { t: 'p', x: `Gli stoici pensavano che chi sbaglia sbagli per ignoranza: crede di fare il proprio bene e si inganna. Questo non giustifica l'errore, ma cambia lo sguardo: puoi difenderti senza odiare.` },
-      { t: 'azione', x: 'Esercizio: Chi voglio essere qui', az: 'esercizio', id: 'chi-voglio-essere-qui' },
-      { t: 'azione', x: 'Esercizio: Chi sbaglia non sa', az: 'esercizio', id: 'chi-sbaglia-non-sa' },
     ],
   },
   {
@@ -111,8 +107,6 @@ export const PAGINE_STUDIO_3A = [
       { t: 'p', x: `C'è il coraggio di **agire**: dire una cosa scomoda, cominciare un compito temuto, chiedere scusa. E c'è il coraggio di **sopportare**: reggere una perdita, una malattia, un'attesa. Gli stoici lo allenavano con piccole prove volontarie e con la premeditazione dei mali.` },
       { t: 'h', x: 'Come si allena' },
       { t: 'p', x: `Scegli ogni tanto una piccola scomodità da affrontare, senza necessità e senza esagerare. Serve a ricordare che si può stare anche senza ciò a cui ci si è abituati. La paura si ridimensiona quando la si conosce.` },
-      { t: 'azione', x: 'Esercizio: Prepararsi al peggio', az: 'esercizio', id: 'prepararsi-al-peggio' },
-      { t: 'azione', x: 'Esercizio: Il primo gesto piccolo', az: 'esercizio', id: 'il-primo-gesto-piccolo' },
     ],
   },
   {
@@ -132,8 +126,6 @@ export const PAGINE_STUDIO_3A = [
       { t: 'p', x: `Oggi la temperanza tocca il cibo, il telefono, gli acquisti, il lavoro, i confronti con gli altri. Il segnale è semplice: se una cosa ti trascina e poi ti lascia peggio di prima, è il momento di rimettere una misura.` },
       { t: 'h', x: 'Un esercizio antico' },
       { t: 'p', x: `Seneca consigliava di scegliere ogni tanto qualche giorno di vita più semplice: cibo modesto, vestiti poveri, letto duro. Poi ci si domanda: è questo che temevo? Spesso la risposta è no, e la paura di perdere le comodità si scioglie.` },
-      { t: 'azione', x: 'Esercizio: Quanto basta', az: 'esercizio', id: 'quanto-basta' },
-      { t: 'azione', x: 'Esercizio: Il riposo ha la sua misura', az: 'esercizio', id: 'il-riposo-ha-la-sua-misura' },
     ],
   },
   {
@@ -191,7 +183,6 @@ export const PAGINE_STUDIO_3A = [
       { t: 'h', x: 'Il suo stile' },
       { t: 'p', x: `Diretto, spesso duro, pieno di esempi quotidiani. Epitteto sa che le idee non bastano: vanno esercitate ogni giorno. Non a caso il suo insegnamento è diventato la base degli esercizi di questa app.` },
       { t: 'azione', x: 'Il Manuale di Epitteto', az: 'studio', id: 'il-manuale-di-epitteto' },
-      { t: 'azione', x: 'Esercizio: Ciò che dipende da me', az: 'esercizio', id: 'cio-che-dipende-da-me' },
     ],
   },
   {
@@ -218,7 +209,6 @@ export const PAGINE_STUDIO_3A = [
       { t: 'h', x: 'Un maestro imperfetto' },
       { t: 'p', x: `Seneca visse nella ricchezza e nel potere, e già i contemporanei glielo rimproveravano. Lui lo ammetteva: diceva di scrivere per chi cerca di migliorare, senza salire su un piedistallo. Questa onestà rende le sue pagine più credibili, non meno.` },
       { t: 'azione', x: "L'ira secondo Seneca", az: 'studio', id: 'l-ira-secondo-seneca' },
-      { t: 'azione', x: 'Esercizio: Esame della sera', az: 'esercizio', id: 'esame-della-sera' },
       { t: 'azione', x: 'La vita di Seneca', az: 'studio', id: 'la-vita-di-seneca' },
     ],
   },
@@ -239,8 +229,6 @@ export const PAGINE_STUDIO_3A = [
       ] },
       { t: 'h', x: 'Come leggerlo' },
       { t: 'p', x: `Non è un trattato: va letto a piccole dosi, una o due pagine alla volta. Le frasi tornano, cambiano forma, si correggono. È il diario di un uomo che si esercita, non di uno che ha già trovato tutte le risposte.` },
-      { t: 'azione', x: 'Meditazione: La mattina', az: 'meditazione', id: 'la-mattina' },
-      { t: 'azione', x: 'Esercizio: Il rifugio dentro', az: 'esercizio', id: 'il-rifugio-dentro' },
     ],
   },
   {
@@ -261,7 +249,6 @@ export const PAGINE_STUDIO_3A = [
       { t: 'h', x: 'Perché leggerlo' },
       { t: 'p', x: `Musonio dà l'impressione di un uomo che parla in una stanza, ai suoi allievi, con parole semplici. È utile per capire da dove viene la sobrietà pratica di Epitteto.` },
       { t: 'azione', x: 'Come leggere gli stoici', az: 'studio', id: 'come-leggere' },
-      { t: 'azione', x: 'Esercizio: Quanto basta', az: 'esercizio', id: 'quanto-basta' },
       { t: 'azione', x: 'Gli stoici sotto gli imperatori', az: 'studio', id: 'gli-stoici-e-il-potere' },
     ],
   },
